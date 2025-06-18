@@ -10,7 +10,7 @@ namespace woolly_friends.Controllers
         }
 
         // Admin
-        public IActionResult PetsPage() 
+        public IActionResult PetsGallery() 
         {
             return View();
         }
