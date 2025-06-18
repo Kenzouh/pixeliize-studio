@@ -1,90 +1,153 @@
-﻿@{
-	ViewData["Title"] = "Profile";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>Profile</title>
-
-	<!-- Pre-requisite Meta Tags -->
-	<meta charset="utf-8" />
-	<meta name="description" content="Profile page with user credentials." />
-	<meta name="keywords" content="Profile, User" />
-	<meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<link href="~/css/main.css" rel="stylesheet" media="all" />
+    <title>Profile</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Profile page with user credentials." />
+    <meta name="keywords" content="Profile, User" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="max-w-6xl mx-auto px-6 py-8">
-        <div class="flex flex-col md:flex-row items-start gap-10">
-            <!-- Profile Picture -->
-            <div class="flex-shrink-0">
-                <img src="~/Images/ProfileIcon.png" alt="Profile Picture" class="rounded-full w-48 h-48 object-cover border border-gray-300" />
-            </div>
-
-            <!-- Profile Detail s -->
-            <div>
-                <div class="flex items-center gap-4 mb-2">
-                    <h1 class="text-3xl font-bold text-[#684034]">George Edward</h1>
-                    <img src="~/Images/VerifiedIcon.png" alt="Verified" class="w-10 h-10" />
-                </div>
-                <p class="text-gray-700 font-semibold">Contact Number: 09123456789</p>
-                <p class="text-gray-500">Member Since June 1999</p>
-            </div>
-        </div>
-
-        <!-- Tabs -->
-        <div class="mt-10 border-b border-gray-300 pb-2">
-            <nav class="flex space-x-6">
-                <a href="#orders" class="text-[#684034] font-bold border-b-2 border-[#684034] pb-1">Orders and Wishlist (2)</a>
-                <a href="#requests" class="text-gray-600 hover:text-[#684034]">Requests (1)</a>
-            </nav>
-        </div>
-
-        <!-- Orders Section -->
-        <section id="orders" class="mt-8">
-            <h2 class="text-xl font-bold mb-4">Orders</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                @for (int i = 0; i < 3; i++)
-                {
-                    <div class="border rounded-lg overflow-hidden shadow-sm">
-                        <img src="~/Images/PetPhotos/Skibidi.jpg" alt="Pet" class="w-full h-48 object-cover" />
-                        <div class="p-4">
-                            <h3 class="text-lg font-bold text-[#684034]">Skibidi</h3>
-                            <p class="text-sm text-gray-600">Large Male Dog</p>
-                            <p class="text-sm text-gray-400">Pureza, Manila</p>
-                            <p class="font-semibold text-[#684034] mt-2">₱5,000</p>
-                        </div>
-                    </div>
-                }
-            </div>
-        </section>
-
-        <!-- Wishlist Section -->
-        <section class="mt-12">
-            <h2 class="text-xl font-bold mb-4">Wishlist</h2>
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-                @for (int i = 0; i < 3; i++)
-                {
-                    <div class="border rounded-lg overflow-hidden shadow-sm">
-                        <img src="~/Images/PetPhotos/skibidi.jpg" alt="Pet" class="w-full h-48 object-cover" />
-                        <div class="p-4">
-                            <h3 class="text-lg font-bold text-[#684034]">Skibidi</h3>
-                            <p class="text-sm text-gray-600">Large Male Dog</p>
-                            <p class="text-sm text-gray-400">Pureza, Manila</p>
-                            <p class="font-semibold text-[#684034] mt-2">₱5,000</p>
-                        </div>
-                    </div>
-                }
-            </div>
-        </section>
+<body class="bg-white font-sans">
+    <div class="container mx-auto mt-4 px-4">
+        <nav class="text-lg">
+            <ol class="list-reset flex text-gray-700">
+                <li><a href="Home" class="text-blue-600 hover:underline">Home</a></li>
+                <li><span class="mx-2">/</span></li>
+                <li class="text-gray-500">Profile</li>
+            </ol>
+        </nav>
     </div>
-	<script src="~/js/main.js"></script>
+
+    <!-- Profile -->
+    <div class="container mx-auto mt-8 px-4 flex flex-wrap items-start gap-8">
+        <div class="w-full md:w-1/4">
+            <img src="~/images/Profile.jpg" class="w-full max-h-72 object-cover border-4 border-black rounded-md" alt="Profile Image">
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl font-bold text-[#684034] font-serif">George Edward</h1>
+            <h2 class="text-base font-bold text-black capitalize">Contact Number: 09123456789</h2>
+            <h2 class="text-base font-normal text-gray-500">Member Since June 1999</h2>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-2 mt-6 px-4">
+        <button class="bg-gray-100 text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px]">Products</button>
+        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Orders'">Orders</button>
+        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Reviews'">Reviews</button>
+    </div>
+
+    <!-- Filter -->
+    <div class="container mx-auto mt-8 px-4 flex flex-wrap">
+        <aside class="w-full md:w-1/4 bg-white p-5">
+            <h4 class="font-bold text-lg flex items-center mb-4">Refine your search <i class="bi bi-filter ml-2"></i></h4>
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Species</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Cats (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Dogs (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Other Pets (0)</label>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Gender</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Male (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Female (0)</label>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Size</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Small (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Medium (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Large (0)</label>
+            </div>
+
+            <div>
+                <h6 class="font-bold mb-2">Price</h6>
+                <div class="flex gap-2">
+                    <input type="text" placeholder="Min" class="w-1/2 border p-2" />
+                    <input type="text" placeholder="Max" class="w-1/2 border p-2" />
+                </div>
+            </div>
+        </aside>
+
+        <!-- Pet Cards -->
+        <div class="w-full md:w-3/4 p-3 grid grid-cols-1 md:grid-cols-3 gap-4">
+            <!-- Card 1 -->
+            <div class="relative rounded-lg overflow-hidden shadow-sm">
+                <img src="~/images/Dog1.png" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Skibidi</h3>
+                    <div class="text-gray-700 flex items-center gap-1 sm:p-1">
+                        <i class="bi bi-heart-fill"></i> Large Male Dog
+                    </div>
+                    <p class="text-gray-500 sm:p-1">Huge Heart</p>
+                    <div class="flex items-center gap-1 sm:p-1">
+                        <i class="bi bi-geo-alt-fill"></i> Pureza, Manila
+                    </div>
+                    <div class="font-bold text-[#0B0B0B] sm:p-1">₱5,000</div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative rounded-lg overflow-hidden shadow-sm">
+                <img src="~/images/Cat1.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Fluffy</h3>
+                    <div class="text-gray-700 flex items-center gap-1 sm:p-1">
+                        <i class="bi bi-heart-fill"></i> Small Female Dog
+                    </div>
+                    <p class="text-gray-500 sm:p-1">Very Energetic</p>
+                    <div class="flex items-center gap-1 sm:p-1">
+                        <i class="bi bi-geo-alt-fill"></i> Quezon City
+                    </div>
+                    <div class="font-bold text-[#0B0B0B] sm:p-1">₱3,200</div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative rounded-lg overflow-hidden shadow-sm">
+                <img src="~/images/Rabbit1.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Bonny</h3>
+                    <div class="text-gray-700 flex items-center gap-1 sm:p-1">
+                        <i class="bi bi-heart-fill"></i> Small Male Rabbit
+                    </div>
+                    <p class="text-gray-500 sm:p-1">Loves cuddles and carrots</p>
+                    <div class="flex items-center gap-1 sm:p-1">
+                        <i class="bi bi-geo-alt-fill"></i> Pasig City
+                    </div>
+                    <div class="font-bold text-[#0B0B0B] sm:p-1">₱1,500</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.bi-suit-heart, .bi-suit-heart-fill').forEach(function (icon) {
+                icon.addEventListener('click', function () {
+                    this.classList.toggle('bi-suit-heart');
+                    this.classList.toggle('bi-suit-heart-fill');
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>

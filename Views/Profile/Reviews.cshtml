@@ -1,28 +1,141 @@
-﻿@{
-	ViewData["Title"] = "Reviews";
-}
-
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>Profile | Pets</title>
-
-	<!-- Pre-requisite Meta Tags -->
-	<meta charset="utf-8" />
-	<meta name="description" content="Reviews page showing the reviews of adopters." />
-	<meta name="keywords" content="Reviews, Pets, Stars" />
-	<meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
-	<link href="~/css/main.css" rel="stylesheet" media="all" />
+    <title>Profile</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Profile page with user credentials." />
+    <meta name="keywords" content="Profile, User" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-	<h1>Review Page</h1>
+<body class="bg-white font-sans">
+    <div class="container mx-auto mt-4 px-4">
+        <nav class="text-lg">
+            <ol class="list-reset flex text-gray-700">
+                <li><a href="/Home" class="text-blue-600 hover:underline">Home</a></li>
+                <li><span class="mx-2">/</span></li>
+                <li class="text-gray-500">Profile</li>
+            </ol>
+        </nav>
+    </div>
 
-	<script src="~/js/main.js"></script>
+    <!-- Profile -->
+    <div class="container mx-auto mt-8 px-4 flex flex-wrap items-start gap-8">
+        <div class="w-full md:w-1/4">
+            <img src="~/images/Profile.jpg" class="w-full max-h-72 object-cover border-4 border-black rounded-md" alt="Profile Image">
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl font-bold text-[#684034] font-serif">George Edward</h1>
+            <h2 class="text-base font-bold text-black capitalize">Contact Number: 09123456789</h2>
+            <h2 class="text-base font-normal text-gray-500">Member Since June 1999</h2>
+        </div>
+    </div>
+
+    <!-- Buttons -->
+    <div class="flex gap-2 mt-6 px-4">
+        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile'">Products</button>
+        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Orders'">Orders</button>
+        <button class="bg-gray-100 text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Reviews'">Reviews</button>
+    </div>
+
+    <!-- Feedback Card -->
+    <div class="p-6">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            <!-- Rating 1 -->
+            <div class="bg-white shadow-sm rounded-lg p-4 text-center">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                        <img src="~/images/Bernal.png" alt="Avatar" class="w-10 h-10 rounded-full object-cover">
+                        <span class="font-medium text-gray-800">Kris Bernal</span>
+                    </div>
+
+                    <!-- Star Rating -->
+                    <div class="flex gap-1 rating" data-rating="0">
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <!-- Feedback -->
+                <p class="text-gray-700 text-left">Adopting Skibidi changed my life for the better!</p>
+            </div>
+
+            <!-- Rating 2 -->
+            <div class="bg-white shadow-sm rounded-lg p-4 text-center">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                        <img src="~/images/Bernal.png" alt="Avatar" class="w-10 h-10 rounded-full object-cover">
+                        <span class="font-medium text-gray-800">Kris Bernal</span>
+                    </div>
+
+                    <!-- Star Rating -->
+                    <div class="flex gap-1 rating" data-rating="0">
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <!-- Feedback -->
+                <p class="text-gray-700 text-left">Adopting Skibidi changed my life for the better!</p>
+            </div>
+
+            <!-- Rating 3 -->
+            <div class="bg-white shadow-sm rounded-lg p-4 text-center">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                        <img src="~/images/Bernal.png" alt="Avatar" class="w-10 h-10 rounded-full object-cover">
+                        <span class="font-medium text-gray-800">Kris Bernal</span>
+                    </div>
+
+                    <!-- Star Rating -->
+                    <div class="flex gap-1 rating" data-rating="0">
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <!-- Feedback -->
+                <p class="text-gray-700 text-left">Adopting Skibidi changed my life for the better!</p>
+            </div>
+
+            <!-- Rating 4 -->
+            <div class="bg-white shadow-sm rounded-lg p-4 text-center">
+                <div class="flex items-center justify-between mb-3">
+                    <div class="flex items-center gap-2">
+                        <img src="~/images/Bernal.png" alt="Avatar" class="w-10 h-10 rounded-full object-cover">
+                        <span class="font-medium text-gray-800">Kris Bernal</span>
+                    </div>
+
+                    <!-- Star Rating -->
+                    <div class="flex gap-1 rating" data-rating="0">
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                        <i class="bi bi-star text-yellow-400 text-xl cursor-pointer"></i>
+                    </div>
+                </div>
+
+                <!-- Feedback -->
+                <p class="text-gray-700 text-left">Adopting Skibidi changed my life for the better!</p>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
