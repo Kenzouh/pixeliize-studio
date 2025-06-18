@@ -6,36 +6,272 @@
 <html lang="en">
 
 <head>
-	<title>Home</title>
+    <title>Home</title>
 
-	<!-- Pre-requisite Meta Tags -->
-	<meta charset="utf-8" />
-	<meta name="description" content="Login page to input user credentials to access Woolly Friends." />
-	<meta name="keywords" content="Woolly Friends Login" />
-	<meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Pre-requisite Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Login page to input user credentials to access Woolly Friends." />
+    <meta name="keywords" content="Woolly Friends Login" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 
-	<link href="~/css/main.css" rel="stylesheet" media="all" />
+    <link href="~/css/main.css" rel="stylesheet" media="all" />
 </head>
 
-<body>
+<body class="bg-white">
+    <!-- ================================= Hero Section ================================= -->
+    <section class="relative bg-no-repeat bg-center md:bg-cover min-h-[500px] md:min-h-screen flex items-center" style="background-image: url('/Images/Banner.png');">
+        <div class="max-w-7xl mx-auto px-8 w-full">
+            <div class="max-w-lg text-left text-white space-y-6">
+                <h1 class="text-4xl md:text-5xl font-bold">Find Your Perfect Pet</h1>
+                <p class="text-lg md:text-xl whitespace-nowrap">Explore our shelter and find the companion of your dreams!</p>
 
-	<div class="text-center">
-		<h1 class="display-4">Welcome</h1>
-		<p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+                <!-- ================================= Start Your Search Button ================================= -->
+                <!-- Redirect to All Pets Gallery -->
+                <a href="/Pets/Available" class="inline-block bg-[#684034] hover:bg-[#3E261F] px-8 py-3 rounded-lg font-semibold transition-colors">
+                    Start Your Search
+                </a>
+
+                <!-- ================================= Category Buttons ================================= -->
+                <div class="flex gap-4">
+                    <!-- Redirect to Dogs Gallery -->
+                    <a href="/Pets/Dogs" class="bg-[#D9D9D980] bg-opacity-50 hover:bg-[#7A7A7A] hover:bg-opacity-50 px-6 py-2 rounded-lg font-medium transition-colors">
+                        Dogs
+                    </a>
+                    <!-- Redirect to Cats Gallery -->
+                    <a href="/Pets/Cats" class="bg-[#D9D9D980] bg-opacity-50 hover:bg-[#7A7A7A] hover:bg-opacity-50 px-6 py-2 rounded-lg font-medium transition-colors">
+                        Cats
+                    </a>
+                    <!-- Redirect to Other Pets Gallery -->
+                    <a href="/Pets/Others" class="bg-[#D9D9D980] bg-opacity-50 hover:bg-[#7A7A7A] hover:bg-opacity-50 px-6 py-2 rounded-lg font-medium transition-colors">
+                        Other Animals
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================= Available Pets Section ================================= -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#684034] mb-4">Available Pets</h2>
+                <p class="text-black font-semibold text-base">These adorable pets are looking for a loving home.</p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+                <!-- ================================= Pet Card 1 ================================= -->
+                <div class="relative group hover:scale-105 transform transition-transform duration-300">
+                    <!-- Redirect to Skibidi Page -->
+                    <a href="/Pets/Details/2" class="block bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative aspect-[4/3] w-full">
+                            <img src="/Images/Skibidi.png" alt="Skibidi - Large Male Dog" class="absolute inset-0 w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-[#684034] mb-2">Skibidi</h3>
+                            <p class="text-sm mb-1"><i class="fas fa-mars text-blue-500"></i> Large Male Dog</p>
+                            <p class="text-sm mb-2">Huge Heart 💙</p>
+                            <p class="text-sm mb-1"><i class="fas fa-map-marker-alt"></i> Punta, Manila</p>
+                            <p class="text-lg font-bold text-[#684034]">₱ 4000</p>
+                        </div>
+                    </a>
+                    <!-- Add to Wishlist -->
+                    <form method="post" action="/Wishlist/Add/2" class="absolute top-4 right-4 z-10">
+                        <button type="submit" class="bg-black text-white hover:text-red-500 rounded-full w-10 h-10 flex items-center justify-center transition-colors shadow-md">
+                            <i class="far fa-heart text-xl"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- ================================= Pet Card 2 ================================= -->
+                <div class="relative group hover:scale-105 transform transition-transform duration-300">
+                    <!-- Redirect to Skibidi Page -->
+                    <a href="/Pets/Details/2" class="block bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative aspect-[4/3] w-full">
+                            <img src="/Images/Skibidi.png" alt="Skibidi - Large Male Dog" class="absolute inset-0 w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-[#684034] mb-2">Skibidi</h3>
+                            <p class="text-sm mb-1"><i class="fas fa-mars text-blue-500"></i> Large Male Dog</p>
+                            <p class="text-sm mb-2">Huge Heart 💙</p>
+                            <p class="text-sm mb-1"><i class="fas fa-map-marker-alt"></i> Punta, Manila</p>
+                            <p class="text-lg font-bold text-[#684034]">₱ 4000</p>
+                        </div>
+                    </a>
+                    <!-- Add to Wishlist -->
+                    <form method="post" action="/Wishlist/Add/2" class="absolute top-4 right-4 z-10">
+                        <button type="submit" class="bg-black text-white hover:text-red-500 rounded-full w-10 h-10 flex items-center justify-center transition-colors shadow-md">
+                            <i class="far fa-heart text-xl"></i>
+                        </button>
+                    </form>
+                </div>
+
+                <!-- ================================= Pet Card 3 ================================= -->
+                <div class="relative group hover:scale-105 transform transition-transform duration-300">
+                    <!-- Redirect to Blackie Page -->
+                    <a href="/Pets/Details/3" class="block bg-white rounded-lg shadow-lg overflow-hidden">
+                        <div class="relative aspect-[4/3] w-full">
+                            <img src="/Images/Blackie.png" alt="Blackie" class="absolute inset-0 w-full h-full object-cover">
+                        </div>
+                        <div class="p-4">
+                            <h3 class="text-xl font-bold text-[#684034] mb-2">Blackie</h3>
+                            <p class="text-sm mb-1"><i class="fas fa-venus text-pink-500"></i> Domestic Short Hair Cat</p>
+                            <p class="text-sm mb-2">Looking for love</p>
+                            <p class="text-sm mb-1"><i class="fas fa-map-marker-alt"></i> Punta, Manila</p>
+                            <p class="text-lg font-bold text-[#684034]">₱ 1300</p>
+                        </div>
+                    </a>
+                    <!-- Add to Wishlist -->
+                    <form method="post" action="/Wishlist/Add/3" class="absolute top-4 right-4 z-10">
+                        <button type="submit" class="bg-black text-white hover:text-red-500 rounded-full w-10 h-10 flex items-center justify-center transition-colors shadow-md">
+                            <i class="far fa-heart text-xl"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================= Reviews Section ================================= -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-[#684034] mb-4">What Our Adopters Say</h2>
+                <p class="font-bold">Hear from people who found joy in adopting a pet.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-[#684034] rounded-full flex items-center justify-center text-white font-bold mr-3">B</div>
+                        <div>
+                            <h4 class="font-semibold">Bernal, Kris</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-black">Adopting Bella changed my life for the better!</p>
+                </div>
+
+                <div class="bg-gray-50 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-[#684034] rounded-full flex items-center justify-center text-white font-bold mr-3">C</div>
+                        <div>
+                            <h4 class="font-semibold">Caloocan, Boy</h4>
+                            <div class="flex text-yellow-400">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-black">Max is the perfect companion...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================= Testimonials Section ================================= -->
+    <section class="bg-gray-50 py-16">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h2 class="mb-4 text-[40px] font-bold text-[#684034]">Words from Our Happy Pet Parents</h2>
+                <p class="font-bold text-[16px]">Celebrating the Joyful Woolly Friends Family</p>
+            </div>
+
+            <div class="mx-auto grid max-w-6xl items-center gap-12 md:grid-cols-2">
+                <div class="text-center md:text-left">
+                    <div class="mb-6 text-6xl text-[#684034]">"</div>
+                    <p class="text-right mb-8 text-lg leading-relaxed font-bold">Thank you so much! Without you, we wouldn't have such a perfect family member. She's very happy, playful, and loved by all of us. Please send our appreciation to the breeder for raising such a beautiful and healthy pup!</p>
+                    <div class="text-right">
+                        <p class="font-bold text-lg text-[#684034]">— Ed Caluag</p>
+                        <p class="font-semibold">Antipolo, City</p>
+                    </div>
+                </div>
+                <div class="flex justify-center">
+                    <img src="/Images/Testimonials.png" alt="Happy dog with computer" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================================= FAQs Section ================================= -->
+    <section class="bg-white py-16">
+        <div class="container mx-auto px-4">
+            <div class="mb-12 text-center">
+                <h2 class="text-3xl font-bold text-[#684034]">PLANNING TO ADOPT A PET?</h2>
+            </div>
+
+            <div class="mx-auto grid max-w-4xl gap-8 md:grid-cols-2">
+                <!-- ================================= Pet Adoption FAQs ================================= -->
+                <!-- Page Redirect -->
+                <a href="/FAQs/Adoption" class="block">
+                    <div class="group bg-white rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300 overflow-hidden flex h-full flex-col items-center p-6 text-center hover:shadow-xl">
+                        <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D4B5A0]">
+                            <i class="fas fa-heart text-2xl text-[#684034]"></i>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold text-[#684034]">Pet Adoption FAQs</h3>
+                        <p class="mb-6">Make the adoption transition as smooth as possible.</p>
+                        <div class="mt-auto">
+                            <span class="rounded-full border-2 border-[#684034] px-6 py-2 font-semibold text-[#684034] transition-colors group-hover:bg-[#684034] group-hover:text-white inline-block">LEARN MORE</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- ================================= Pets for Sale FAQs ================================= -->
+                <!-- Page Redirect -->
+                <a href="/FAQs/Sale" class="block">
+                    <div class="group bg-white rounded-lg shadow-lg hover:scale-105 transform transition-transform duration-300 overflow-hidden flex h-full flex-col items-center p-6 text-center hover:shadow-xl">
+                        <div class="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#D4B5A0]">
+                            <i class="fas fa-question-circle text-2xl text-[#684034]"></i>
+                        </div>
+                        <h3 class="mb-2 text-xl font-bold text-[#684034]">Pets for Sale FAQs</h3>
+                        <p class="mb-6">Get answers to all the pet questions you haven't thought of for pet adoption.</p>
+                        <div class="mt-auto">
+                            <span class="rounded-full border-2 border-[#684034] px-6 py-2 font-semibold text-[#684034] transition-colors group-hover:bg-[#684034] group-hover:text-white inline-block">LEARN MORE</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
 
 
-		<!-- Tailwind CSS Example -->
+    <script>
+        // For Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
 
-		<!--
-		<h1 class="text-3xl font-bold text-yellow-500">
-			Hello world! Tailwind V3 is working!
-		</h1>
-		-->
-	</div>
+        // Wishlist Clicked: To know if the pet is added to the wishlist
+        document.querySelectorAll('.fa-heart').forEach(heart => {
+            heart.addEventListener('click', function() {
+                this.classList.toggle('far');
+                this.classList.toggle('fas');
+                this.classList.toggle('text-red-500');
+            });
+        });
 
-	<script src="~/js/main.js"></script>
+    </script>
+
+    <script src="~/js/main.js"></script>
+
 </body>
 
 </html>
