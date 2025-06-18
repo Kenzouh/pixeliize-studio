@@ -3,244 +3,85 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - WebApplication2</title>
+    <title>@ViewData["Title"] - woolly_friends</title>
+    <link rel="icon" href="~/images/Logo.png" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" /> -->
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="~/WebApplication2.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <nav class="bg-white border-b shadow mb-3">
-            <div class="container mx-auto px-4">
-                <div class="flex items-center justify-between py-4">
-                    <!-- Brand -->
-                    <div class="text-black">
-                        <a asp-area="" asp-controller="Home" asp-action="Index" class="text-xl font-semibold tracking-wide">
-                            woolly_friends
-                        </a>
-                    </div>
+<body class="min-h-screen font-inter bg-gray-50">
 
-                    <!-- Mobile Toggle Button -->
-                    <div class="lg:hidden">
-                        <button id="nav-toggle" class="flex items-center px-3 py-2 border rounded text-gray-600 border-gray-400 hover:text-black hover:border-black">
-                            <svg class="fill-current h-4 w-4" viewBox="0 0 20 20">
-                                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <!-- Menu -->
-                    <div id="nav-menu" class="hidden lg:flex items-center">
-                        <ul class="flex space-x-6">
-                            <li><a asp-area="" asp-controller="Home" asp-action="Index" class="text-gray-700 hover:text-black">Home</a></li>
-                            <li><a asp-area="" asp-controller="Login" asp-action="Index" class="text-gray-700 hover:text-black">Login</a></li>
-                            <li><a asp-area="" asp-controller="SignUp" asp-action="Index" class="text-gray-700 hover:text-black">Sign Up</a></li>
-                            <li><a asp-area="" asp-controller="Profile" asp-action="Index" class="text-gray-700 hover:text-black">Profile</a></li>
-                            <li><a asp-area="" asp-controller="Profile" asp-action="PetsPage" class="text-gray-700 hover:text-black">Pets Page</a></li>
-                            <li><a asp-area="" asp-controller="Profile" asp-action="Orders" class="text-gray-700 hover:text-black">Orders</a></li>
-                            <li><a asp-area="" asp-controller="Profile" asp-action="Reviews" class="text-gray-700 hover:text-black">Reviews</a></li>
-                        </ul>
-                    </div>
-                </div>
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <header class="relative bg-[#684034] h-[62px] overflow-hidden">
+            <div class="absolute left-1/2 transform -translate-x-1/2 top-[-13px]">
+                <img src="~/images/Logo.png" alt="Logo" class="h-20" />
             </div>
+
+            <!-- Confetti Icons -->
+            <img class="absolute left-[484px] top-[32px] w-[10px]" src="~/images/ConfettiHeart.svg" />
+            <img class="absolute left-[512.17px] top-[33.83px] w-[10px] rotate-[-190deg]" src="~/images/SingleConfetti.svg" />
+            <img class="absolute left-[568.38px] top-[4.96px] w-[10px] rotate-[40deg]" src="~/images/ConfettiHeart.svg" />
+            <img class="absolute left-[548px] top-[29px] w-[10px] rotate-[80deg]" src="~/images/SingleConfetti.svg" />
+            <img class="absolute left-[584px] top-[39px] w-[10px]" src="~/images/SingleConfetti.svg" />
+            <img class="absolute left-[858.99px] top-[33.41px] w-[10px] rotate-[-160deg]" src="~/images/SingleConfetti.svg" />
+            <img class="absolute left-[873.01px] top-[10.59px] w-[10px] rotate-[20deg]" src="~/images/ConfettiHeart.svg" />
+            <img class="absolute left-[886px] top-[36px] w-[10px]" src="~/images/SingleConfetti.svg" />
+            <img class="absolute left-[925.38px] top-[26.96px] w-[10px] rotate-[40deg]" src="~/images/SingleConfetti.svg" />
+            <img class="absolute left-[948px] top-[22px] w-[10px]" src="~/images/ConfettiHeart.svg" />
+        </header>
+
+        <!-- Navbar Toggle & Menu -->
+        <nav class="bg-gray-100 shadow-sm border-b px-4 py-2 flex items-center">
+            <button id="toggleSidebar" class="text-gray-700 font-semibold text-sm border px-3 py-1 rounded">
+                <i class="bi bi-list"></i>
+                MENU
+            </button>
+
+            <button class="ml-auto text-sm flex items-center gap-1 border px-2 py-1 rounded text-gray-700 hover:text-pink-600">
+                <i class="bi bi-heart-fill"></i>
+                <span class="uppercase font-bold">Wishlist</span>
+            </button>
         </nav>
 
+        <div class="flex flex-1">
+            <!-- Sidebar -->
+            <aside id="sidebar" class="w-64 bg-white border-r p-4 transition-all duration-500">
+                <ul class="space-y-4 font-semibold text-gray-800">
+                    <li><a href="/Home" class="hover:text-rose-600">Home</a></li>
+                    <li><a href="/Login" class="hover:text-rose-600">Login</a></li>
+                    <li><a href="/SignUp" class="hover:text-rose-600">Sign Up</a></li>
+                    <li><a href="/Profile" class="hover:text-rose-600">Profile</a></li>
+                    <li><a href="/Profile/PetsPage" class="hover:text-rose-600">Pets Page</a></li>
+                    <li><a href="/Profile/Orders" class="hover:text-rose-600">Orders</a></li>
+                    <li><a href="/Profile/Reviews" class="hover:text-rose-600">Reviews</a></li>
+                </ul>
+            </aside>
 
-        <!--
-        
-        FAQ
+            <!-- Main Content -->
+            <main class="flex-1 p-6">
+                @RenderBody()
+            </main>
+        </div>
 
-        <nav id="sidebar" class="box-border h-screen w-[270px] p-[5px_1em] bg-customBrown2-ultimateDark border-r border-line-color
-   sticky top-0 self-start transition-all duration-300 ease-in-out overflow-hidden whitespace-nowrap">
-            <ul class="list-none">
-                <li class="flex justify-end mb-4">
-                    <span class="logo font-semibold rounded-lgd p-3 no-underline text-nav-text flex items-center gap-4">Kenzo's</span>
+        <!-- Footer -->
+        <footer class="bg-[#684034] text-white text-sm py-4 px-6 flex flex-wrap justify-center gap-4 md:gap-20">
+            <span>&copy; 2025 Woolly Friends</span>
+            <span>Follow us on Social Media!</span>
+            <span>Contact us: woollyfriends@gmail.com</span>
+            <a href="/Home/Privacy" class="underline">Privacy</a>
+        </footer>
+    </div>
 
-                    <button onclick="toggleSidebar()" id="toggle-btn" class="ml-auto p-4 border-0 rounded-lg bg-none
-               cursor-pointer hover:bg-nav-hover active:bg-nav-active">
-                        <svg class="flex-shrink-0 fill-current text-nav-text
-                   transition-transform duration-[150ms] ease" xmlns="http://www.w3.org/2000/svg" height="24px"
-                             viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z" />
-                        </svg>
-                    </button>
-                </li>
-
-
-                Home
-                <li>
-                    <a href="/kenzoCafe" class="rounded-lg p-3 no-underline flex items-center gap-4
-               hover:bg-nav-hover active:bg-nav-active text-nav-text">
-                        <svg class="flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg"
-                             height="24px" viewBox="0 -960 960 960" width="24px" fill="currentColor">
-                            <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
-                        </svg>
-                        <span>Home</span>
-                    </a>
-                </li>
-
-                <hr class="border-nav-hr" />
-
-
-                Products
-                <li class="active">
-                    <a href="/kenzoCafe/products/sweetsAndBeverages" class="rounded-lg p-3 no-underline flex items-center gap-4
-               text-nav-text hover:bg-nav-hover active:bg-nav-active">
-                        <svg class="flex-shrink-0 fill-current text-nav-text
-               transition-all duration-[200ms] ease" xmlns="http://www.w3.org/2000/svg"
-                             height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M160-120v-80h640v80H160Zm160-160q-66 0-113-47t-47-113v-400h640q33 0 56.5 23.5T880-760v120q0 33-23.5 56.5T800-560h-80v120q0 66-47 113t-113 47H320Zm0-480h320-400 80Zm400 120h80v-120h-80v120ZM560-360q33 0 56.5-23.5T640-440v-320H400v16l72 58q2 2 8 16v170q0 8-6 14t-14 6H300q-8 0-14-6t-6-14v-170q0-2 8-16l72-58v-16H240v320q0 33 23.5 56.5T320-360h240ZM360-760h40-40Z" />
-                        </svg>
-                        <span>Products</span>
-                    </a>
-                </li>
-
-
-
-
-                Order
-
-                <li class="active">
-                    <a href="/kenzoCafe/order/orderSweetsAndBeverages" class="rounded-lg p-3 no-underline flex items-center gap-4
-               text-nav-text">
-                        <svg class="flex-shrink-0 fill-current text-nav-text
-               transition-transform duration-[150ms] ease" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z" />
-                        </svg>
-                        <span>Order</span>
-                    </a>
-                </li>
-
-                <hr class="border-nav-hr" />
-
-
-                Special Offers
-
-                <li class="active">
-                    <a href="/kenzoCafe/specialOffers" class="rounded-lg p-3 no-underline flex items-center gap-4
-               text-nav-text hover:bg-nav-hover active:bg-nav-active">
-                        <svg class="flex-shrink-0 fill-current text-nav-text
-               transition-transform duration-[150ms] ease" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z" />
-                        </svg>
-                        <span>Special Offers</span>
-                    </a>
-                </li>
-
-                Loyalty Program
-                <li>
-                    <button onclick=toggleSubMenu(this) class="dropdown-btn
-               rounded-lg p-[0.85em] no-underline text-nav-here flex items-center gap-4
-               w-full text-left bg-transparent border-0 font-inherit cursor-pointer
-               hover:bg-nav-hover active:bg-nav-active">
-                        <svg class="flex-shrink-0 fill-current text-nav-here
-               transition-transform duration-[150ms] ease" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="m387-412 35-114-92-74h114l36-112 36 112h114l-93 74 35 114-92-71-93 71ZM240-40v-309q-38-42-59-96t-21-115q0-134 93-227t227-93q134 0 227 93t93 227q0 61-21 115t-59 96v309l-240-80-240 80Zm240-280q100 0 170-70t70-170q0-100-70-170t-170-70q-100 0-170 70t-70 170q0 100 70 170t170 70ZM320-159l160-41 160 41v-124q-35 20-75.5 31.5T480-240q-44 0-84.5-11.5T320-283v124Zm160-62Z" />
-                        </svg>
-
-                        <span class="flex-grow">Loyalty Programs</span>
-                        <svg class="flex-shrink-0 fill-current text-nav-here
-                   transition-all duration-[200ms] ease" xmlns="http://www.w3.org/2000/svg" height="24px"
-                             viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M480-344 240-584l56-56 184 184 184-184 56 56-240 240Z" />
-                        </svg>
-                    </button>
-
-                    <ul class="sub-menu grid grid-rows-[0fr] transition-all duration-[300ms] ease-in-out pl-8">
-                        <div class="overflow-hidden">
-                        <li>
-                            <a href="/kenzoCafe/loyalty/switzerlandTrip" class="rounded-lg p-3 no-underline text-nav-here flex items-center gap-4">
-                                Trip To Switzerland
-                            </a>
-                        </li>
-                        <li>
-                            <a href="/kenzoCafe/loyalty/factoryTrip" class="rounded-lg p-3 no-underline text-nav-text flex items-center gap-4
-                           hover:bg-nav-hover active:bg-nav-active">Trip To The Factory</a>
-                        </li>
-
-                        </div>
-                    </ul>
-                </li>
-
-                <hr class="border-nav-hr" />
-
-
-
-
-                Customer Reviews
-
-                <li class="active">
-                    <a href="/kenzoCafe/customerReviews" class="rounded-lg p-3 no-underline flex items-center gap-4
-               text-nav-text hover:bg-nav-hover active:bg-nav-active">
-                        <svg class="flex-shrink-0 fill-current text-nav-text
-               transition-all duration-[200ms] ease" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M480-320q48 0 85.5-28.5T620-422H340q17 45 54.5 73.5T480-320ZM380-480q25 0 42.5-17.5T440-540q0-25-17.5-42.5T380-600q-25 0-42.5 17.5T320-540q0 25 17.5 42.5T380-480Zm200 0q25 0 42.5-17.5T640-540q0-25-17.5-42.5T580-600q-25 0-42.5 17.5T520-540q0 25 17.5 42.5T580-480ZM305-704l112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z" />
-                        </svg>
-                        <span>Customer Reviews </span>
-                    </a>
-                </li>
-
-
-
-                FAQ 
-                <li class="active">
-                    <a href="/kenzoCafe/faqs" class="rounded-lg p-3 no-underline flex items-center gap-4
-               text-nav-text hover:bg-nav-hover active:bg-nav-active">
-                        <svg class="flex-shrink-0 fill-current" xmlns="http://www.w3.org/2000/svg" height="24px"
-                             viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M478-240q21 0 35.5-14.5T528-290q0-21-14.5-35.5T478-340q-21 0-35.5 14.5T428-290q0 21 14.5 35.5T478-240Zm-36-154h74q0-33 7.5-52t42.5-52q26-26 41-49.5t15-56.5q0-56-41-86t-97-30q-57 0-92.5 30T342-618l66 26q5-18 22.5-39t53.5-21q32 0 48 17.5t16 38.5q0 20-12 37.5T506-526q-44 39-54 59t-10 73Zm38 314q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z" />
-                        </svg>
-                        <span>FAQs</span>
-                    </a>
-                </li>
-
-                <hr class="border-nav-hr" />
-
-                Profile Section
-
-                <li>
-                    <a href="/kenzoCafe/aboutUs" class="rounded-lg p-3 no-underline text-nav-text flex items-center gap-4
-               hover:bg-nav-hover active:bg-nav-active">
-                        <svg class="flex-shrink-0 fill-current text-nav-text" xmlns="http://www.w3.org/2000/svg"
-                             height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                            <path d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z" />
-                        </svg>
-                        <span>About Us</span>
-                    </a>
-                </li>
-            </ul>
-        </nav>
-
-        -->
-    </header>
-
+    <!-- Sidebar -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const toggle = document.getElementById("nav-toggle");
-            const menu = document.getElementById("nav-menu");
-
-            toggle.addEventListener("click", () => {
-                menu.classList.toggle("hidden");
-            });
+        document.getElementById('toggleSidebar').addEventListener('click', function () {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.classList.toggle('hidden');
         });
     </script>
 
-
-    <div>
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2025 - WebApplication2 - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
