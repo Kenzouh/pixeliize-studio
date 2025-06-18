@@ -20,8 +20,100 @@
 </head>
 
 <body>
-	<h1>Welcome to the sign up page!</h1>
 
+    <main class="my-20">
+        <div class="flex justify-center">
+
+            <div class="wrapper w-full max-w-[450px] bg-transparent border border-[#684034] backdrop-blur-[20px] rounded-xl p-5">
+
+                <form action="/kenzoCafe/order/success" method="POST">
+
+                    <h1 class="text-center text-4xl font-bold my-4">Sign Up</h1>
+
+                     <!-- ========================= First Name ========================= -->
+
+                    <div class="mb-8">
+                    <label class="block text-sm font-medium mb-2">First Name:</label>
+                    <input type="text" name="fname" placeholder="Johnny"
+                        class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#715a44]" 
+                        required />
+                        </div>
+
+                    <!-- ========================= Last Name ========================= -->
+
+                    <div class="mb-8">
+                    <label class="block text-sm font-medium mb-2">Last Name:</label>
+                    <input type="text" name="lname" placeholder="Smithson" 
+                        class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
+                    </div>
+                    <!-- ========================= Email ========================= -->
+
+                    <div class="mb-8">
+                        <label for="address" class="block text-black text-sm font-medium mb-2">
+                            Email
+                        </label>
+                        <input type="text" id="address" placeholder="olaf@gmail.com"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#715a44]"
+                               required />
+                    </div>
+
+                    <!-- ========================= Password ========================= -->
+                    <div class="mb-8">
+                        <label for="password" class="block text-black text-sm font-medium mb-2">
+                            Password
+                        </label>
+                        <input type="password" name="password" placeholder="***********"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#9E7D5C] focus:border-[#372D23]"
+                               required />
+                    </div>
+
+                    <!-- ========================= Password Confirmation ========================= -->
+                    <div class="mb-8">
+                        <label for="password" class="block text-black text-sm font-medium mb-2">
+                            Confirm Password
+                        </label>
+                        <input type="password" name="password" placeholder="***********"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#9E7D5C] focus:border-[#372D23]"
+                               required />
+                    </div>
+
+                    <!-- ========================= Don't have an account yet? ========================= -->
+
+                    <div class="flex flex-col items-center my-8">
+                        <p class="mb-2">By signing up, I agree to the
+
+                            <a href="" class="text-[#684034] underline italic hover:text-[#3c251f]">
+                                Terms of Use</a>
+                            and Woolly Friends&apos;
+
+                            <a href="" class="text-[#684034] underline italic hover:text-[#3c251f]">
+                                Privacy Policy
+                            </a>
+                        </p>
+                    </div>
+
+                    <!-- ========================= Sign Me Up! ========================= -->
+
+                    <div class="flex flex-col items-center my-8">
+                        <button class="bg-[#684034] text-white font-bold py-2 px-8 mb-4 rounded-full hover:bg-[#5e3a2f]">Sign me up!</button>
+
+                        <p class="mb-2">
+                            Already have an account
+                            <a href="" class="text-[#684034] underline italic hover:text-[#3c251f]">
+                                Log in!
+                            </a>
+                        </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+    </main>
 	<script src="~/js/main.js"></script>
 </body>
 
