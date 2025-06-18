@@ -20,8 +20,70 @@
 </head>
 
 <body>
-	<h1>Hi there, user!</h1>
+    <div class="max-w-6xl mx-auto px-6 py-8">
+        <div class="flex flex-col md:flex-row items-start gap-10">
+            <!-- Profile Picture -->
+            <div class="flex-shrink-0">
+                <img src="~/images/profileIcon.png" alt="Profile Picture" class="rounded-full w-48 h-48 object-cover border border-gray-300" />
+            </div>
 
+            <!-- Profile Detail s -->
+            <div>
+                <div class="flex items-center gap-4 mb-2">
+                    <h1 class="text-3xl font-bold text-[#684034]">George Edward</h1>
+                    <img src="~/images/icon-verified-account.png" alt="Verified" class="w-10 h-10" />
+                </div>
+                <p class="text-gray-700 font-semibold">Contact Number: 09123456789</p>
+                <p class="text-gray-500">Member Since June 1999</p>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="mt-10 border-b border-gray-300 pb-2">
+            <nav class="flex space-x-6">
+                <a href="#orders" class="text-[#684034] font-bold border-b-2 border-[#684034] pb-1">Orders and Wishlist (2)</a>
+                <a href="#requests" class="text-gray-600 hover:text-[#684034]">Requests (1)</a>
+            </nav>
+        </div>
+
+        <!-- Orders Section -->
+        <section id="orders" class="mt-8">
+            <h2 class="text-xl font-bold mb-4">Orders</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="border rounded-lg overflow-hidden shadow-sm">
+                        <img src="~/images/pets/skibidi.jpg" alt="Pet" class="w-full h-48 object-cover" />
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold text-[#684034]">Skibidi</h3>
+                            <p class="text-sm text-gray-600">Large Male Dog</p>
+                            <p class="text-sm text-gray-400">Pureza, Manila</p>
+                            <p class="font-semibold text-[#684034] mt-2">₱5,000</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+
+        <!-- Wishlist Section -->
+        <section class="mt-12">
+            <h2 class="text-xl font-bold mb-4">Wishlist</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                @for (int i = 0; i < 3; i++)
+                {
+                    <div class="border rounded-lg overflow-hidden shadow-sm">
+                        <img src="~/images/pets/skibidi.jpg" alt="Pet" class="w-full h-48 object-cover" />
+                        <div class="p-4">
+                            <h3 class="text-lg font-bold text-[#684034]">Skibidi</h3>
+                            <p class="text-sm text-gray-600">Large Male Dog</p>
+                            <p class="text-sm text-gray-400">Pureza, Manila</p>
+                            <p class="font-semibold text-[#684034] mt-2">₱5,000</p>
+                        </div>
+                    </div>
+                }
+            </div>
+        </section>
+    </div>
 	<script src="~/js/main.js"></script>
 </body>
 
