@@ -7,4 +7,10 @@
     <RootNamespace>woolly_friends</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="wwwroot\Images\Cats\" />
+    <Folder Include="wwwroot\Images\Icons\" />
+    <Folder Include="wwwroot\Images\Other Animals\" />
+  </ItemGroup>
+
 </Project>
