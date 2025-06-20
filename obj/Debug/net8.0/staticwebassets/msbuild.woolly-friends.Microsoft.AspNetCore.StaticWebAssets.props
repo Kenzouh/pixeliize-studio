@@ -1512,23 +1512,5 @@
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
       <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\jquery\LICENSE.txt'))</OriginalItemSpec>
     </StaticWebAsset>
-    <StaticWebAsset Include="$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\woolly-friends.adjk9k2f5w.bundle.scp.css'))">
-      <SourceType>Package</SourceType>
-      <SourceId>woolly-friends</SourceId>
-      <ContentRoot>$(MSBuildThisFileDirectory)..\staticwebassets\</ContentRoot>
-      <BasePath>_content/woolly-friends</BasePath>
-      <RelativePath>woolly-friends.adjk9k2f5w.bundle.scp.css</RelativePath>
-      <AssetKind>All</AssetKind>
-      <AssetMode>Reference</AssetMode>
-      <AssetRole>Primary</AssetRole>
-      <RelatedAsset></RelatedAsset>
-      <AssetTraitName>ScopedCss</AssetTraitName>
-      <AssetTraitValue>ProjectBundle</AssetTraitValue>
-      <Fingerprint>adjk9k2f5w</Fingerprint>
-      <Integrity>8gdtOCmJC8KjvjcI3q3wApDOI2KGVgG+QvW23yiVFkM=</Integrity>
-      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
-      <OriginalItemSpec>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\woolly-friends.adjk9k2f5w.bundle.scp.css'))</OriginalItemSpec>
-    </StaticWebAsset>
   </ItemGroup>
 </Project>

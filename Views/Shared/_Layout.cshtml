@@ -19,42 +19,31 @@
                 <img src="~/images/Logo.png" alt="Logo" class="h-20" />
             </div>
 
-            <!-- Confetti Icons -->
-            <img class="absolute left-[484px] top-[32px] w-[10px]" src="~/images/ConfettiHeart.svg" />
-            <img class="absolute left-[512.17px] top-[33.83px] w-[10px] rotate-[-190deg]" src="~/images/SingleConfetti.svg" />
-            <img class="absolute left-[568.38px] top-[4.96px] w-[10px] rotate-[40deg]" src="~/images/ConfettiHeart.svg" />
-            <img class="absolute left-[548px] top-[29px] w-[10px] rotate-[80deg]" src="~/images/SingleConfetti.svg" />
-            <img class="absolute left-[584px] top-[39px] w-[10px]" src="~/images/SingleConfetti.svg" />
-            <img class="absolute left-[858.99px] top-[33.41px] w-[10px] rotate-[-160deg]" src="~/images/SingleConfetti.svg" />
-            <img class="absolute left-[873.01px] top-[10.59px] w-[10px] rotate-[20deg]" src="~/images/ConfettiHeart.svg" />
-            <img class="absolute left-[886px] top-[36px] w-[10px]" src="~/images/SingleConfetti.svg" />
-            <img class="absolute left-[925.38px] top-[26.96px] w-[10px] rotate-[40deg]" src="~/images/SingleConfetti.svg" />
-            <img class="absolute left-[948px] top-[22px] w-[10px]" src="~/images/ConfettiHeart.svg" />
+            <!-- Navbar Toggle & Menu -->
+            <nav class="px-7 py-4 flex justify-between w-full">
+                <button id="toggleSidebar" class="text-white font-semibold text-md hover:text-gray-300 flex items-center gap-1">
+                    <i class="bi bi-list text-2xl"></i>
+                    MENU
+                </button>
+
+                <button class="text-white text-md border-white border-2 lg:rounded-full  hover:border-gray-300 hover:text-gray-300 px-2">
+                    <span class="uppercase font-bold">Add Listing</span>
+                </button>
+            </nav>
+
         </header>
 
-        <!-- Navbar Toggle & Menu -->
-        <nav class="bg-gray-100 shadow-sm border-b px-4 py-2 flex items-center">
-            <button id="toggleSidebar" class="text-gray-700 font-semibold text-sm border px-3 py-1 rounded">
-                <i class="bi bi-list"></i>
-                MENU
-            </button>
-
-            <button class="ml-auto text-sm flex items-center gap-1 border px-2 py-1 rounded text-gray-700 hover:text-pink-600">
-                <i class="bi bi-heart-fill"></i>
-                <span class="uppercase font-bold">Wishlist</span>
-            </button>
-        </nav>
 
         <div class="flex flex-1">
             <!-- Sidebar -->
-            <aside id="sidebar" class="w-64 bg-white border-r p-4 transition-all duration-500">
+            <aside id="sidebar" class="hidden w-64 bg-white border-r p-4 transition-all duration-500">
                 <ul class="space-y-4 font-semibold text-gray-800">
                     <li><a href="/Home" class="hover:text-rose-600">Home</a></li>
                     <li><a href="/Login" class="hover:text-rose-600">Login</a></li>
                     <li><a href="/SignUp" class="hover:text-rose-600">Sign Up</a></li>
                     <li><a href="/Profile" class="hover:text-rose-600">Profile</a></li>
-                    <li><a href="/UserProfile" class="hover:text-rose-600">User Profile</a></li>
                     <li><a href="/Profile/PetsGallery" class="hover:text-rose-600">Pets Gallery</a></li>
+                    <li><a href="/Profile/PetsPage" class="hover:text-rose-600">Pets Page</a></li>
                 </ul>
             </aside>
 
