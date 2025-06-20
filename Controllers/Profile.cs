@@ -26,5 +26,10 @@ namespace woolly_friends.Controllers
         {
             return View();
         }
+
+        public IActionResult PetsPage()
+        {
+            return View();
+        }
     }
 }

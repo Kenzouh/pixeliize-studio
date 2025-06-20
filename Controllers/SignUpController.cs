@@ -25,25 +25,34 @@ namespace woolly_friends.Controllers
         [HttpPost]
         public IActionResult Index(SignUpViewModel model)
         {
-            // Checks if every input is present and correct.
-            if (ModelState.IsValid)
+            try
             {
-                var user = new User
+                // Checks if every input is present and correct.
+                if (ModelState.IsValid)
                 {
-                    FirstName = model.FirstName,
-                    LastName = model.LastName,
-                    UserEmail = model.UserEmail,
-                    UserPassword = model.UserPassword,
-                    Username = null,
-                    UserAddress = null,
-                    UserImgPath = null // This should have a default value sa future
-                };
+                    var user = new User
+                    {
+                        FirstName = model.FirstName,
+                        LastName = model.LastName,
+                        UserEmail = model.UserEmail,
+                        UserPassword = model.UserPassword,
+                        Username = null,
+                        UserAddress = null,
+                        UserImgPath = null // This should have a default value sa future
+                    };
 
-                _context.Users.Add(user);
-                _context.SaveChanges();
+                    _context.Users.Add(user);
 
-                return RedirectToAction("Index", "Login"); // brings u to login page
+                    _context.SaveChanges();
+
+                    return RedirectToAction("Index", "Login"); // brings u to login page
+                }
+            } catch (System.InvalidOperationException)
+            {
+                Console.WriteLine("Database is non-existent or not connected yet.");
             }
+
+
 
             return View(model); // uhhh idk how to display error msgs lol
         }
