@@ -9,23 +9,34 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Source+Serif+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="~/css/main.css" rel="stylesheet" media="all" />
 </head>
-<body class="min-h-screen font-inter bg-gray-50">
+<body class="min-h-screen font-inter bg-gray">
 
     <div class="min-h-screen flex flex-col">
         <!-- Header -->
-        <header class="relative bg-[#684034] h-[62px] overflow-hidden">
+        <header class="relative bg-[#412c25] h-[62px] z-50 overflow-hidden">
             <div class="absolute left-1/2 transform -translate-x-1/2 top-[-13px]">
                 <img src="~/images/Logo.png" alt="Logo" class="h-20" />
             </div>
 
             <!-- Navbar Toggle & Menu -->
-            <nav class="px-7 py-4 flex justify-between w-full">
-                <button id="toggleSidebar" class="text-white font-semibold text-md hover:text-gray-300 flex items-center gap-1">
-                    <i class="bi bi-list text-2xl"></i>
-                    MENU
+            <nav class="px-7 py-4 flex justify-between w-full text-white">
+
+
+                <button onclick="toggleSidebar()" id="toggle-btn" class="flex items-center 
+                    rounded-md gap-2 cursor-pointer px-2 py-1 hover:bg-[#3c2822] active:bg-[#32211d]">
+
+                        <svg class="flex-shrink-0 fill-current text-nav-text
+                        transition-transform duration-[150ms] ease" xmlns="http://www.w3.org/2000/svg" height="24px"
+                             viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                            <path d="M440-240 200-480l240-240 56 56-183 184 183 184-56 56Zm264 0L464-480l240-240 56 56-183 184 183 184-56 56Z"></path>
+                        </svg>
+
+                    <p>Menu</p>
                 </button>
 
+                <!-- Add Listing -->
                 <button class="text-white text-md border-white border-2 lg:rounded-full  hover:border-gray-300 hover:text-gray-300 px-2">
                     <span class="uppercase font-bold">Add Listing</span>
                 </button>
@@ -35,15 +46,118 @@
 
 
         <div class="flex flex-1">
-            <!-- Sidebar -->
-            <aside id="sidebar" class="hidden w-64 bg-white border-r p-4 transition-all duration-500">
-                <ul class="space-y-4 font-semibold text-gray-800">
-                    <li><a href="/Home" class="hover:text-rose-600">Home</a></li>
-                    <li><a href="/Login" class="hover:text-rose-600">Login</a></li>
-                    <li><a href="/SignUp" class="hover:text-rose-600">Sign Up</a></li>
-                    <li><a href="/Profile" class="hover:text-rose-600">Profile</a></li>
-                    <li><a href="/Profile/PetsGallery" class="hover:text-rose-600">Pets Gallery</a></li>
-                    <li><a href="/Profile/PetsPage" class="hover:text-rose-600">Pets Page</a></li>
+
+            <!-- Sidebar -->                                                                                                       <!-- Shifts sidebar to its full width-->
+            <aside id="sidebar" class="bg-[#523930] left-0 w-48 border-r transition-all duration-300 p-4 sticky top-[62px] overflow-hidden">
+                <ul class="space-y-4 font-semibold text-white">
+
+                    <!--===== Home =====-->
+
+                    <li class="flex items-center gap-2 font-bold p-2 rounded-2xl cursor-pointer">
+
+                        <a href="/Home" class="flex items-center gap-2 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                 width="24px" fill="#fde68a">
+                                <path d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z" />
+                            </svg>
+
+                            <span class="text-yellow-200">Home</span>
+                        </a>
+                        
+                    </li>
+
+                    <li><hr class="border-[#8a5433]" /></li>
+
+                    <!--===== Login =====-->
+
+                   
+                    <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer">
+                        <a href="/Login" class="flex items-center gap-2 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                 width="24px" fill="#e8eaed">
+                                <path d="M160-160q-33 0-56.5-23.5T80-240v-120h80v120h640v-480H160v120H80v-120q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm300-140-56-58 83-82H80v-80h407l-83-82 56-58 180 180-180 180Z" />
+                            </svg>
+
+                            <span>Login</span>
+                        </a>
+                    </li>
+                    
+
+                    <!--===== Sign Up =====-->
+
+                    <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer">
+                        <a href="/SignUp" class="flex items-center gap-2 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" 
+                            width="24px" fill="#e8eaed">
+                                <path d="M240-160q-33 0-56.5-23.5T160-240q0-33 23.5-56.5T240-320q33 0 56.5 23.5T320-240q0 33-23.5 56.5T240-160Zm0-240q-33 0-56.5-23.5T160-480q0-33 23.5-56.5T240-560q33 0 56.5 23.5T320-480q0 33-23.5 56.5T240-400Zm0-240q-33 0-56.5-23.5T160-720q0-33 23.5-56.5T240-800q33 0 56.5 23.5T320-720q0 33-23.5 56.5T240-640Zm240 0q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Zm240 0q-33 0-56.5-23.5T640-720q0-33 23.5-56.5T720-800q33 0 56.5 23.5T800-720q0 33-23.5 56.5T720-640ZM480-400q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm40 240v-123l221-220q9-9 20-13t22-4q12 0 23 4.5t20 13.5l37 37q8 9 12.5 20t4.5 22q0 11-4 22.5T863-380L643-160H520Zm300-263-37-37 37 37ZM580-220h38l121-122-18-19-19-18-122 121v38Zm141-141-19-18 37 37-18-19Z" />
+                            </svg>
+
+                            <span>Sign Up</span>
+                        </a>
+                    </li>
+                    
+
+                    <li><hr class="border-[#8a5433]" /></li>
+
+                    <!--===== Profile =====-->
+
+                    <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer">
+
+                        <a href="/Profile" class="flex items-center gap-2 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" 
+                            width="24px" fill="#e8eaed">
+                                <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+                            </svg>
+
+                            <span>Profile</span>
+                        </a>
+
+                    </li>
+
+                    <!--===== User Profile =====-->
+
+                    <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer">
+
+                        <a href="/UserProfile" class="flex items-center gap-2 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960"
+                                 width="24px" fill="#e8eaed">
+                                <path d="M234-276q51-39 114-61.5T480-360q69 0 132 22.5T726-276q35-41 54.5-93T800-480q0-133-93.5-226.5T480-800q-133 0-226.5 93.5T160-480q0 59 19.5 111t54.5 93Zm246-164q-59 0-99.5-40.5T340-580q0-59 40.5-99.5T480-720q59 0 99.5 40.5T620-580q0 59-40.5 99.5T480-440Zm0 360q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q53 0 100-15.5t86-44.5q-39-29-86-44.5T480-280q-53 0-100 15.5T294-220q39 29 86 44.5T480-160Zm0-360q26 0 43-17t17-43q0-26-17-43t-43-17q-26 0-43 17t-17 43q0 26 17 43t43 17Zm0-60Zm0 360Z" />
+                            </svg>
+
+                            <span>User Profile</span>
+                        </a>
+
+                    </li>
+
+                    <li><hr class="border-[#8a5433]" /></li>
+
+                    <!--===== Pets Gallery =====-->
+
+                    <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer">
+
+                        <a href="/UserProfile" class="flex items-center gap-2 font-bold">
+
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path d="M120-200q-33 0-56.5-23.5T40-280v-400q0-33 23.5-56.5T120-760h400q33 0 56.5 23.5T600-680v400q0 33-23.5 56.5T520-200H120Zm600-320q-17 0-28.5-11.5T680-560v-160q0-17 11.5-28.5T720-760h160q17 0 28.5 11.5T920-720v160q0 17-11.5 28.5T880-520H720Zm40-80h80v-80h-80v80ZM120-280h400v-400H120v400Zm40-80h320L375-500l-75 100-55-73-85 113Zm560 160q-17 0-28.5-11.5T680-240v-160q0-17 11.5-28.5T720-440h160q17 0 28.5 11.5T920-400v160q0 17-11.5 28.5T880-200H720Zm40-80h80v-80h-80v80Zm-640 0v-400 400Zm640-320v-80 80Zm0 320v-80 80Z" />
+                            </svg>
+
+                            <span>Pets Gallery</span>
+                        </a>
+
+                    </li>
+
+                    <!--===== Pets Page =====-->
+
+                    <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer">
+
+                        <a href="/Profile/PetsPage" class="flex items-center gap-2 font-bold">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                                <path d="M180-475q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180-160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm240 0q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180 160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM266-75q-45 0-75.5-34.5T160-191q0-52 35.5-91t70.5-77q29-31 50-67.5t50-68.5q22-26 51-43t63-17q34 0 63 16t51 42q28 32 49.5 69t50.5 69q35 38 70.5 77t35.5 91q0 47-30.5 81.5T694-75q-54 0-107-9t-107-9q-54 0-107 9t-107 9Z" />
+                            </svg>
+
+                            <span>Pets Page</span>
+                        </a>
+                    </li>
                 </ul>
             </aside>
 
@@ -54,7 +168,7 @@
         </div>
 
         <!-- Footer -->
-        <footer class="bg-[#684034] text-white text-sm py-4 px-6 flex flex-wrap justify-center gap-4 md:gap-20">
+        <footer class="bg-[#412c25] text-white text-sm py-4 px-6 flex flex-wrap justify-center gap-4 md:gap-20">
             <span>&copy; 2025 Woolly Friends</span>
             <span>Follow us on Social Media!</span>
             <span>Contact us: woollyfriends@gmail.com</span>

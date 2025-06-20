@@ -1,4 +1,33 @@
-﻿/*======== Home Page ========*/
+﻿/*======== Navbar ========*/
+
+#sidebar {
+    text-wrap: nowrap;
+}
+
+    #sidebar.close {
+        width: 60px; /* collapsed width */
+        padding: 5px;
+        overflow: hidden;
+        transform: translateX(-100%);
+    }
+
+
+#sidebar.close .sub-menu, #sidebar.close ul {
+    overflow: hidden;
+}
+
+
+#sidebar .sub-menu.show {
+    grid-template-rows: 1fr; /* Overriding the 0fr from #sidebar .sub-menu  */
+}
+
+/* Rotates the arrow only and not the create icon. */
+.rotate svg{
+    transform: rotate(180deg);
+}
+
+
+/*======== Home Page ========*/
 
 
 /*======== Sign Up Page ========*/

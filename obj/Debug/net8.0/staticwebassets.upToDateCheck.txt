@@ -1,6 +1,13 @@
 wwwroot\css\main.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\Icons\Gallery.svg
+wwwroot\Icons\Home.svg
+wwwroot\Icons\Login.svg
+wwwroot\Icons\NavbarArrow.svg
+wwwroot\Icons\Pets.svg
+wwwroot\Icons\Profile.svg
+wwwroot\Icons\SignUp.svg
 wwwroot\Images\badge-check.svg
 wwwroot\Images\Banner.png
 wwwroot\Images\Bernal.png
