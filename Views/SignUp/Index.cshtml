@@ -1,22 +1,22 @@
 ﻿@{
-	ViewData["Title"] = "Sign Up";
+    ViewData["Title"] = "Sign Up";
 }
 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-	<title>Sign Up</title>
+    <title>Sign Up</title>
 
-	<!-- Pre-requisite Meta Tags -->
-	<meta charset="utf-8" />
-	<meta name="description" content="Login page to input user credentials to access Woolly Friends." />
-	<meta name="keywords" content="Woolly Friends Login" />
-	<meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Pre-requisite Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Login page to input user credentials to access Woolly Friends." />
+    <meta name="keywords" content="Woolly Friends Login" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<link href="~/css/main.css" rel="stylesheet" media="all" />
+    <link href="~/css/main.css" rel="stylesheet" media="all" />
 </head>
 
 <body>
@@ -26,26 +26,26 @@
 
             <div class="wrapper w-full max-w-[450px] bg-transparent border border-[#684034] backdrop-blur-[20px] rounded-xl p-5">
 
-                <form action="/kenzoCafe/order/success" method="POST">
+                <form asp-controller="SignUp" asp-action="Index" method="post">
 
                     <h1 class="text-center text-4xl font-bold my-4">Sign Up</h1>
 
-                     <!-- ========================= First Name ========================= -->
+                    <!-- ========================= First Name ========================= -->
 
                     <div class="mb-8">
-                    <label class="block text-sm font-medium mb-2">First Name:</label>
-                    <input type="text" name="fname" placeholder="Johnny"
-                        class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
-                        focus:outline-none focus:ring-2 focus:ring-[#715a44]" 
-                        required />
-                        </div>
+                        <label class="block text-sm font-medium mb-2">First Name:</label>
+                        <input type="text" name="FirstName" placeholder="Johnny"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#715a44]"
+                               required />
+                    </div>
 
                     <!-- ========================= Last Name ========================= -->
 
                     <div class="mb-8">
-                    <label class="block text-sm font-medium mb-2">Last Name:</label>
-                    <input type="text" name="lname" placeholder="Smithson" 
-                        class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        <label class="block text-sm font-medium mb-2">Last Name:</label>
+                        <input type="text" name="LastName" placeholder="Smithson"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                         focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
                     </div>
                     <!-- ========================= Email ========================= -->
@@ -54,7 +54,7 @@
                         <label for="address" class="block text-black text-sm font-medium mb-2">
                             Email
                         </label>
-                        <input type="text" id="address" placeholder="olaf@gmail.com"
+                        <input type="text" name="UserEmail" id="address" placeholder="olaf@gmail.com"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                         focus:outline-none focus:ring-2 focus:ring-[#715a44]"
                                required />
@@ -65,7 +65,7 @@
                         <label for="password" class="block text-black text-sm font-medium mb-2">
                             Password
                         </label>
-                        <input type="password" name="password" placeholder="***********"
+                        <input type="password" name="UserPassword" placeholder="***********"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                         focus:outline-none focus:ring-2 focus:ring-[#9E7D5C] focus:border-[#372D23]"
                                required />
@@ -76,7 +76,7 @@
                         <label for="password" class="block text-black text-sm font-medium mb-2">
                             Confirm Password
                         </label>
-                        <input type="password" name="password" placeholder="***********"
+                        <input type="password" name="ConfirmPassword" placeholder="***********"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                         focus:outline-none focus:ring-2 focus:ring-[#9E7D5C] focus:border-[#372D23]"
                                required />
@@ -85,10 +85,12 @@
                     <!-- ========================= Don't have an account yet? ========================= -->
 
                     <div class="flex flex-col items-center my-8">
-                        <p class="mb-2">By signing up, I agree to the
+                        <p class="mb-2">
+                            By signing up, I agree to the
 
                             <a href="" class="text-[#684034] underline italic hover:text-[#3c251f]">
-                                Terms of Use</a>
+                                Terms of Use
+                            </a>
                             and Woolly Friends&apos;
 
                             <a href="" class="text-[#684034] underline italic hover:text-[#3c251f]">
@@ -100,7 +102,7 @@
                     <!-- ========================= Sign Me Up! ========================= -->
 
                     <div class="flex flex-col items-center my-8">
-                        <button class="bg-[#684034] text-white font-bold py-2 px-8 mb-4 rounded-full hover:bg-[#5e3a2f]">Sign me up!</button>
+                        <button type="submit" class="bg-[#684034] text-white font-bold py-2 px-8 mb-4 rounded-full hover:bg-[#5e3a2f]">Sign me up!</button>
 
                         <p class="mb-2">
                             Already have an account
@@ -114,7 +116,7 @@
         </div>
 
     </main>
-	<script src="~/js/main.js"></script>
+    <script src="~/js/main.js"></script>
 </body>
 
 </html>
