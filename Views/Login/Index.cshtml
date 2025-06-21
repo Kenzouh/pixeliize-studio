@@ -26,7 +26,7 @@
 
             <div class="wrapper w-full max-w-[450px] bg-transparent border border-[#684034] backdrop-blur-[20px] rounded-xl p-5">
 
-                <form action="/kenzoCafe/order/success" method="POST">
+                <form asp-controller="Login" asp-action="Index" method="post">
 
                     <h1 class="text-center text-4xl font-bold my-4">Login</h1>
 
@@ -35,7 +35,7 @@
                         <label for="address" class="block text-black text-sm font-medium mb-2">
                             Email
                         </label>
-                        <input type="text" id="address" placeholder="olaf@gmail.com"
+                        <input type="text" name="UserEmail" id="address" placeholder="olaf@gmail.com"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                     focus:outline-none focus:ring-2 focus:ring-[#715a44]"
                                required />
@@ -46,7 +46,7 @@
                         <label for="password" class="block text-black text-sm font-medium mb-2">
                             Password
                         </label>
-                        <input type="password" name="password" placeholder="***********"
+                        <input type="password" name="UserPassword" placeholder="***********"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                     focus:outline-none focus:ring-2 focus:ring-[#9E7D5C] focus:border-[#372D23]"
                                required />
@@ -63,7 +63,7 @@
                     <!-- ========================= Log Me In! ========================= -->
 
                     <div class="flex justify-center">
-                        <button class="bg-[#684034] text-white font-bold py-2 px-8 my-4 rounded-full hover:bg-[#5e3a2f]">Log me in!</button>
+                        <button type="submit" class="bg-[#684034] text-white font-bold py-2 px-8 my-4 rounded-full hover:bg-[#5e3a2f]">Log me in!</button>
                     </div>
 
                     <!-- ========================= Forgot your password? ========================= -->

@@ -7,20 +7,24 @@ namespace woolly_friends.Models.Tables
     {
         public int Id { get; set; }
 
-        [Required]
+        [Required, MaxLength(50)]
         public string FirstName { get; set; }
 
-        [Required]
+        [Required, MaxLength(50)]
         public string LastName { get; set; }
 
-        [Required, EmailAddress]
+        [Required, EmailAddress, MaxLength(50)]
         public string UserEmail { get; set; }
 
-        [Required, DataType(DataType.Password)]
+        [Required, DataType(DataType.Password), MaxLength(255)]
         public string UserPassword { get; set; }
 
+        [MaxLength(30)]
         public string? Username { get; set; }
+        [MaxLength(255)]
         public string? UserAddress { get; set; }
+        [MaxLength(255)]
         public string? UserImgPath { get; set; } // NOTE: currently null, but this should have a default path for the default blank pfp
+        public bool IsActive { get; set; } = true;
     }
 }
