@@ -30,15 +30,24 @@ namespace woolly_friends.Controllers
                 // Checks if every input is present and correct.
                 if (ModelState.IsValid)
                 {
+                    // Checks if duplicate emails are present
+                    // IMPORTANT NOTE: In bigger projects, u must add unique constraints. This is fine for now.
+                    bool emailExists = _context.Users.Any(u => u.UserEmail == model.UserEmail);
+                    if (emailExists)
+                    {
+                        ModelState.AddModelError("UserEmail", "Email is already registered! Please use another email.");
+                        return View(model);
+                    }
+
+                    // Password hashing
+                    string hashedPassword = BCrypt.Net.BCrypt.HashPassword(model.UserPassword);
+
                     var user = new User
                     {
                         FirstName = model.FirstName,
                         LastName = model.LastName,
                         UserEmail = model.UserEmail,
-                        UserPassword = model.UserPassword,
-                        Username = null,
-                        UserAddress = null,
-                        UserImgPath = null // This should have a default value sa future
+                        UserPassword = hashedPassword,
                     };
 
                     _context.Users.Add(user);
@@ -50,9 +59,8 @@ namespace woolly_friends.Controllers
             } catch (System.InvalidOperationException)
             {
                 Console.WriteLine("Database is non-existent or not connected yet.");
+                return View(model);
             }
-
-
 
             return View(model); // uhhh idk how to display error msgs lol
         }
