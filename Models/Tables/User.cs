@@ -24,7 +24,7 @@ namespace woolly_friends.Models.Tables
         [MaxLength(255)]
         public string? UserAddress { get; set; }
         [MaxLength(255)]
-        public string? UserImgPath { get; set; } // NOTE: currently null, but this should have a default path for the default blank pfp
+        public string? UserImgPath { get; set; } = "/Images/DefaultProfile.png";
         public bool IsActive { get; set; } = true;
     }
 }
