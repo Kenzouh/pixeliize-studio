@@ -22,11 +22,12 @@
 <body>
 
     <main class="my-20">
+
         <div class="flex justify-center">
 
             <div class="wrapper w-full max-w-[450px] bg-transparent border border-[#684034] backdrop-blur-[20px] rounded-xl p-5">
 
-                <form asp-controller="SignUp" asp-action="Index" method="post">
+                <form id="signupForm" asp-controller="SignUp" asp-action="Index" method="post">
 
                     <h1 class="text-center text-4xl font-bold my-4">Sign Up</h1>
 
@@ -102,7 +103,7 @@
                     <!-- ========================= Sign Me Up! ========================= -->
 
                     <div class="flex flex-col items-center my-8">
-                        <button type="submit" class="bg-[#684034] text-white font-bold py-2 px-8 mb-4 rounded-full hover:bg-[#5e3a2f]">Sign me up!</button>
+                        <button type="button" onclick="showPrivacyModal()" class="bg-[#684034] text-white font-bold py-2 px-8 mb-4 rounded-full hover:bg-[#5e3a2f]">Sign me up!</button>
 
                         <p class="mb-2">
                             Already have an account
@@ -115,6 +116,141 @@
             </div>
         </div>
 
+
+        <!--======================= Privacy Policy =======================-->
+        <!-- Modal Backdrop -->
+        <div id="privacyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 z-50 overflow-y-auto">
+
+            <!-- Container with spacing -->
+            <div class="flex justify-center items-start py-8 px-4 w-full">
+
+                <!-- Modal Content -->
+                <div class="bg-white max-w-3xl w-[90%] max-h-[90vh] overflow-y-auto rounded-xl shadow-lg p-6 text-sm text-gray-800">
+
+                    <h2 class="text-2xl font-bold text-center text-[#684034] mb-4">Privacy Policy</h2>
+
+                    <p class="mb-4">
+                        Woolly Friends&trade; respects your right to privacy and complies with the Data Privacy Act of 2012 (RA 10173)...
+                    </p>
+
+
+                    <!--========== Number 1 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">1. Data We Collect</h3>
+                    <p class="ml-4">We collect the following data when you log into Woolly Friends&trade;:</p>
+
+                    <ul class="list-disc list-inside mb-4">
+                        <li class="ml-8"><strong>Full Name:</strong> Useful for contacting the person who bought or adopted a pet in Woolly Friends&trade;.</li>
+                        <li class="ml-8"><strong>Email:</strong> For sending messages and notifications.</li>
+                        <li class="ml-8"><strong>Address:</strong> To check if the adoptees/buyers have a proper shelter to provide for the pets.</li>
+                        <li class="ml-8"><strong>Phone Number:</strong> For contacting the adoptees/buyers when they submitted a pet listing request.</li>
+                        <li class="ml-8"><strong>Password:</strong> For securing your account — Only you can access.</li>
+                        <li class="ml-8"><strong>Session Cookies:</strong> For keeping you logged in if you don't log out, then quitted the web app.</li>
+                        <li class="ml-8"><strong>Reviews:</strong> After adopting/buying a pet, you are asked to share your review on how did Woolly Friends&trade;' services go.'</li>
+                    </ul>
+
+
+                    <!--========== Number 2 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">2. How Woolly Friends Use Your Data</h3>
+                    <p class="ml-4">Woolly Friends&trade; uses your information to:</p>
+
+                    <ul class="list-disc list-inside mb-4">
+                        <li class="ml-8">Facilitate account registration, access, and management.</li>
+                        <li class="ml-8">Process adoption or purchase requests.</li>
+                        <li class="ml-8">Verify your identity and contact you.</li>
+                        <li class="ml-8">Ensure compliance with related laws and to protect you.</li>
+                    </ul>
+
+
+                    <!--========== Number 3 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">3. Data Sharing</h3>
+                    <p class="ml-4">
+                        Woolly Friends&trade; values your privacy. Therefore, your information will
+                        <strong>NOT BE SOLD/SHARED</strong> with third parties, except:
+                    </p>
+
+                    <ul class="list-disc list-inside mb-4">
+                        <li class="ml-8"><strong>Legal Obligations:</strong> Law enforcement requests or court orders.</li>
+                        <li class="ml-8"><strong>Email Providers:</strong> To contact you.</li>
+                    </ul>
+
+
+                    <!--========== Number 4 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">4. Data Security</h3>
+                    <p class="ml-4">Woolly Friends&trade; values your privacy.</p>
+
+                    <ul class="list-disc list-inside mb-4">
+                        <li class="ml-8"><strong>Legal Obligations:</strong> Law enforcement requests or court orders.</li>
+                        <li class="ml-8"><strong>Email Providers:</strong> To contact you.</li>
+                    </ul>
+
+
+                    <!--========== Number 5 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">5. Your Rights as a Data Subject</h3>
+                    <p class="ml-4">
+                        Woolly Friends&trade; implements multiple technical safeguard techniques to secure your
+                        user data and the system itself. These safeguard implementations include:
+                    </p>
+
+                    <ul class="list-disc list-inside mb-4">
+                        <li class="ml-8">
+                            <strong>Password hashing:</strong> Your password is translated to a gibberish language which cannot be
+                            reverted back to its original form. Not even the admins can unlock your account.
+                        </li>
+                        <li class="ml-8"><strong>Anti-Scripting:</strong> Woolly Friends&trade; is free from script attacks.</li>
+                        <li class="ml-8"><strong>Secured Cookies:</strong> Your cookies are only yours and kept securely.</li>
+                    </ul>
+
+
+                    <!--========== Number 6 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">6. Account Deletion and Retention</h3>
+                    <p class="ml-4">As a user, you have the freedom to:</p>
+
+                    <ul class="list-disc list-inside mb-4">
+                        <li class="ml-8">Delete your account.</li>
+                        <li class="ml-8">Keep and use your account (your account may be moderated if you troll or misuse the web application).</li>
+                    </ul>
+
+
+                    <!--========== Number 7 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">7. Children's Policy</h3>
+                    <p class="ml-4">
+                        Woolly Friends&trade;'' services are not intended for children under the age of 13. We do not knowingly
+                        collect information from children. If you believe a child has submitted data without parental consent,
+                        please contact us immediately
+                        (<a href="mailto:woollyfriends@gmail.com" class="text-[#0000FF] hover:text-[#4a4aff]">woollyfriends@gmail.com</a>).
+                    </p>
+
+
+                    <!--========== Number 8 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">8. Cookies and Analytics</h3>
+                    <p class="ml-4">We may use cookies to remember your preferences and collect anonymous analytics data.</p>
+
+
+                    <!--========== Number 9 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">9. Updates To This Privacy Policy</h3>
+                    <p class="ml-4">
+                        We may revise this Data Privacy Policy from time-to-time. You will be informed whenever we updated our
+                        privacy policy. The latest version will always be available on our website.
+                    </p>
+
+
+                    <!--========== Number 10 ==========-->
+                    <h3 class="font-semibold text-[#684034] mt-4 mb-2">10. Contact Us</h3>
+                    <p class="ml-4">
+                        If you have any questions or concerns, you may contact us at
+                        <a href="mailto:woollyfriends@gmail.com" class="text-[#0000FF] hover:text-[#4a4aff]">woollyfriends@gmail.com</a>.
+                    </p>
+                    
+                    <br />
+
+
+                    <div class="flex justify-end gap-4">
+                        <button onclick="closePrivacyPopup()" class="text-gray-700 border border-[#684034] px-4 py-2 rounded-lg hover:bg-gray-200">Cancel</button>
+                        <button onclick="submitForm()" type="button" class="text-white bg-[#684034] px-4 py-2 rounded-lg hover:bg-[#5e3a2f]">Agree and Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
     <script src="~/js/main.js"></script>
 </body>

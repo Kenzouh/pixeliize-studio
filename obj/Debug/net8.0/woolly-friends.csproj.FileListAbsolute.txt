@@ -856,3 +856,4 @@ C:\Users\LM\source\repos\woolly-friends\obj\Debug\net8.0\refint\woolly-friends.d
 C:\Users\LM\source\repos\woolly-friends\obj\Debug\net8.0\woolly-friends.pdb
 C:\Users\LM\source\repos\woolly-friends\obj\Debug\net8.0\woolly-friends.genruntimeconfig.cache
 C:\Users\LM\source\repos\woolly-friends\obj\Debug\net8.0\ref\woolly-friends.dll
+C:\Users\Chu\source\repos\jericho-clone\woolly-friends\bin\Debug\net8.0\BCrypt.Net-Next.dll
