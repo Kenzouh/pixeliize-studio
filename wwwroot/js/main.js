@@ -23,3 +23,18 @@ function toggleSubMenu(button) {
         toggleButton.classList.toggle('rotate');
     }
 }
+
+
+// Data Privacy Policy Popup
+
+function showPrivacyModal() {
+    document.getElementById('privacyModal').classList.remove('hidden');
+}
+
+function closePrivacyPopup() {
+    document.getElementById('privacyModal').classList.add('hidden');
+}
+
+function submitForm() {
+    document.getElementById('signupForm').submit();
+}
