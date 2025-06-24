@@ -23,6 +23,8 @@ namespace woolly_friends.Models.Tables
         public string? Username { get; set; }
         [MaxLength(255)]
         public string? UserAddress { get; set; }
+        [Phone, MaxLength(11)]
+        public string? UserContact { get; set; }
         [MaxLength(255)]
         public string? UserImgPath { get; set; } = "/Images/DefaultProfile.png";
         public bool IsActive { get; set; } = true;

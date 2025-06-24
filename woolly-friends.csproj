@@ -11,6 +11,7 @@
     <Folder Include="wwwroot\Images\Cats\" />
     <Folder Include="wwwroot\Images\Icons\" />
     <Folder Include="wwwroot\Images\Other Animals\" />
+    <Folder Include="wwwroot\Uploads\Profile\" />
   </ItemGroup>
 
   <ItemGroup>

@@ -2,7 +2,7 @@
 
 namespace woolly_friends.Controllers
 {
-    public class SignUp : Controller
+    public class DataPrivacyController : Controller
     {
         public IActionResult Index()
         {
