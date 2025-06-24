@@ -1,0 +1,141 @@
+﻿@{
+    ViewData["Title"] = "Payment Form";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Payment Form</title>
+
+    <!-- Pre-requisite Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Payment form page to adopt pets." />
+    <meta name="keywords" content="Woolly Friends, Pay, Payment, Payment Form, Form" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <link href="~/css/main.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+
+    <main class="my-20">
+        <div class="flex justify-center">
+
+            <div class="wrapper w-full max-w-[450px] bg-transparent border border-[#684034] backdrop-blur-[20px] rounded-xl p-5">
+
+                <!--Image is a large file so we need encryption type-->
+                <!--enctype="multipart/form-data" = this will break a large amount of data to multiple parts,
+                                                    then when that data is received, those small parts will
+                                                     be  reassembled to its original size-->
+                <form asp-controller="Login" asp-action="Index" method="post" enctype="multipart/form-data">
+
+                    <h1 class="text-center text-4xl font-bold my-4">Payment Form</h1>
+
+                    <!-- ========================= First Name ========================= -->
+                    <div class="mb-8">
+                        <label for="fname" class="block text-black text-sm font-medium mb-2">
+                            First Name
+                        </label>
+                        <input type="text" name="UserFirstName" id="address" placeholder="Jerry"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                    focus:outline-none focus:ring-2 focus:ring-[#715a44]"
+                               required />
+                    </div>
+
+                    <!-- ========================= Last Name ========================= -->
+                    <div class="mb-8">
+                        <label for="lname" class="block text-black text-sm font-medium mb-2">
+                            Last Name
+                        </label>
+                        <input type="text" name="UserLastName" placeholder="Johansson"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                    focus:outline-none focus:ring-2 focus:ring-[#9E7D5C] focus:border-[#372D23]"
+                               required />
+                    </div>
+
+                    <!-- ========================= Address ========================= -->
+                    <div class="mb-8">
+                        <label for="address" class="block text-black text-sm font-medium mb-2">
+                            Address
+                        </label>
+                        <input type="text" name="UserAddress" placeholder="123 Sesame Street"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                    focus:outline-none focus:ring-2 focus:ring-[#9E7D5C] focus:border-[#372D23]"
+                               required />
+                    </div>
+
+                    <!-- ========================= Email ========================= -->
+                    <div class="mb-8">
+                        <label for="user-email" class="block text-black text-sm font-medium mb-2">
+                            Email
+                        </label>
+                        <input type="text" name="UserEmail" id="address" placeholder="olaf@gmail.com"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#715a44]"
+                               required />
+                    </div>
+
+
+                    <!-- ========================= Phone Number ========================= -->
+
+                    <div class="my-8">
+                        <label for="phone-number" class="block text-black text-sm font-medium mb-2">
+                            Phone Number
+                        </label>
+
+                        <input type="text" name="phone" id="address" placeholder="0923-***-****"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#715a44]"
+                               required />
+                    </div>
+
+                    <!-- ========================= ID ========================= -->
+                    <!--We can choose a file. But, by default, we can select all files.-->
+                    <label for="id">ID Picture:</label>
+
+                    <!--Accept attribute: accepts a specific file type.-->
+                    <input class="" type="file" id="file" accept="image/png, image/jpeg"><br><br>
+
+                    <!-- ========================= Payment Option ========================= -->
+
+
+                    <label for="payment" class="required mr-4">Payment Method:</label>
+
+                    <select id="payment" class="placeholder:text-slate-500  bg-transparent border
+                border-[#684034] rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-[#715a44]" required>
+                        <option value="mastercard" class="text-black bg-transparent"> Credit Card</option>
+                        <option value="debitcard" class="text-black bg-transparent">Debit Card</option>
+                        <option value="debitcard" class="text-black bg-transparent">GCash</option>
+                        <option value="debitcard" class="text-black bg-transparent">Visa</option>
+                    </select><br /><br />
+
+                    <!-- ========================= Money ========================= -->
+
+                    <div class="mb-4">
+                        <label for="cash" class="block text-black text-sm font-medium mb-2">
+                            Input Amount
+                        </label>
+
+                        <input type="text" name="cash" id="cash" placeholder="15000"
+                               class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+                        focus:outline-none focus:ring-2 focus:ring-[#715a44]"
+                               required />
+                    </div>
+                    <!-- ========================= Submit ========================= -->
+
+                    <div class="flex justify-center">
+                        <button type="submit" class="bg-[#684034] text-white font-bold py-2 px-8 my-4 rounded-full hover:bg-[#5e3a2f]">Buy Now!</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>
