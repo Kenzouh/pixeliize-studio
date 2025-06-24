@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model woolly_friends.Models.Tables.User
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -26,7 +28,7 @@
     <!-- Profile -->
     <div class="container mx-auto mt-8 px-4 flex flex-wrap items-start gap-8">
         <div class="w-full md:w-1/4">
-            <img src="~/images/Profile.jpg" class="w-full max-h-72 object-cover border-4 border-black rounded-md" alt="Profile Image">
+            <img src="@(string.IsNullOrEmpty(Model.UserImgPath) ? "/Images/DefaultProfile.png" : Model.UserImgPath)" class="w-full max-h-72 object-cover border-4 border-black rounded-md" alt="Profile Image">
         </div>
         <div class="flex flex-col gap-2">
             <h1 class="text-4xl font-bold text-[#684034] font-serif">George Edward</h1>
