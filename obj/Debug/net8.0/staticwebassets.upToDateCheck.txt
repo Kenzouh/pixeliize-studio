@@ -23,6 +23,7 @@ wwwroot\Images\Dogs\FaqPetAdoption.jpg
 wwwroot\Images\Dogs\FaqPetSale.png
 wwwroot\Images\Filter.svg
 wwwroot\Images\Hamster.jpg
+wwwroot\Images\KalokohanBoy.jpg
 wwwroot\Images\Logo.png
 wwwroot\Images\MrBean.png
 wwwroot\Images\PetPhotos\Skibidi.jpg
