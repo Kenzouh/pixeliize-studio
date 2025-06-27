@@ -1,7 +1,7 @@
 ﻿/*======== Navbar ========*/
 
 #sidebar {
-    text-wrap: nowrap;
+    white-space: nowrap;
 }
 
     #sidebar.close {
@@ -22,10 +22,30 @@
 }
 
 /* Rotates the arrow only and not the create icon. */
-.rotate svg{
+.rotate{
     transform: rotate(180deg);
 }
 
+.sub-menu {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-in-out, padding 0.3s ease-in-out;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+    .sub-menu.show {
+        max-height: 200px; /* Adjust based on actual content height */
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+
+/*======== Random ========*/
+
+.required-symbol {
+    color: red;
+}
 
 /*======== Home Page ========*/
 

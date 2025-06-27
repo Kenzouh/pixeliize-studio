@@ -1,8 +1,28 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\BirthdayCake.svg",
+      "PackagePath": "staticwebassets\\Icons\\BirthdayCake.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Company.svg",
+      "PackagePath": "staticwebassets\\Icons\\Company.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\ContactUs.svg",
+      "PackagePath": "staticwebassets\\Icons\\ContactUs.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\FAQs.svg",
+      "PackagePath": "staticwebassets\\Icons\\FAQs.svg"
+    },
+    {
       "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Gallery.svg",
       "PackagePath": "staticwebassets\\Icons\\Gallery.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\HelpCenter.svg",
+      "PackagePath": "staticwebassets\\Icons\\HelpCenter.svg"
     },
     {
       "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Home.svg",
@@ -17,20 +37,48 @@
       "PackagePath": "staticwebassets\\Icons\\Logout.svg"
     },
     {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Member.svg",
+      "PackagePath": "staticwebassets\\Icons\\Member.svg"
+    },
+    {
       "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\NavbarArrow.svg",
       "PackagePath": "staticwebassets\\Icons\\NavbarArrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\OpenEye.svg",
+      "PackagePath": "staticwebassets\\Icons\\OpenEye.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Paw.svg",
+      "PackagePath": "staticwebassets\\Icons\\Paw.svg"
     },
     {
       "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Pets.svg",
       "PackagePath": "staticwebassets\\Icons\\Pets.svg"
     },
     {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\PrivacyPolicy.svg",
+      "PackagePath": "staticwebassets\\Icons\\PrivacyPolicy.svg"
+    },
+    {
       "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Profile.svg",
       "PackagePath": "staticwebassets\\Icons\\Profile.svg"
     },
     {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Settings.svg",
+      "PackagePath": "staticwebassets\\Icons\\Settings.svg"
+    },
+    {
       "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\SignUp.svg",
       "PackagePath": "staticwebassets\\Icons\\SignUp.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Telephone.svg",
+      "PackagePath": "staticwebassets\\Icons\\Telephone.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Trash.svg",
+      "PackagePath": "staticwebassets\\Icons\\Trash.svg"
     },
     {
       "Id": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Images\\Banner.png",
