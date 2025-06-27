@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "lhdd/6o+/sKcDV3pWfCIgcofyNYSTCMWEWs13s2NRLw=",
+  "Hash": "XoradlSSz/Zych7lC5tkMO3r+n6H+ZNrcHdKQRZIWKQ=",
   "Source": "woolly-friends",
   "BasePath": "_content/woolly-friends",
   "Mode": "Default",
@@ -31,8 +31,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "fs28szh43s",
-      "Integrity": "4Sfc4j+LRuXgpPKB1XgS3rQDhhO8ZyNZKu3ssnHouDk=",
+      "Fingerprint": "84rnms5p6x",
+      "Integrity": "+MDX4wFxnrexJk+JOmOoHq7HxPQvYQvL85JjW6VRolU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\main.css"
@@ -80,6 +80,90 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\BirthdayCake.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/BirthdayCake#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "m1sfk4bf5m",
+      "Integrity": "RjCxfuvmpfi93Wq8WrI/YUESpUJjYL1zt89zYW32Xj8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\BirthdayCake.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Company.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/Company#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "lmerg2pn4t",
+      "Integrity": "zSqbKd+FEKM2YoGmkAOlGa6CE9mfqJ+7gMB1BBbIFU8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\Company.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\ContactUs.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/ContactUs#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "9lwwhgkvor",
+      "Integrity": "A6K/l/FtEYa47GbxC8xbZhfJ+RLtB8ClloCOnz5D968=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\ContactUs.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\FAQs.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/FAQs#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "e6cd5sau5q",
+      "Integrity": "5rPyc/iz/TxZSm/Dm0bEaCTXrX4PlaU7GCQgukQwhF0=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\FAQs.svg"
+    },
+    {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Gallery.svg",
       "SourceId": "woolly-friends",
       "SourceType": "Discovered",
@@ -99,6 +183,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Icons\\Gallery.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\HelpCenter.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/HelpCenter#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "k66gmwtvj6",
+      "Integrity": "TGm9ORUH6mht0FGTSMZKetQlx643ZIUe34lcEbtiBSk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\HelpCenter.svg"
     },
     {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Home.svg",
@@ -164,6 +269,27 @@
       "OriginalItemSpec": "wwwroot\\Icons\\Logout.svg"
     },
     {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Member.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/Member#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "83v5z3w367",
+      "Integrity": "XCRcK7skeESioIOiPVw+QbU1ylNfRK/cQFUPVl/F8p8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\Member.svg"
+    },
+    {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\NavbarArrow.svg",
       "SourceId": "woolly-friends",
       "SourceType": "Discovered",
@@ -183,6 +309,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Icons\\NavbarArrow.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\OpenEye.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/OpenEye#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8ie67up10u",
+      "Integrity": "8P0VMmBZ+08JxcAXKcY46nbCcHbQJjd94KqrIodEX2A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\OpenEye.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Paw.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/Paw#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "ejxyhn1ek6",
+      "Integrity": "StvTAttXNIp3u7K+d0STSulOUuWjM5HDCX0PR+puhC4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\Paw.svg"
     },
     {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Pets.svg",
@@ -206,6 +374,27 @@
       "OriginalItemSpec": "wwwroot\\Icons\\Pets.svg"
     },
     {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\PrivacyPolicy.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/PrivacyPolicy#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r734afb1c2",
+      "Integrity": "uUBVcOpiVt7unbfNbEnZzFbYlohayxuMpdiMvqsMKyY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\PrivacyPolicy.svg"
+    },
+    {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Profile.svg",
       "SourceId": "woolly-friends",
       "SourceType": "Discovered",
@@ -227,6 +416,27 @@
       "OriginalItemSpec": "wwwroot\\Icons\\Profile.svg"
     },
     {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Settings.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/Settings#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "hivsmmv7n1",
+      "Integrity": "d9Mre9cw/9uSCbSyCLXdnioUxkrwgzRuyt8AAA/6xlM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\Settings.svg"
+    },
+    {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\SignUp.svg",
       "SourceId": "woolly-friends",
       "SourceType": "Discovered",
@@ -246,6 +456,48 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Icons\\SignUp.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Telephone.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/Telephone#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "8vu38r52bv",
+      "Integrity": "BOPNQkP1a4V8ADdhqSNBWKo802T7mgRy6tVwqLbF3o4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\Telephone.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Trash.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/Trash#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yegr2f9mge",
+      "Integrity": "2nn/SGgpOixmIfaW1xVSFrbAuNM8ELOEQN5TfkiTjBk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\Trash.svg"
     },
     {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Images\\badge-check.svg",
@@ -808,8 +1060,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "elatataale",
-      "Integrity": "4thbpyj5crQS6s07hisZ8rEGTlZTR7hVOQ5jTEIOkmw=",
+      "Fingerprint": "3nxuyfckmy",
+      "Integrity": "MTyz4Kf4ujDWDxUlFB1KMih4ixuCr2idT+cjgvHJewk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\main.js"
@@ -2056,6 +2308,51 @@
   ],
   "Endpoints": [
     {
+      "Route": "css/main.84rnms5p6x.css",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\css\\main.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+MDX4wFxnrexJk+JOmOoHq7HxPQvYQvL85JjW6VRolU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 14:29:26 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "84rnms5p6x"
+        },
+        {
+          "Name": "label",
+          "Value": "css/main.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+MDX4wFxnrexJk+JOmOoHq7HxPQvYQvL85JjW6VRolU="
+        }
+      ]
+    },
+    {
       "Route": "css/main.css",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\css\\main.css",
       "Selectors": [],
@@ -2066,7 +2363,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "811"
+          "Value": "1159"
         },
         {
           "Name": "Content-Type",
@@ -2074,11 +2371,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4Sfc4j+LRuXgpPKB1XgS3rQDhhO8ZyNZKu3ssnHouDk=\""
+          "Value": "\"+MDX4wFxnrexJk+JOmOoHq7HxPQvYQvL85JjW6VRolU=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Jun 2025 12:54:45 GMT"
+          "Value": "Fri, 27 Jun 2025 14:29:26 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -2088,52 +2385,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4Sfc4j+LRuXgpPKB1XgS3rQDhhO8ZyNZKu3ssnHouDk="
-        }
-      ]
-    },
-    {
-      "Route": "css/main.fs28szh43s.css",
-      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\css\\main.css",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "811"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "text/css"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"4Sfc4j+LRuXgpPKB1XgS3rQDhhO8ZyNZKu3ssnHouDk=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Fri, 27 Jun 2025 12:54:45 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "fs28szh43s"
-        },
-        {
-          "Name": "label",
-          "Value": "css/main.css"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-4Sfc4j+LRuXgpPKB1XgS3rQDhhO8ZyNZKu3ssnHouDk="
+          "Value": "sha256-+MDX4wFxnrexJk+JOmOoHq7HxPQvYQvL85JjW6VRolU="
         }
       ]
     },
@@ -2302,6 +2554,334 @@
       ]
     },
     {
+      "Route": "Icons/BirthdayCake.m1sfk4bf5m.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\BirthdayCake.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RjCxfuvmpfi93Wq8WrI/YUESpUJjYL1zt89zYW32Xj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 18:22:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "m1sfk4bf5m"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/BirthdayCake.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-RjCxfuvmpfi93Wq8WrI/YUESpUJjYL1zt89zYW32Xj8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/BirthdayCake.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\BirthdayCake.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "501"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"RjCxfuvmpfi93Wq8WrI/YUESpUJjYL1zt89zYW32Xj8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 18:22:33 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-RjCxfuvmpfi93Wq8WrI/YUESpUJjYL1zt89zYW32Xj8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Company.lmerg2pn4t.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Company.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zSqbKd+FEKM2YoGmkAOlGa6CE9mfqJ+7gMB1BBbIFU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lmerg2pn4t"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/Company.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-zSqbKd+FEKM2YoGmkAOlGa6CE9mfqJ+7gMB1BBbIFU8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Company.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Company.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "422"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"zSqbKd+FEKM2YoGmkAOlGa6CE9mfqJ+7gMB1BBbIFU8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:19:37 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-zSqbKd+FEKM2YoGmkAOlGa6CE9mfqJ+7gMB1BBbIFU8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/ContactUs.9lwwhgkvor.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\ContactUs.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A6K/l/FtEYa47GbxC8xbZhfJ+RLtB8ClloCOnz5D968=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:24:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9lwwhgkvor"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/ContactUs.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-A6K/l/FtEYa47GbxC8xbZhfJ+RLtB8ClloCOnz5D968="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/ContactUs.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\ContactUs.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "541"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"A6K/l/FtEYa47GbxC8xbZhfJ+RLtB8ClloCOnz5D968=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:24:39 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-A6K/l/FtEYa47GbxC8xbZhfJ+RLtB8ClloCOnz5D968="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/FAQs.e6cd5sau5q.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\FAQs.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5rPyc/iz/TxZSm/Dm0bEaCTXrX4PlaU7GCQgukQwhF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 14:38:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "e6cd5sau5q"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/FAQs.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5rPyc/iz/TxZSm/Dm0bEaCTXrX4PlaU7GCQgukQwhF0="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/FAQs.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\FAQs.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "430"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5rPyc/iz/TxZSm/Dm0bEaCTXrX4PlaU7GCQgukQwhF0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 14:38:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5rPyc/iz/TxZSm/Dm0bEaCTXrX4PlaU7GCQgukQwhF0="
+        }
+      ]
+    },
+    {
       "Route": "Icons/Gallery.svg",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Gallery.svg",
       "Selectors": [],
@@ -2380,6 +2960,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-ivwTAPl/IHyJJClmUJ3W2CQilXfF1mHAl+e0gNZfun4="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/HelpCenter.k66gmwtvj6.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\HelpCenter.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TGm9ORUH6mht0FGTSMZKetQlx643ZIUe34lcEbtiBSk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 14:31:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "k66gmwtvj6"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/HelpCenter.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TGm9ORUH6mht0FGTSMZKetQlx643ZIUe34lcEbtiBSk="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/HelpCenter.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\HelpCenter.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "570"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TGm9ORUH6mht0FGTSMZKetQlx643ZIUe34lcEbtiBSk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 14:31:01 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TGm9ORUH6mht0FGTSMZKetQlx643ZIUe34lcEbtiBSk="
         }
       ]
     },
@@ -2630,6 +3292,88 @@
       ]
     },
     {
+      "Route": "Icons/Member.83v5z3w367.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Member.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XCRcK7skeESioIOiPVw+QbU1ylNfRK/cQFUPVl/F8p8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 18:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "83v5z3w367"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/Member.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-XCRcK7skeESioIOiPVw+QbU1ylNfRK/cQFUPVl/F8p8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Member.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Member.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "515"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"XCRcK7skeESioIOiPVw+QbU1ylNfRK/cQFUPVl/F8p8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 18:27:04 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-XCRcK7skeESioIOiPVw+QbU1ylNfRK/cQFUPVl/F8p8="
+        }
+      ]
+    },
+    {
       "Route": "Icons/NavbarArrow.m5hgx9an9h.svg",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\NavbarArrow.svg",
       "Selectors": [],
@@ -2708,6 +3452,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-2p9k87S+eqMt28Rh4V59gsb97rd4bX/tCxrW1/pBRF8="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/OpenEye.8ie67up10u.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\OpenEye.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8P0VMmBZ+08JxcAXKcY46nbCcHbQJjd94KqrIodEX2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 19:15:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8ie67up10u"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/OpenEye.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8P0VMmBZ+08JxcAXKcY46nbCcHbQJjd94KqrIodEX2A="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/OpenEye.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\OpenEye.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "554"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8P0VMmBZ+08JxcAXKcY46nbCcHbQJjd94KqrIodEX2A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 19:15:52 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8P0VMmBZ+08JxcAXKcY46nbCcHbQJjd94KqrIodEX2A="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Paw.ejxyhn1ek6.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Paw.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "657"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"StvTAttXNIp3u7K+d0STSulOUuWjM5HDCX0PR+puhC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:22:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ejxyhn1ek6"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/Paw.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-StvTAttXNIp3u7K+d0STSulOUuWjM5HDCX0PR+puhC4="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Paw.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Paw.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "657"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"StvTAttXNIp3u7K+d0STSulOUuWjM5HDCX0PR+puhC4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:22:43 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-StvTAttXNIp3u7K+d0STSulOUuWjM5HDCX0PR+puhC4="
         }
       ]
     },
@@ -2794,6 +3702,88 @@
       ]
     },
     {
+      "Route": "Icons/PrivacyPolicy.r734afb1c2.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\PrivacyPolicy.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uUBVcOpiVt7unbfNbEnZzFbYlohayxuMpdiMvqsMKyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:40:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r734afb1c2"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/PrivacyPolicy.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-uUBVcOpiVt7unbfNbEnZzFbYlohayxuMpdiMvqsMKyY="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/PrivacyPolicy.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\PrivacyPolicy.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "524"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"uUBVcOpiVt7unbfNbEnZzFbYlohayxuMpdiMvqsMKyY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 15:40:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-uUBVcOpiVt7unbfNbEnZzFbYlohayxuMpdiMvqsMKyY="
+        }
+      ]
+    },
+    {
       "Route": "Icons/Profile.bwwqlxtpaq.svg",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Profile.svg",
       "Selectors": [],
@@ -2876,6 +3866,88 @@
       ]
     },
     {
+      "Route": "Icons/Settings.hivsmmv7n1.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Settings.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9Mre9cw/9uSCbSyCLXdnioUxkrwgzRuyt8AAA/6xlM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 17:55:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "hivsmmv7n1"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/Settings.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-d9Mre9cw/9uSCbSyCLXdnioUxkrwgzRuyt8AAA/6xlM="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Settings.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Settings.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "771"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"d9Mre9cw/9uSCbSyCLXdnioUxkrwgzRuyt8AAA/6xlM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 17:55:25 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-d9Mre9cw/9uSCbSyCLXdnioUxkrwgzRuyt8AAA/6xlM="
+        }
+      ]
+    },
+    {
       "Route": "Icons/SignUp.phhhb22frj.svg",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\SignUp.svg",
       "Selectors": [],
@@ -2954,6 +4026,170 @@
         {
           "Name": "integrity",
           "Value": "sha256-M3ppBF0Lx/7xvPe8bOa9s/lhvurlwAWW0z8G95q1kSg="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Telephone.8vu38r52bv.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Telephone.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BOPNQkP1a4V8ADdhqSNBWKo802T7mgRy6tVwqLbF3o4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 18:14:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "8vu38r52bv"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/Telephone.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-BOPNQkP1a4V8ADdhqSNBWKo802T7mgRy6tVwqLbF3o4="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Telephone.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Telephone.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "487"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"BOPNQkP1a4V8ADdhqSNBWKo802T7mgRy6tVwqLbF3o4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 18:14:40 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-BOPNQkP1a4V8ADdhqSNBWKo802T7mgRy6tVwqLbF3o4="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Trash.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Trash.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2nn/SGgpOixmIfaW1xVSFrbAuNM8ELOEQN5TfkiTjBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 19:17:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-2nn/SGgpOixmIfaW1xVSFrbAuNM8ELOEQN5TfkiTjBk="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Trash.yegr2f9mge.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\Icons\\Trash.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "319"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"2nn/SGgpOixmIfaW1xVSFrbAuNM8ELOEQN5TfkiTjBk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 19:17:03 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yegr2f9mge"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/Trash.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-2nn/SGgpOixmIfaW1xVSFrbAuNM8ELOEQN5TfkiTjBk="
         }
       ]
     },
@@ -5090,7 +6326,7 @@
       ]
     },
     {
-      "Route": "js/main.elatataale.js",
+      "Route": "js/main.3nxuyfckmy.js",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\june-27-clone\\woolly-friends\\wwwroot\\js\\main.js",
       "Selectors": [],
       "ResponseHeaders": [
@@ -5100,7 +6336,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1131"
+          "Value": "1924"
         },
         {
           "Name": "Content-Type",
@@ -5108,11 +6344,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4thbpyj5crQS6s07hisZ8rEGTlZTR7hVOQ5jTEIOkmw=\""
+          "Value": "\"MTyz4Kf4ujDWDxUlFB1KMih4ixuCr2idT+cjgvHJewk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Jun 2025 12:54:45 GMT"
+          "Value": "Fri, 27 Jun 2025 19:03:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5122,7 +6358,7 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "elatataale"
+          "Value": "3nxuyfckmy"
         },
         {
           "Name": "label",
@@ -5130,7 +6366,7 @@
         },
         {
           "Name": "integrity",
-          "Value": "sha256-4thbpyj5crQS6s07hisZ8rEGTlZTR7hVOQ5jTEIOkmw="
+          "Value": "sha256-MTyz4Kf4ujDWDxUlFB1KMih4ixuCr2idT+cjgvHJewk="
         }
       ]
     },
@@ -5145,7 +6381,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "1131"
+          "Value": "1924"
         },
         {
           "Name": "Content-Type",
@@ -5153,11 +6389,11 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"4thbpyj5crQS6s07hisZ8rEGTlZTR7hVOQ5jTEIOkmw=\""
+          "Value": "\"MTyz4Kf4ujDWDxUlFB1KMih4ixuCr2idT+cjgvHJewk=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Fri, 27 Jun 2025 12:54:45 GMT"
+          "Value": "Fri, 27 Jun 2025 19:03:18 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -5167,7 +6403,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-4thbpyj5crQS6s07hisZ8rEGTlZTR7hVOQ5jTEIOkmw="
+          "Value": "sha256-MTyz4Kf4ujDWDxUlFB1KMih4ixuCr2idT+cjgvHJewk="
         }
       ]
     },

@@ -2,31 +2,44 @@
 const toggleButton = document.getElementById('toggle-btn');
 const sidebar = document.getElementById('sidebar');
 
+
+
+// Sidebar Icon Rotation and Opening the sidebar.
 function toggleSidebar() {
-    sidebar.classList.toggle('close');
-    toggleButton.classList.toggle('rotate');
+    const icon = document.getElementById('menu-icon');
+    const sidebar = document.getElementById('sidebar');
+
+    icon.classList.toggle('rotate');   // Rotate the icon
+    sidebar.classList.toggle('close'); // Close the sidebar
+}
+
+// Sidebar Dropdown Menu Toggle
+function toggleSubMenu(button) {
+    const submenu = button.nextElementSibling;
+    submenu.classList.toggle('show');
+
+    const arrowIcon = button.querySelector('.arrow-icon');
+    if (arrowIcon) arrowIcon.classList.toggle('rotate');
 }
 
 
-
 function toggleSubMenu(button) {
-    button.nextElementSibling.classList.toggle('show');
+    const submenu = button.nextElementSibling;
+    submenu.classList.toggle('show');
 
-    // Rotates the SVG arrows.
-    button.classList.toggle('rotate');
+    const arrowIcon = button.querySelector('.arrow-icon');
+    if (arrowIcon) arrowIcon.classList.toggle('rotate-icon');
 
-    /* Opens the sidebar if the drpodown buttons got clicked */
+    // Open sidebar if it's closed when dropdown is clicked
     if (sidebar.classList.contains('close')) {
-        sidebar.classList.toggle('close');
-
-        /* Rotates the toggle icon SVG if the buttons of the sidebar icons got clicked */
-        toggleButton.classList.toggle('rotate');
+        sidebar.classList.remove('close');
+        toggleButton.querySelector('svg')?.classList.remove('rotate');
     }
 }
 
 
-// Data Privacy Policy Popup
 
+// Data Privacy Policy Popup (Sign Up Page)
 function showPrivacyModal() {
     document.getElementById('privacyModal').classList.remove('hidden');
 }
@@ -37,4 +50,17 @@ function closePrivacyPopup() {
 
 function submitForm() {
     document.getElementById('signupForm').submit();
+}
+
+
+// ========== Profile Profile Page Modal ========== 
+
+// Open
+function showProfileModal() {
+    document.getElementById('profileModal').classList.remove('hidden');
+}
+
+// Close
+function closeProfileModal() {
+    document.getElementById('profileModal').classList.add('hidden');
 }
