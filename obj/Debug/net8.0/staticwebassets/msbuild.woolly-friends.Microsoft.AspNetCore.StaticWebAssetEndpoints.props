@@ -72,6 +72,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-UCiGzNyLW158\u002Bmhdyg14ec2RDSJ6qmJbfZG0gizhO9I="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"335"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022UCiGzNyLW158\u002Bmhdyg14ec2RDSJ6qmJbfZG0gizhO9I=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Jun 2025 19:05:30 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/woolly-friends/Icons/Logout.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Icons\Logout.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-4dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"277"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00224dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 27 Jun 2025 11:44:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/woolly-friends/Icons/Logout.x8urcb3l8c.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Icons\Logout.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"x8urcb3l8c"},{"Name":"integrity","Value":"sha256-4dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA="},{"Name":"label","Value":"_content/woolly-friends/Icons/Logout.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"277"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u00224dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA=\u0022"},{"Name":"Last-Modified","Value":"Fri, 27 Jun 2025 11:44:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/woolly-friends/Icons/NavbarArrow.m5hgx9an9h.svg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Icons\NavbarArrow.svg'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -299,6 +311,18 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Q0/9pTaY7IS1ZmuDDAtvN8BOFkdQxLGqfTfsEf\u002B5e3Y="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"389915"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022Q0/9pTaY7IS1ZmuDDAtvN8BOFkdQxLGqfTfsEf\u002B5e3Y=\u0022"},{"Name":"Last-Modified","Value":"Tue, 24 Jun 2025 19:05:30 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/woolly-friends/Images/MrBean.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\MrBean.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-554huaq0v59Y5PgBPY2941OR1\u002Bs\u002B\u002BOspeTbH2gVU3Ow="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"251587"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022554huaq0v59Y5PgBPY2941OR1\u002Bs\u002B\u002BOspeTbH2gVU3Ow=\u0022"},{"Name":"Last-Modified","Value":"Fri, 27 Jun 2025 10:50:31 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/woolly-friends/Images/MrBean.r7lyf0xalp.png">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\MrBean.png'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"r7lyf0xalp"},{"Name":"integrity","Value":"sha256-554huaq0v59Y5PgBPY2941OR1\u002Bs\u002B\u002BOspeTbH2gVU3Ow="},{"Name":"label","Value":"_content/woolly-friends/Images/MrBean.png"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"251587"},{"Name":"Content-Type","Value":"image/png"},{"Name":"ETag","Value":"\u0022554huaq0v59Y5PgBPY2941OR1\u002Bs\u002B\u002BOspeTbH2gVU3Ow=\u0022"},{"Name":"Last-Modified","Value":"Fri, 27 Jun 2025 10:50:31 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/woolly-friends/Images/PetPhotos/Skibidi.jpg">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\Images\PetPhotos\Skibidi.jpg'))</AssetFile>

@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\Icons\\Login.svg"
     },
     {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Icons\\Logout.svg",
+      "PackagePath": "staticwebassets\\Icons\\Logout.svg"
+    },
+    {
       "Id": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Icons\\NavbarArrow.svg",
       "PackagePath": "staticwebassets\\Icons\\NavbarArrow.svg"
     },
@@ -83,6 +87,10 @@
     {
       "Id": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Images\\Logo.png",
       "PackagePath": "staticwebassets\\Images\\Logo.png"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Images\\MrBean.png",
+      "PackagePath": "staticwebassets\\Images\\MrBean.png"
     },
     {
       "Id": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Images\\PetPhotos\\Skibidi.jpg",
