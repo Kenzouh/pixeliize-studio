@@ -4,6 +4,7 @@ wwwroot\favicon.ico
 wwwroot\Icons\Gallery.svg
 wwwroot\Icons\Home.svg
 wwwroot\Icons\Login.svg
+wwwroot\Icons\Logout.svg
 wwwroot\Icons\NavbarArrow.svg
 wwwroot\Icons\Pets.svg
 wwwroot\Icons\Profile.svg
@@ -23,6 +24,7 @@ wwwroot\Images\Dogs\FaqPetSale.png
 wwwroot\Images\Filter.svg
 wwwroot\Images\Hamster.jpg
 wwwroot\Images\Logo.png
+wwwroot\Images\MrBean.png
 wwwroot\Images\PetPhotos\Skibidi.jpg
 wwwroot\Images\Profile.jpg
 wwwroot\Images\ProfileIcon.png

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "ZmWqtdYcbK+ZeHP1xoA8T2DZ9N76yVtDEPFFgjb5UjM=",
+  "Hash": "kasZ3uSm/ZnbhJAvtHII8TkJ9qdide0kFMWZTCgcBGc=",
   "Source": "woolly-friends",
   "BasePath": "_content/woolly-friends",
   "Mode": "Default",
@@ -141,6 +141,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Icons\\Login.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Icons\\Logout.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/Logout#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "x8urcb3l8c",
+      "Integrity": "4dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\Logout.svg"
     },
     {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Icons\\NavbarArrow.svg",
@@ -540,6 +561,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Images\\Logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Images\\MrBean.png",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Images/MrBean#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "r7lyf0xalp",
+      "Integrity": "554huaq0v59Y5PgBPY2941OR1+s++OspeTbH2gVU3Ow=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\MrBean.png"
     },
     {
       "Identity": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Images\\PetPhotos\\Skibidi.jpg",
@@ -2485,6 +2527,88 @@
       ]
     },
     {
+      "Route": "Icons/Logout.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Icons\\Logout.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 11:44:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-4dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/Logout.x8urcb3l8c.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Icons\\Logout.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "277"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"4dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 11:44:32 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "x8urcb3l8c"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/Logout.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-4dkcJ6880ipOolxNhCxadzrOBcDjA/sD1EYHAGMZPhA="
+        }
+      ]
+    },
+    {
       "Route": "Icons/NavbarArrow.m5hgx9an9h.svg",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Icons\\NavbarArrow.svg",
       "Selectors": [],
@@ -4039,6 +4163,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-Q0/9pTaY7IS1ZmuDDAtvN8BOFkdQxLGqfTfsEf+5e3Y="
+        }
+      ]
+    },
+    {
+      "Route": "Images/MrBean.png",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Images\\MrBean.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "251587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"554huaq0v59Y5PgBPY2941OR1+s++OspeTbH2gVU3Ow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 10:50:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-554huaq0v59Y5PgBPY2941OR1+s++OspeTbH2gVU3Ow="
+        }
+      ]
+    },
+    {
+      "Route": "Images/MrBean.r7lyf0xalp.png",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\june25-clone\\woolly-friends\\wwwroot\\Images\\MrBean.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "251587"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"554huaq0v59Y5PgBPY2941OR1+s++OspeTbH2gVU3Ow=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Fri, 27 Jun 2025 10:50:31 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r7lyf0xalp"
+        },
+        {
+          "Name": "label",
+          "Value": "Images/MrBean.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-554huaq0v59Y5PgBPY2941OR1+s++OspeTbH2gVU3Ow="
         }
       ]
     },
