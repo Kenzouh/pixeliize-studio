@@ -2,6 +2,13 @@
 
 namespace woolly_friends.Models.Tables
 {
+    // roles duh
+    public enum Role
+    {
+        User,
+        Admin
+    }
+
     // This maps out to the User database table
     public class User
     {
@@ -21,12 +28,13 @@ namespace woolly_friends.Models.Tables
 
         [MaxLength(30)]
         public string? Username { get; set; }
-        [MaxLength(255)]
-        public string? UserAddress { get; set; }
+
         [Phone, MaxLength(11)]
         public string? UserContact { get; set; }
         [MaxLength(255)]
         public string? UserImgPath { get; set; } = "/Images/DefaultProfile.png";
         public bool IsActive { get; set; } = true;
+        public Role UserRole { get; set; } = Role.User;
+        public DateTime DateCreated { get; set; } = DateTime.UtcNow;
     }
 }

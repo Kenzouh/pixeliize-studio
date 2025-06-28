@@ -31,7 +31,6 @@ namespace woolly_friends.Controllers
                 if (ModelState.IsValid)
                 {
                     // Checks if duplicate emails are present
-                    // IMPORTANT NOTE: In bigger projects, u must add unique constraints. This is fine for now.
                     bool emailExists = _context.Users.Any(u => u.UserEmail == model.UserEmail);
                     if (emailExists)
                     {
@@ -48,6 +47,7 @@ namespace woolly_friends.Controllers
                         LastName = model.LastName,
                         UserEmail = model.UserEmail,
                         UserPassword = hashedPassword,
+                        Username = $"{model.FirstName} {model.LastName}",
                     };
 
                     _context.Users.Add(user);
