@@ -1,6 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Profile";
 }
+@model woolly_friends.Models.Tables.User
 
 <!DOCTYPE html>
 <html lang="en">
@@ -33,7 +34,7 @@
     <!-- Profile Section -->
     <div class="container mx-auto mt-8 px-4 flex items-start gap-8">
         <div class="w-full md:w-1/4 mr-4">
-            <img src="~/Images/ProfileIcon.png" alt="Profile Picture" class="w-full max-h-72 object-cover border-4 border-black rounded-md" />
+            <img src="@Model.UserImgPath" alt="Profile Picture" class="w-full max-h-72 object-cover border-4 border-black rounded-md" />
         </div>
 
 
@@ -50,7 +51,7 @@
                 </div>
 
                 <div class="flex items-center gap-4 mb-4">
-                    <h1 class="text-4xl font-bold text-[#684034] font-serif">George Edward</h1>
+                    <h1 class="text-4xl font-bold text-[#684034] font-serif">@Model.Username</h1>
                     <img src="~/Images/VerifiedIcon.png" alt="Verified" class="w-8 h-8" />
                 </div>
 
