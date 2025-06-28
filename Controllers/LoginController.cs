@@ -42,7 +42,8 @@ namespace woolly_friends.Controllers
                     {
                         // session thing, it lets ur login stay
                         HttpContext.Session.SetInt32("UserId", user.Id);
-                        HttpContext.Session.SetString("UserEmail", user.UserEmail);
+                        HttpContext.Session.SetString("Username", user.Username);
+                        HttpContext.Session.SetString("UserImgPath", user.UserImgPath);
                         return RedirectToAction("Index", "Home"); // format: file name, folder name. No need to specify View
                     }
                     else
@@ -60,6 +61,13 @@ namespace woolly_friends.Controllers
             }
 
             return View(model); // again, add error msg here plz
+        }
+
+        [HttpPost, ValidateAntiForgeryToken]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Clear();
+            return RedirectToAction("Index", "Login");
         }
     }
 }
