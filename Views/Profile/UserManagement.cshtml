@@ -1,0 +1,211 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>User Management</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="User Management for admins to manage user accounts" />
+    <meta name="keywords" content="User Management" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body class="bg-white font-sans">
+    <div class="container mx-auto mt-4 px-4">
+        <nav class="text-lg">
+            <ol class="list-reset flex text-gray-700">
+                <li><a href="/Home" class="text-blue-600 hover:underline">Home</a></li>
+                <li><span class="mx-2">/</span></li>
+                <li class="text-gray-500">Profile</li>
+            </ol>
+        </nav>
+    </div>
+
+    <!-- Profile Section -->
+    <div class="container mx-auto mt-8 px-4 flex flex-wrap items-start gap-8">
+        <div class="w-full md:w-1/4">
+            <img src="~/images/Profile.jpg" class="w-full max-h-72 object-cover border-4 border-black rounded-md" alt="Profile Image">
+        </div>
+        <div class="flex flex-col gap-2">
+            <h1 class="text-4xl font-bold text-[#684034] font-serif">George Edward</h1>
+            <h2 class="text-base font-bold text-black capitalize">Contact Number: 09123456789</h2>
+            <h2 class="text-base font-normal text-gray-500">Member Since June 1999</h2>
+        </div>
+    </div>
+
+    <!-- Tabs/Pages Buttons Section -->
+    <div class="flex gap-2 mt-6 px-4">
+        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile'">Products</button>
+        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Orders'">Orders</button>
+        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Reviews'">Reviews</button>
+        <button class="bg-gray-100 text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px]">User Management</button>
+    </div>
+
+    <!-- User Management Section -->
+    <main class="container mx-auto px-4 py-10">
+        <div class="bg-white rounded-lg shadow-xl">
+            <div class="bg-[#D0C4C0] px-6 py-4 border-b border-gray-300 rounded-t-lg flex justify-between items-center">
+                <h2 class="text-xl font-bold text-black">USERS</h2>
+                <div class="flex items-center space-x-2">
+                    <label for="search" class="font-medium text-black">Search:</label>
+                    <input type="text"
+                           id="search"
+                           class="border border-gray-300 rounded-md px-4 py-2 w-64 focus:outline-none focus:ring-2 focus:ring-[#684034]"
+                           placeholder="Search users...">
+                </div>
+            </div>
+
+            <!-- Table Headers -->
+            <div class="overflow-x-auto">
+                <table class="w-full min-w-[1000px]" data-sort-direction="asc">
+                    <thead class="bg-[#D0C4C0] text-black">
+                        <tr class="border-b border-gray-300 text-sm">
+                            <th class="px-6 py-3 text-left font-semibold cursor-pointer" onclick="sortTable(0)">
+                                <div class="flex items-center space-x-1">
+                                    <span>ID</span>
+                                    <div class="flex flex-col">
+                                        <i class="fas fa-caret-up text-xs -mb-1"></i>
+                                        <i class="fas fa-caret-down text-xs"></i>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left font-semibold cursor-pointer" onclick="sortTable(1)">
+                                <div class="flex items-center space-x-1">
+                                    <span>First Name</span>
+                                    <div class="flex flex-col">
+                                        <i class="fas fa-caret-up text-xs -mb-1"></i>
+                                        <i class="fas fa-caret-down text-xs"></i>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left font-semibold cursor-pointer" onclick="sortTable(2)">
+                                <div class="flex items-center space-x-1">
+                                    <span>Last Name</span>
+                                    <div class="flex flex-col">
+                                        <i class="fas fa-caret-up text-xs -mb-1"></i>
+                                        <i class="fas fa-caret-down text-xs"></i>
+                                    </div>
+                                </div>
+                            </th>
+                            <th class="px-6 py-3 text-left font-semibold">Birthday</th>
+                            <th class="px-6 py-3 text-left font-semibold">Number</th>
+                            <th class="px-6 py-3 text-left font-semibold">Email</th>
+                            <th class="px-6 py-3 text-left font-semibold">Address</th>
+                            <th class="px-6 py-3 text-left font-semibold">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="userTableBody" class="text-sm text-black">
+                        <!-- Sample rows. Hindi pa sya connected sa db, ikaw na bahala dito George HAHAHHA -->
+                        <tr class="border-b border-gray-200 hover:bg-gray-50 even:bg-gray-50 transition">
+                            <td class="px-6 py-4">1</td>
+                            <td class="px-6 py-4">George</td>
+                            <td class="px-6 py-4">Ditan</td>
+                            <td class="px-6 py-4">03/15/1999</td>
+                            <td class="px-6 py-4">09123456789</td>
+                            <td class="px-6 py-4">georgeedcaluag@gmail.com</td>
+                            <td class="px-6 py-4">LRT PUREZA</td>
+                            <td class="px-6 py-4">
+                                <div class="flex space-x-2">
+                                    <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold transition">
+                                        <i class="fas fa-ban mr-1"></i>Deactivate
+                                    </button>
+                                    <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold transition">
+                                        <i class="fas fa-trash mr-1"></i>Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50 even:bg-gray-50 transition">
+                            <td class="px-6 py-4">2</td>
+                            <td class="px-6 py-4">Edward</td>
+                            <td class="px-6 py-4">Itan</td>
+                            <td class="px-6 py-4">03/15/1999</td>
+                            <td class="px-6 py-4">09123456789</td>
+                            <td class="px-6 py-4">georgeedcaluag@gmail.com</td>
+                            <td class="px-6 py-4">PUREZA</td>
+                            <td class="px-6 py-4">
+                                <div class="flex space-x-2">
+                                    <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold transition">
+                                        <i class="fas fa-ban mr-1"></i>Deactivate
+                                    </button>
+                                    <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold transition">
+                                        <i class="fas fa-trash mr-1"></i>Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr class="border-b border-gray-200 hover:bg-gray-50 even:bg-gray-50 transition">
+                            <td class="px-6 py-4">3</td>
+                            <td class="px-6 py-4">Gorgie</td>
+                            <td class="px-6 py-4">Tan</td>
+                            <td class="px-6 py-4">03/15/1999</td>
+                            <td class="px-6 py-4">09123456789</td>
+                            <td class="px-6 py-4">georgeedcaluag@gmail.com</td>
+                            <td class="px-6 py-4">LRT</td>
+                            <td class="px-6 py-4">
+                                <div class="flex space-x-2">
+                                    <button class="bg-orange-500 hover:bg-orange-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold transition">
+                                        <i class="fas fa-ban mr-1"></i>Deactivate
+                                    </button>
+                                    <button class="bg-red-500 hover:bg-red-600 text-white px-4 py-1.5 rounded-md text-sm font-semibold transition">
+                                        <i class="fas fa-trash mr-1"></i>Delete
+                                    </button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Pagination -->
+            <div class="bg-gray-50 px-6 py-4 border-t flex justify-between items-center">
+                <!-- Place holder palang to ah (1 to 3 of 3) -->
+                <div id="paginationInfo" class="text-sm text-black">Showing 1 to 3 of 3 entries</div>
+                <div class="flex items-center space-x-2">
+                    <button id="prevBtn" class="px-3 py-1 text-sm text-black hover:text-[#684034] transition-colors" onclick="previousPage()">Previous</button>
+                    <button id="pageBtn" class="px-3 py-1 text-sm bg-[#684034] text-white rounded hover:bg-[#533428] transition-colors">1</button>
+                    <button id="nextBtn" class="px-3 py-1 text-sm text-black hover:text-[#684034] transition-colors" onclick="nextPage()">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script>
+        // For the search function
+        document.getElementById('search').addEventListener('input', function () {
+            const searchTerm = this.value.toLowerCase();
+            const tableRows = document.querySelectorAll('#userTableBody tr');
+
+            tableRows.forEach(row => {
+                const text = row.textContent.toLowerCase();
+                row.style.display = text.includes(searchTerm) ? '' : 'none';
+            });
+        });
+
+        // For the sorting
+        function sortTable(columnIndex) {
+            const table = document.querySelector('table');
+            const tbody = table.querySelector('tbody');
+            const rows = Array.from(tbody.querySelectorAll('tr'));
+            const isAscending = table.dataset.sortDirection !== 'asc';
+            table.dataset.sortDirection = isAscending ? 'asc' : 'desc';
+
+            rows.sort((a, b) => {
+                const aText = a.cells[columnIndex].textContent.trim().toLowerCase();
+                const bText = b.cells[columnIndex].textContent.trim().toLowerCase();
+                return isAscending ? aText.localeCompare(bText) : bText.localeCompare(aText);
+            });
+
+            rows.forEach(row => tbody.appendChild(row));
+        }
+
+        // Placeholder palang para dun sa pagination buttons
+        function previousPage() {
+        }
+
+        function nextPage() {
+        }
+    </script>
+</body>
+</html>

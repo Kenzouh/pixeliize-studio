@@ -29,5 +29,11 @@ namespace woolly_friends.Controllers
         public IActionResult PetsGallery() => View();
         public IActionResult Orders() => View();
         public IActionResult Reviews() => View();
+
+        public IActionResult UserManagement()
+        {
+            return View();
+        }
+
     }
 }
