@@ -17,101 +17,105 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = woolly_friends
 build_property.RootNamespace = woolly_friends
-build_property.ProjectDir = C:\Users\user\Source\Repos\woolly-friends\
+build_property.ProjectDir = C:\Users\Nayswan\Source\Repos\woolly-friends-weewoo\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Source\Repos\woolly-friends
+build_property.MSBuildProjectDirectory = C:\Users\Nayswan\Source\Repos\woolly-friends-weewoo
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/AdoptionForm/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/AdoptionForm/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRvcHRpb25Gb3JtXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/DataPrivacy/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/DataPrivacy/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRGF0YVByaXZhY3lcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Errors/AccountNotFound.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Errors/AccountNotFound.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRXJyb3JzXEFjY291bnROb3RGb3VuZC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Faqs/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Faqs/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFxc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Faqs/PetsForSaleFaqs.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Faqs/PetsForSaleFaqs.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFxc1xQZXRzRm9yU2FsZUZhcXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Home/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Login/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Login/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTG9naW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/PaymentForm/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/PaymentForm/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGF5bWVudEZvcm1cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Profile/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Profile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Profile/Orders.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Profile/Orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxPcmRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Profile/PetsGallery.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Profile/PetsGallery.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQZXRzR2FsbGVyeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Profile/PetsPage.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Profile/PetsPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxQZXRzUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Profile/Reviews.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Profile/Reviews.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZmlsZVxSZXZpZXdzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Shared/BackupLayout.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Shared/BackupLayout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEJhY2t1cExheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Shared/Error.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Shared/_Layout.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/SignUp/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/SignUp/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2lnblVwXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/UserProfile/Index.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/UserProfile/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclByb2ZpbGVcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/UserProfile/Orders.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/UserProfile/Orders.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclByb2ZpbGVcT3JkZXJzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/_ViewImports.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Source/Repos/woolly-friends/Views/_ViewStart.cshtml]
+[C:/Users/Nayswan/Source/Repos/woolly-friends-weewoo/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
