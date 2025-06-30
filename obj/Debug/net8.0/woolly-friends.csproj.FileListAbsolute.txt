@@ -329,12 +329,6 @@ D:\Draft\woolly-friends\obj\Debug\net8.0\scopedcss\bundle\woolly-friends.styles.
 D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets.build.json
 D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets.development.json
 D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets\msbuild.woolly-friends.Microsoft.AspNetCore.StaticWebAssets.props
-D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets\msbuild.woolly-friends.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
-D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets\msbuild.build.woolly-friends.props
-D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.woolly-friends.props
-D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.woolly-friends.props
-D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets.pack.json
 D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Draft\woolly-friends\obj\Debug\net8.0\woolly-f.BD8051FF.Up2Date
 D:\Draft\woolly-friends\obj\Debug\net8.0\woolly-friends.dll
@@ -1539,3 +1533,9 @@ D:\woolly-friends\obj\Debug\net8.0\refint\woolly-friends.dll
 D:\woolly-friends\obj\Debug\net8.0\woolly-friends.pdb
 D:\woolly-friends\obj\Debug\net8.0\woolly-friends.genruntimeconfig.cache
 D:\woolly-friends\obj\Debug\net8.0\ref\woolly-friends.dll
+D:\Draft\woolly-friends\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Draft\woolly-friends\obj\Debug\net8.0\rpswa.dswa.cache.json
+D:\Draft\woolly-friends\obj\Debug\net8.0\rjimswa.dswa.cache.json
+D:\Draft\woolly-friends\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
+D:\Draft\woolly-friends\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
+D:\Draft\woolly-friends\obj\Debug\net8.0\staticwebassets.build.json.cache
