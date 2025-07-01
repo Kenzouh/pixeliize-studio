@@ -27,12 +27,12 @@ namespace woolly_friends.Models.Tables
         public string UserPassword { get; set; }
 
         [MaxLength(30)]
-        public string? Username { get; set; }
+        public string Username { get; set; }
 
         [Phone, MaxLength(11)]
-        public string? UserContact { get; set; }
+        public string UserContact { get; set; } = "N/A";
         [MaxLength(255)]
-        public string? UserImgPath { get; set; } = "/Images/DefaultProfile.png";
+        public string UserImgPath { get; set; } = "/Images/DefaultProfile.png";
         public bool IsActive { get; set; } = true;
         public Role UserRole { get; set; } = Role.User;
         public DateTime DateCreated { get; set; } = DateTime.UtcNow;
