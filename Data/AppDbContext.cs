@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using woolly_friends.Models.Tables;
 
-namespace woolly_friends.Models
+namespace woolly_friends.Data
 {
     public class AppDbContext : DbContext
     {

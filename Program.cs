@@ -1,16 +1,18 @@
 using System;
-using woolly_friends.Models;
 using Microsoft.EntityFrameworkCore;
+using woolly_friends.Data;
+using woolly_friends.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
+builder.Services.AddScoped<IAccountService, AccountService>();
+
 
 // For DB connection
-builder.Services.AddDbContext<AppDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
 var app = builder.Build();
 

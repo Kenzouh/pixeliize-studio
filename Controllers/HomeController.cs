@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using woolly_friends.Models;
+using woolly_friends.Models.ViewModels;
 
 namespace woolly_friends.Controllers
 {

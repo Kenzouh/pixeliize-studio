@@ -1,4 +1,4 @@
-namespace woolly_friends.Models
+namespace woolly_friends.Models.ViewModels
 {
     public class ErrorViewModel
     {
