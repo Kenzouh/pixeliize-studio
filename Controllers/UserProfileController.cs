@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using woolly_friends.Models;
+using woolly_friends.Data;
 
 namespace woolly_friends.Controllers
 {

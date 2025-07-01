@@ -27,6 +27,7 @@
             <div class="wrapper w-full max-w-[450px] bg-transparent border border-[#684034] backdrop-blur-[20px] rounded-xl p-5">
 
                 <form asp-controller="Login" asp-action="Index" method="post">
+                    @Html.AntiForgeryToken()
 
                     <h1 class="text-center text-4xl font-bold my-4">Login</h1>
 
