@@ -28,23 +28,26 @@
 
     @Html.Partial("_UserProfile")
 
+    <hr class="mt-6 border border-[#412c25]" />
+
     <!-- Tabs (Orders + Wishlist only) -->
     <!-- Buttons -->
     <div class="flex gap-2 mt-6 px-4">
         <form method="get" asp-action="ViewSection" asp-controller="UserProfile">
             <input type="hidden" name="section" value="wishlist" />
-            <button type="submit" class="bg-gray-100 text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px]">
+            <button type="submit" class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]">
                 Wishlist
             </button>
         </form>
 
         <form method="get" asp-action="ViewSection" asp-controller="UserProfile">
             <input type="hidden" name="section" value="orders" />
-            <button type="submit" class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100">
+            <button type="submit" class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]">
                 Orders
             </button>
         </form>
-    </div>
+    </div><br />
+
 
 
 

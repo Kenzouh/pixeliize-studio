@@ -64,3 +64,14 @@ function showProfileModal() {
 function closeProfileModal() {
     document.getElementById('profileModal').classList.add('hidden');
 }
+
+// ========== Pet Listing Modal ========== 
+
+// (Admin Page)
+function showPetUploadModal() {
+    document.getElementById('petUploadModal').classList.remove('hidden');
+}
+
+function closePetUploadModal() {
+    document.getElementById('petUploadModal').classList.add('hidden');
+}

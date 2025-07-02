@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\user\\Source\\Repos\\woolly-friends\\woolly-friends.csproj": {}
+    "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj": {}
   },
   "projects": {
-    "C:\\Users\\user\\Source\\Repos\\woolly-friends\\woolly-friends.csproj": {
+    "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\woolly-friends\\woolly-friends.csproj",
+        "projectUniqueName": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj",
         "projectName": "woolly-friends",
-        "projectPath": "C:\\Users\\user\\Source\\Repos\\woolly-friends\\woolly-friends.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Source\\Repos\\woolly-friends\\obj\\",
+        "projectPath": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj",
+        "packagesPath": "C:\\Users\\Chu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Chu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

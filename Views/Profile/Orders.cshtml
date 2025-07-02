@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model woolly_friends.Models.Tables.User
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -13,129 +15,32 @@
 </head>
 
 <body class="bg-white font-sans">
-    <div class="container mx-auto mt-4 px-4">
-        <nav class="text-lg">
-            <ol class="list-reset flex text-gray-700">
-                <li><a href="/Home" class="text-blue-600 hover:underline">Home</a></li>
-                <li><span class="mx-2">/</span></li>
-                <li class="text-gray-500">Profile</li>
-            </ol>
-        </nav>
-    </div>
 
     <!-- Profile -->
-    <div class="container mx-auto mt-8 px-4 flex flex-wrap items-start gap-8">
-        <div class="w-full md:w-1/4">
-            <img src="~/images/Profile.jpg" class="w-full max-h-72 object-cover border-4 border-black rounded-md" alt="Profile Image">
-        </div>
-        <div class="flex flex-col gap-2">
-            <h1 class="text-4xl font-bold text-[#684034] font-serif">George Edward</h1>
-            <h2 class="text-base font-bold text-black capitalize">Contact Number: 09123456789</h2>
-            <h2 class="text-base font-normal text-gray-500">Member Since June 1999</h2>
-        </div>
-    </div>
+
+
+
+    <hr class="mt-6 border border-[#412c25]" />
+
 
     <!-- Buttons -->
     <div class="flex gap-2 mt-6 px-4">
-        <button class="bg-[#D0C4C0]  text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile'">Products</button>
-        <button class="bg-gray-100 text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Orders'">Orders</button>
-        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/Reviews'">Reviews</button>
-        <button class="bg-[#D0C4C0] text-[#241612] border border-[#8B8381] font-black text-lg min-w-[180px] h-[50px] hover:bg-gray-100" onclick="window.location.href='/Profile/UserManagement'">User Management</button>
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/Index'">Products</button>
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/Orders'">Orders</button>
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/Reviews'">Reviews</button>
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/UserManagement'">User Management</button>
     </div>
+
+    <!-- Header -->
+    @Html.Partial("_SearchBarHeader")
 
     <!-- Filter -->
     <div class="container mx-auto mt-8 px-4 flex flex-wrap">
-        <aside class="w-full md:w-1/4 bg-white p-5">
-            <h4 class="font-bold text-lg flex items-center mb-4">Refine your search <i class="bi bi-filter ml-2"></i></h4>
 
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Species</h6>
-                <label class="block"><input type="checkbox" class="mr-2">Cats (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Dogs (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Other Pets (0)</label>
-            </div>
-
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Gender</h6>
-                <label class="block"><input type="checkbox" class="mr-2">Male (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Female (0)</label>
-            </div>
-
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Size</h6>
-                <label class="block"><input type="checkbox" class="mr-2">Small (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Medium (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Large (0)</label>
-            </div>
-
-            <div>
-                <h6 class="font-bold mb-2">Price</h6>
-                <div class="flex gap-2">
-                    <input type="text" placeholder="Min" class="w-1/2 border p-2" />
-                    <input type="text" placeholder="Max" class="w-1/2 border p-2" />
-                </div>
-            </div>
-        </aside>
+        @Html.Partial("_FilterSidebar")
 
         <!-- Pet Cards -->
-        <div class="w-full md:w-3/4 p-3 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <!-- Card 1 -->
-            <div class="relative rounded-lg overflow-hidden shadow-sm">
-                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
-                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
-                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
-                </div>
-                <div class="bg-white px-4 pt-4 pb-2">
-                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Chewy</h3>
-                    <div class="text-gray-700 flex items-center gap-1 sm:p-1">
-                        <i class="bi bi-heart-fill"></i> Small Female Dog
-                    </div>
-                    <p class="text-gray-500 sm:p-1">Huge Heart</p>
-                    <div class="flex items-center gap-1 sm:p-1">
-                        <i class="bi bi-geo-alt-fill"></i> Quiapo, Manila
-                    </div>
-                    <div class="font-bold text-[#0B0B0B] sm:p-1">₱5,000</div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="relative rounded-lg overflow-hidden shadow-sm">
-                <img src="~/images/Blackie.jpg" alt="Dog" class="w-full h-64 object-cover">
-                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
-                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
-                </div>
-                <div class="bg-white px-4 pt-4 pb-2">
-                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Blackie</h3>
-                    <div class="text-gray-700 flex items-center gap-1 sm:p-1">
-                        <i class="bi bi-heart-fill"></i> Domestic Short Haired Cat
-                    </div>
-                    <p class="text-gray-500 sm:p-1">Looking for love</p>
-                    <div class="flex items-center gap-1 sm:p-1">
-                        <i class="bi bi-geo-alt-fill"></i> Mandaluyong City
-                    </div>
-                    <div class="font-bold text-[#0B0B0B] sm:p-1">₱3,000</div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="relative rounded-lg overflow-hidden shadow-sm">
-                <img src="~/images/Hamster.jpg" alt="Dog" class="w-full h-64 object-cover">
-                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
-                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
-                </div>
-                <div class="bg-white px-4 pt-4 pb-2">
-                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Buttercup</h3>
-                    <div class="text-gray-700 flex items-center gap-1 sm:p-1">
-                        <i class="bi bi-heart-fill"></i> Small Hamster
-                    </div>
-                    <p class="text-gray-500 sm:p-1">Loves cuddles</p>
-                    <div class="flex items-center gap-1 sm:p-1">
-                        <i class="bi bi-geo-alt-fill"></i> Valenzuela
-                    </div>
-                    <div class="font-bold text-[#0B0B0B] sm:p-1">₱1,500</div>
-                </div>
-            </div>
-        </div>
+        @Html.Partial("_WishlistContent")
 
     </div>
 
