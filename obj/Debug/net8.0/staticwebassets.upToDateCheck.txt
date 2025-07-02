@@ -17,6 +17,7 @@ wwwroot\Icons\Paw.svg
 wwwroot\Icons\Pets.svg
 wwwroot\Icons\PrivacyPolicy.svg
 wwwroot\Icons\Profile.svg
+wwwroot\Icons\Search.svg
 wwwroot\Icons\Settings.svg
 wwwroot\Icons\SignUp.svg
 wwwroot\Icons\Telephone.svg

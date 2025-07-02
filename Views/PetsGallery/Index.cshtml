@@ -1,0 +1,289 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pets Gallery</title>
+
+    <!-- Pre-requisite Meta Tags -->
+    <meta charset="utf-8" />
+    <meta name="description" content="Pets page showing the pets." />
+    <meta name="keywords" content="Wishlist, Orders, Pets" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="~/css/main.css" rel="stylesheet" media="all" />
+</head>
+
+<body>
+
+    <!-- Header -->
+    <div class="container mx-auto mt-4 px-4">
+        <div class="flex justify-between border border-[#412c25] items-center bg-[#d0b1b1] px-6 py-2 rounded-full">
+
+            <div class="flex items-center gap-3">
+                <h3>
+                    Displaying <span class="font-bold">1</span> to <span class="font-bold">39</span> of <span class="font-bold">538</span> pets
+                </h3>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <label for="search" class="font-medium text-black">Search:</label>
+
+
+                <div class="relative w-64">
+                    <!-- ========== Search Icon ==========-->
+                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 fill-[#412c25]"
+                         xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
+                        <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
+                    </svg>
+
+                    <input type="text"
+                           id="search"
+                           class="border border-gray-300 rounded-full pl-10 pr-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#684034]"
+                           placeholder="Search users...">
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Filter + Pet Cards -->
+    <div class="container mx-auto mt-8 px-4 flex flex-wrap">
+        <!-- Filter Sidebar -->
+        <aside class="w-[240px] bg-[#d0b1b1] p-5 rounded-md shadow-lg sticky h-fit top-4">
+            <h4 class="font-bold text-lg flex items-center mb-4">Refine your search <i class="bi bi-filter ml-2"></i></h4>
+
+            <!-- Gender -->
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Transaction</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Adopt</label>
+                <label class="block"><input type="checkbox" class="mr-2">Buy</label>
+            </div>
+
+            <!-- Species -->
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Species</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Cats (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Dogs (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Other Pets (0)</label>
+            </div>
+
+            <!-- Gender -->
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Gender</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Male (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Female (0)</label>
+            </div>
+
+            <!-- Age -->
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Age</h6>
+                <div class="flex gap-2 items-center justify-center">
+                    <input type="text" placeholder="Min" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+                    <span>–</span>
+                    <input type="text" placeholder="Max" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+                </div>
+            </div>
+
+            <!-- Price -->
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Price</h6>
+                <div class="flex gap-2 items-center justify-center">
+                    <input type="text" placeholder="Min" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+                    <span>–</span>
+                    <input type="text" placeholder="Max" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+                </div>
+            </div>
+
+            <!-- Clear Button -->
+
+            <div class="flex justify-end w-full gap-2">
+                <button class="bg-[#cfcfcf] hover:bg-[#c4c4c4] active:bg-[#b8b8b8] px-4 py-2 rounded-full border-2 border-[#412c25]">Clear</button>
+                <button class="bg-[#c39383] hover:bg-[#b58778] active:bg-[#a77c6e] px-4 py-2 rounded-full border-2 border-[#412c25]">Filter</button>
+            </div>
+        </aside>
+
+        <!-- Pet Cards -->
+        <div class="w-full md:w-3/4 p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+
+            <!-- Card 1 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-blue-700 sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-blue-700 sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-blue-700 sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-purple-700 sm:p-1">Adopt Me!</div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-blue-700 sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                </div>
+            </div>
+
+           <!-- Card 5 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-[#cf53ad] sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-purple-700 sm:p-1">Adopt Me!</div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-[#cf53ad] sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-[#cf53ad] sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
+                <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+                <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                    <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                </div>
+                <div class="bg-white px-4 pt-4 pb-2">
+                    <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                    <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                    <p class="text-[#cf53ad] sm:p-1">Gender</p>
+                    <p class="text-black sm:p-1">Age</p>
+                    <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bottom-4 left-0 w-full flex justify-center md:p-6">
+        <div class="flex items-center space-x-2">
+            <!-- AAAAAAAAA: Added 'items-center' to align the larger button vertically -->
+            <!-- Previous Button -->
+            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
+                <!-- AAAAAAAAA: Added 'w-[50px] h-[50px]' -->
+                &lt;
+            </button>
+
+            <!-- Page Numbers -->
+            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
+                1
+            </button>
+            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
+                2
+            </button>
+
+            <!-- Highlighted Page 3 -->
+            <button class="bg-[#775656] text-yellow-200 border-4 border-[#412c25] rounded-xl font-extrabold text-3xl w-[60px] h-[60px] shadow-md">
+                3
+            </button>
+
+            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c] active:bg-[#d39f8e]">
+                4
+            </button>
+            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
+                5
+            </button>
+
+            <!-- Next Button -->
+            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
+                &gt;
+            </button>
+        </div>
+    </div>
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            document.querySelectorAll('.bi-suit-heart, .bi-suit-heart-fill').forEach(function (icon) {
+                icon.addEventListener('click', function () {
+                    this.classList.toggle('bi-suit-heart');
+                    this.classList.toggle('bi-suit-heart-fill');
+                });
+            });
+        });
+    </script>
+
+    <script src="~/js/main.js"></script>
+</body>
+
+</html>

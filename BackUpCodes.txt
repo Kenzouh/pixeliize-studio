@@ -1,0 +1,67 @@
+# FILTER SIDEBAR
+
+
+<!-- Filter Sidebar -->
+        <aside class="w-full md:w- bg-[#d0b1b1] p-5 rounded-md shadow-lg">
+            <h4 class="font-bold text-lg flex items-center mb-4">Refine your search <i class="bi bi-filter ml-2"></i></h4>
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Species</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Cats (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Dogs (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Other Pets (0)</label>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Gender</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Male (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Female (0)</label>
+            </div>
+
+            <div class="mb-4">
+                <h6 class="font-bold mb-2">Size</h6>
+                <label class="block"><input type="checkbox" class="mr-2">Small (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Medium (0)</label>
+                <label class="block"><input type="checkbox" class="mr-2">Large (0)</label>
+            </div>
+
+            <div>
+                <h6 class="font-bold mb-2">Price</h6>
+                <div class="flex gap-2">
+                    <input type="text" placeholder="Min" class="w-1/2 border p-2" />
+                    <input type="text" placeholder="Max" class="w-1/2 border p-2" />
+                </div>
+            </div>
+        </aside>
+
+
+
+
+
+
+
+
+
+# Pagination
+
+
+    <div class="bottom-4 left-0 w-full flex justify-center md:p-6">
+        <div class="flex space-x-2">
+            <!-- Previous Button -->
+            <button class="bg-[#ffc6b3] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg min-w-[50px] h-[50px] hover:bg-gray-100">
+                &lt;
+            </button>
+
+            <!-- Page Numbers -->
+            <button class="bg-[#ffc6b3] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg min-w-[50px] h-[50px] hover:bg-[#d39f8e]">1</button>
+            <button class="bg-[#ffc6b3] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg min-w-[50px] h-[50px] hover:bg-[#d39f8e]">2</button>
+            <button class="bg-[#b18475] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg min-w-[50px] h-[50px]">3</button>
+            <button class="bg-[#ffc6b3] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg min-w-[50px] h-[50px] hover:bg-[#e0a895] active:bg-[#d39f8e]">4</button>
+            <button class="bg-[#ffc6b3] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg min-w-[50px] h-[50px] hover:bg-[#d39f8e]">5</button>
+
+            <!-- Next Button -->
+            <button class="bg-[#ffc6b3] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg min-w-[50px] h-[50px] hover:bg-gray-100">
+                &gt;
+            </button>
+        </div>
+    </div>
