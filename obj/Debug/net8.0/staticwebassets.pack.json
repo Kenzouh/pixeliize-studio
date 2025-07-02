@@ -29,6 +29,14 @@
       "PackagePath": "staticwebassets\\Icons\\Home.svg"
     },
     {
+      "Id": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LeftArrow.svg",
+      "PackagePath": "staticwebassets\\Icons\\LeftArrow.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LocationOn.svg",
+      "PackagePath": "staticwebassets\\Icons\\LocationOn.svg"
+    },
+    {
       "Id": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\Login.svg",
       "PackagePath": "staticwebassets\\Icons\\Login.svg"
     },
@@ -63,6 +71,10 @@
     {
       "Id": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\Profile.svg",
       "PackagePath": "staticwebassets\\Icons\\Profile.svg"
+    },
+    {
+      "Id": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\RightArrow.svg",
+      "PackagePath": "staticwebassets\\Icons\\RightArrow.svg"
     },
     {
       "Id": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\Search.svg",

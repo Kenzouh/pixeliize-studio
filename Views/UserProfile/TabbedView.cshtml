@@ -1,0 +1,32 @@
+﻿public class UserProfileController : Controller
+{
+    private readonly AppDbContext _context;
+
+    public UserProfileController(AppDbContext context)
+    {
+        _context = context;
+    }
+
+    public IActionResult Index()
+    {
+        var userId = HttpContext.Session.GetInt32("UserId");
+        if (userId == null) return RedirectToAction("Index", "Login");
+
+        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+        if (user == null) return RedirectToAction("Index", "Login");
+
+        return View(user); // For main profile
+    }
+
+    public IActionResult TabbedView(string tab)
+    {
+        var userId = HttpContext.Session.GetInt32("UserId");
+        if (userId == null) return RedirectToAction("Index", "Login");
+
+        var user = _context.Users.FirstOrDefault(u => u.Id == userId);
+        if (user == null) return RedirectToAction("Index", "Login");
+
+        ViewBag.Tab = tab ?? "wishlist"; // default to wishlist
+        return View(user); // Pass user if needed
+    }
+}
