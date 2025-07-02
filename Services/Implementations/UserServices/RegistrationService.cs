@@ -2,27 +2,29 @@
 using woolly_friends.Data;
 using woolly_friends.Models.Tables;
 using woolly_friends.Models.ViewModels.UserAuth;
+using woolly_friends.Services.Interfaces.UserServices;
 
-namespace woolly_friends.Services
+namespace woolly_friends.Services.Implementations.UserServices
 {
-    public class AccountService : IAccountService
+    public class RegistrationService : IRegistrationService
     {
         // this part communicates with database
         private readonly AppDbContext _context;
 
-        public AccountService(AppDbContext context)
+        public RegistrationService(AppDbContext context)
         {
             _context = context;
         }
 
-        // CREATE
         public async Task<(bool Success, string ErrorMessage)> RegisterUserAsync(SignUpViewModel model)
         {
+            string loweredEmail = model.UserEmail.Trim().ToLower();
+
             // checks if email exists, duh
-            bool emailExists = await _context.Users.AnyAsync(u => u.UserEmail == model.UserEmail);
+            bool emailExists = await _context.Users.AnyAsync(u => u.UserEmail == loweredEmail);
             if (emailExists)
             {
-                return (false, "Invalid attempt!");
+                return (false, "Email is already registered.");
             }
 
             // hashes ur password
@@ -33,7 +35,7 @@ namespace woolly_friends.Services
             {
                 FirstName = model.FirstName,
                 LastName = model.LastName,
-                UserEmail = model.UserEmail,
+                UserEmail = loweredEmail,
                 UserPassword = hashedPassword,
                 Username = $"{model.FirstName} {model.LastName}",
             };
@@ -42,18 +44,6 @@ namespace woolly_friends.Services
             await _context.SaveChangesAsync();
 
             return (true, null);
-        }
-
-        // READ
-        public async Task<User?> AuthenticateUserAsync(string email, string password)
-        {
-            // This part will check if email is registered and active.
-            var user = await _context.Users.FirstOrDefaultAsync(u => u.UserEmail == email && u.IsActive);
-            if (user == null) return null;
-
-            // password checker duh
-            bool passwordCorrect = BCrypt.Net.BCrypt.Verify(password, user.UserPassword);
-            return passwordCorrect ? user : null;
         }
     }
 }
