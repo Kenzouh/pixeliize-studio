@@ -1,17 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using woolly_friends.Models.ViewModels.UserAuth;
-using woolly_friends.Services;
+using woolly_friends.Services.Interfaces.UserServices;
 
 namespace woolly_friends.Controllers
 {
     public class LoginController : Controller
     {
         // for the login logic
-        private readonly IAccountService _accountService;
+        private readonly IUserAuthService _userAuthService;
 
-        public LoginController(IAccountService accountService)
+        public LoginController(IUserAuthService userAuthService)
         {
-            _accountService = accountService;
+            _userAuthService = userAuthService;
         }
 
         // This activates when the login page is visited.
@@ -26,7 +26,8 @@ namespace woolly_friends.Controllers
             if (!ModelState.IsValid) return View(model);
 
             // authenticates the login
-            var user = await _accountService.AuthenticateUserAsync(model.UserEmail, model.UserPassword);
+            string loweredEmail = model.UserEmail.Trim().ToLower();
+            var user = await _userAuthService.AuthenticateUserAsync(loweredEmail, model.UserPassword);
             if (user == null)
             {
                 ModelState.AddModelError("UserEmail", "Invalid email or password.");

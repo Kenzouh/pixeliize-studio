@@ -1,14 +1,21 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using woolly_friends.Data;
-using woolly_friends.Services;
+using woolly_friends.Services.Implementations.General;
+using woolly_friends.Services.Implementations.UserServices;
+using woolly_friends.Services.Interfaces.General;
+using woolly_friends.Services.Interfaces.UserServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
-builder.Services.AddScoped<IAccountService, AccountService>();
+builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+builder.Services.AddScoped<IUserAuthService, UserAuthService>();
+builder.Services.AddScoped<IUserStatusService, UserManagementService>();
+builder.Services.AddScoped<IUserRoleService, UserManagementService>();
+builder.Services.AddScoped<IPaginationService, PaginationService>();
 
 
 // For DB connection
