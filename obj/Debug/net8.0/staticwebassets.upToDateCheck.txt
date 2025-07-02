@@ -8,6 +8,8 @@ wwwroot\Icons\FAQs.svg
 wwwroot\Icons\Gallery.svg
 wwwroot\Icons\HelpCenter.svg
 wwwroot\Icons\Home.svg
+wwwroot\Icons\LeftArrow.svg
+wwwroot\Icons\LocationOn.svg
 wwwroot\Icons\Login.svg
 wwwroot\Icons\Logout.svg
 wwwroot\Icons\Member.svg
@@ -17,6 +19,7 @@ wwwroot\Icons\Paw.svg
 wwwroot\Icons\Pets.svg
 wwwroot\Icons\PrivacyPolicy.svg
 wwwroot\Icons\Profile.svg
+wwwroot\Icons\RightArrow.svg
 wwwroot\Icons\Search.svg
 wwwroot\Icons\Settings.svg
 wwwroot\Icons\SignUp.svg

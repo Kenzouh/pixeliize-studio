@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EgS+s7MLMFnluDfCYXJfMTiP6XxqY1EfyxGjTaERtg8=",
+  "Hash": "TKFSrK9wsCBNwUI1s6Gg46WjXX/vUKtIiYONomI8w9I=",
   "Source": "woolly-friends",
   "BasePath": "_content/woolly-friends",
   "Mode": "Default",
@@ -227,6 +227,48 @@
       "OriginalItemSpec": "wwwroot\\Icons\\Home.svg"
     },
     {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LeftArrow.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/LeftArrow#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "79ttaam0ag",
+      "Integrity": "W0vl6tVk8Aoh8eQ1OoJxmk/GJu/cq+XTOHm6GcSNC1A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\LeftArrow.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LocationOn.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/LocationOn#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "30t8udu2u4",
+      "Integrity": "09ZfeHqyiYYoiHvwqugOYQ77y1DHSwkBzeFmPwIJUTM=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\LocationOn.svg"
+    },
+    {
       "Identity": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\Login.svg",
       "SourceId": "woolly-friends",
       "SourceType": "Discovered",
@@ -414,6 +456,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\Icons\\Profile.svg"
+    },
+    {
+      "Identity": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\RightArrow.svg",
+      "SourceId": "woolly-friends",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\",
+      "BasePath": "_content/woolly-friends",
+      "RelativePath": "Icons/RightArrow#[.{fingerprint}]?.svg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "j6ovcch645",
+      "Integrity": "K1j3sXP+mDFwl4BVEbk/cKCXTRRMSRrQMPP6TpIM4fI=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Icons\\RightArrow.svg"
     },
     {
       "Identity": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\Search.svg",
@@ -3149,6 +3212,170 @@
       ]
     },
     {
+      "Route": "Icons/LeftArrow.79ttaam0ag.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LeftArrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W0vl6tVk8Aoh8eQ1OoJxmk/GJu/cq+XTOHm6GcSNC1A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 10:02:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "79ttaam0ag"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/LeftArrow.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-W0vl6tVk8Aoh8eQ1OoJxmk/GJu/cq+XTOHm6GcSNC1A="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/LeftArrow.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LeftArrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"W0vl6tVk8Aoh8eQ1OoJxmk/GJu/cq+XTOHm6GcSNC1A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 10:02:27 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-W0vl6tVk8Aoh8eQ1OoJxmk/GJu/cq+XTOHm6GcSNC1A="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/LocationOn.30t8udu2u4.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LocationOn.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"09ZfeHqyiYYoiHvwqugOYQ77y1DHSwkBzeFmPwIJUTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 00:46:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "30t8udu2u4"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/LocationOn.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-09ZfeHqyiYYoiHvwqugOYQ77y1DHSwkBzeFmPwIJUTM="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/LocationOn.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\LocationOn.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "445"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"09ZfeHqyiYYoiHvwqugOYQ77y1DHSwkBzeFmPwIJUTM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 00:46:28 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-09ZfeHqyiYYoiHvwqugOYQ77y1DHSwkBzeFmPwIJUTM="
+        }
+      ]
+    },
+    {
       "Route": "Icons/Login.g43mjbng0z.svg",
       "AssetFile": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\Login.svg",
       "Selectors": [],
@@ -3883,6 +4110,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-C5KXPNEeIo0npqlbPM+PXaZR3AIEf1Ej5OkOjPnRP5c="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/RightArrow.j6ovcch645.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\RightArrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1j3sXP+mDFwl4BVEbk/cKCXTRRMSRrQMPP6TpIM4fI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 10:02:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "j6ovcch645"
+        },
+        {
+          "Name": "label",
+          "Value": "Icons/RightArrow.svg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1j3sXP+mDFwl4BVEbk/cKCXTRRMSRrQMPP6TpIM4fI="
+        }
+      ]
+    },
+    {
+      "Route": "Icons/RightArrow.svg",
+      "AssetFile": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-2\\woolly-friends\\wwwroot\\Icons\\RightArrow.svg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "178"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/svg+xml"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"K1j3sXP+mDFwl4BVEbk/cKCXTRRMSRrQMPP6TpIM4fI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 02 Jul 2025 10:02:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-K1j3sXP+mDFwl4BVEbk/cKCXTRRMSRrQMPP6TpIM4fI="
         }
       ]
     },

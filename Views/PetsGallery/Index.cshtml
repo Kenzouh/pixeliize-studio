@@ -53,62 +53,8 @@
     <!-- Filter + Pet Cards -->
     <div class="container mx-auto mt-8 px-4 flex flex-wrap">
         <!-- Filter Sidebar -->
-        <aside class="w-[240px] bg-[#d0b1b1] p-5 rounded-md shadow-lg sticky h-fit top-4">
-            <h4 class="font-bold text-lg flex items-center mb-4">Refine your search <i class="bi bi-filter ml-2"></i></h4>
 
-            <!-- Gender -->
-
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Transaction</h6>
-                <label class="block"><input type="checkbox" class="mr-2">Adopt</label>
-                <label class="block"><input type="checkbox" class="mr-2">Buy</label>
-            </div>
-
-            <!-- Species -->
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Species</h6>
-                <label class="block"><input type="checkbox" class="mr-2">Cats (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Dogs (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Other Pets (0)</label>
-            </div>
-
-            <!-- Gender -->
-
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Gender</h6>
-                <label class="block"><input type="checkbox" class="mr-2">Male (0)</label>
-                <label class="block"><input type="checkbox" class="mr-2">Female (0)</label>
-            </div>
-
-            <!-- Age -->
-
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Age</h6>
-                <div class="flex gap-2 items-center justify-center">
-                    <input type="text" placeholder="Min" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
-                    <span>–</span>
-                    <input type="text" placeholder="Max" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
-                </div>
-            </div>
-
-            <!-- Price -->
-
-            <div class="mb-4">
-                <h6 class="font-bold mb-2">Price</h6>
-                <div class="flex gap-2 items-center justify-center">
-                    <input type="text" placeholder="Min" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
-                    <span>–</span>
-                    <input type="text" placeholder="Max" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
-                </div>
-            </div>
-
-            <!-- Clear Button -->
-
-            <div class="flex justify-end w-full gap-2">
-                <button class="bg-[#cfcfcf] hover:bg-[#c4c4c4] active:bg-[#b8b8b8] px-4 py-2 rounded-full border-2 border-[#412c25]">Clear</button>
-                <button class="bg-[#c39383] hover:bg-[#b58778] active:bg-[#a77c6e] px-4 py-2 rounded-full border-2 border-[#412c25]">Filter</button>
-            </div>
-        </aside>
+        @Html.Partial("_FilterSidebar")
 
         <!-- Pet Cards -->
         <div class="w-full md:w-3/4 p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -235,41 +181,8 @@
         </div>
     </div>
 
-    <div class="bottom-4 left-0 w-full flex justify-center md:p-6">
-        <div class="flex items-center space-x-2">
-            <!-- AAAAAAAAA: Added 'items-center' to align the larger button vertically -->
-            <!-- Previous Button -->
-            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
-                <!-- AAAAAAAAA: Added 'w-[50px] h-[50px]' -->
-                &lt;
-            </button>
 
-            <!-- Page Numbers -->
-            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
-                1
-            </button>
-            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
-                2
-            </button>
-
-            <!-- Highlighted Page 3 -->
-            <button class="bg-[#775656] text-yellow-200 border-4 border-[#412c25] rounded-xl font-extrabold text-3xl w-[60px] h-[60px] shadow-md">
-                3
-            </button>
-
-            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c] active:bg-[#d39f8e]">
-                4
-            </button>
-            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
-                5
-            </button>
-
-            <!-- Next Button -->
-            <button class="bg-[#d0b1b1] text-[#241612] border-2 border-[#412c25] rounded-lg font-black text-lg w-[50px] h-[50px] hover:bg-[#b99c9c]">
-                &gt;
-            </button>
-        </div>
-    </div>
+    <!-- Pagination -->
 
 
     <script>
