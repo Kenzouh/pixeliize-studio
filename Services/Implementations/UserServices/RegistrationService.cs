@@ -10,10 +10,12 @@ namespace woolly_friends.Services.Implementations.UserServices
     {
         // this part communicates with database
         private readonly AppDbContext _context;
+        private readonly IPasswordHasherService _passwordHasher;
 
-        public RegistrationService(AppDbContext context)
+        public RegistrationService(AppDbContext context, IPasswordHasherService passwordHasher)
         {
             _context = context;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<(bool Success, string ErrorMessage)> RegisterUserAsync(SignUpViewModel model)
@@ -28,7 +30,7 @@ namespace woolly_friends.Services.Implementations.UserServices
             }
 
             // hashes ur password
-            string hashedPassword = BCrypt.Net.BCrypt.HashPassword(model.UserPassword);
+            string hashedPassword = _passwordHasher.HashPassword(model.UserPassword);
 
             // creates the user
             var user = new User

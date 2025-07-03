@@ -9,10 +9,12 @@ namespace woolly_friends.Services.Implementations.UserServices
     {
         // this part communicates with database
         private readonly AppDbContext _context;
+        private readonly IPasswordHasherService _passwordHasher;
 
-        public UserAuthService(AppDbContext context)
+        public UserAuthService(AppDbContext context, IPasswordHasherService passwordHasher)
         {
             _context = context;
+            _passwordHasher = passwordHasher;
         }
 
         public async Task<User?> AuthenticateUserAsync(string email, string password)
@@ -22,7 +24,7 @@ namespace woolly_friends.Services.Implementations.UserServices
             if (user == null) return null;
 
             // password checker duh
-            bool passwordCorrect = BCrypt.Net.BCrypt.Verify(password, user.UserPassword);
+            bool passwordCorrect = _passwordHasher.VerifyPassword(password, user.UserPassword);
             return passwordCorrect ? user : null;
         }
     }
