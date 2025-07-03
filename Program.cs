@@ -14,6 +14,7 @@ builder.Services.AddSession();
 
 // General
 builder.Services.AddScoped<IPaginationService, PaginationService>();
+builder.Services.AddScoped<IUserQueryService, UserQueryService>();
 
 // UserServices
 builder.Services.AddScoped<IPasswordHasherService, PasswordHasherService>();
