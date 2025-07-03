@@ -18,61 +18,73 @@
 
 <body class="bg-white font-sans">
 
-    <main>
+    <main class="w-full max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
 
+        <!-- =============================== Heading =============================== -->
         <div>
-            <h1 class="text-4xl text-center text-[#684034] font-bold my-8">About Us</h1>
-
-            <figure class="flex flex-col items-center">
-
-                <a href="https://sprouleinsurance.com/wp-content/uploads/2021/03/life-insurance-family-with-their-dog.jpg">
-                    <img src="/Images/Dogs/FaqPetAdoption.jpg" alt="Adopted dog from Woolly Friends"
-                         title="Adopted dog from Woolly Friends" target="_blank" width="800" />
-                </a>
-
-                <figcaption class="text-center text-[#684034] text-l font-bold my-2">A Happy Family with The Adopted Doggy From Woolly Friends</figcaption>
-            </figure>
+            <h1 class="text-3xl sm:text-4xl lg:text-5xl text-center text-[#684034] font-bold my-8">About Us</h1>
         </div>
+
+        <!-- =============================== Image Section =============================== -->
+        <figure class="flex flex-col items-center">
+            <a href="https://sprouleinsurance.com/wp-content/uploads/2021/03/life-insurance-family-with-their-dog.jpg" target="_blank">
+                <img src="/Images/Dogs/FaqPetAdoption.jpg" alt="Adopted dog from Woolly Friends"
+                     title="Adopted dog from Woolly Friends"
+                     class="rounded-xl w-full max-w-4xl object-cover" />
+            </a>
+            <figcaption class="text-center text-[#684034] text-base font-bold mt-4">
+                A Happy Family with The Adopted Doggy From Woolly Friends
+            </figcaption>
+        </figure>
 
         <!-- =============================== About Us Container =============================== -->
+        <div class="border-2 border-[#684034] backdrop-blur-[20px] rounded-xl p-6 sm:p-10 mt-10 w-full text-justify">
 
-        <div class="border-2 border-[#684034] backdrop-blur-[20px] rounded-xl p-5 m-8">
-            <section class="bg-white py-12 px-6 md:px-16">
-                <div class="max-w-4xl mx-auto text-justify">
-                    <h2 class="text-3xl md:text-4xl font-bold text-[#684034] mb-6 border-b pb-2">Welcome to Woolly Friends!</h2>
-                    <p class="text-lg leading-relaxed mb-6">
-                        Your go-to platform for finding pets in need of a home.
-                    </p>
-                    <p class="text-lg leading-relaxed mb-6">
-                        At our core, we believe every animal deserves a second chance—a safe place to heal, and a family to call their own. Our mission is to provide an organized, user-friendly space where potential owners can discover available pets and give them the loving home they deserve. Whether you're looking for a loyal dog, a playful kitten, or a quiet companion, our platform allows you to browse available pets easily and find the one that’s right for you.
-                    </p>
-                    <p class="text-lg leading-relaxed mb-6">
-                        We are committed to:
-                    </p>
-                    <ul class="text-base space-y-4 list-disc pl-6 mb-6">
-                        <li>
-                            <span class="font-semibold">Helping people find pets.</span> Our goal is to provide an easy and accessible way for anyone to discover and adopt pets in need of a home.
-                        </li>
-                        <li>
-                            <span class="font-semibold">Providing shelter and care.</span> We offer a secure and nurturing environment for stray, abandoned, and rescued animals, giving them the medical attention, nourishment, and comfort they need while waiting for adoption.
-                        </li>
-                        <li>
-                            <span class="font-semibold">Promoting animal welfare.</span> Every pet deserves a life filled with love and dignity. Through proper veterinary care, nutrition, and attention, we strive to enhance their well-being and quality of life.
-                        </li>
-                        <li>
-                            <span class="font-semibold">Encouraging responsible pet ownership.</span> Beyond adoption, we promote compassion, awareness, and the lifelong joys and responsibilities that come with caring for an animal.
-                        </li>
-                    </ul>
-                    <p class="text-lg leading-relaxed">
-                        At <span class="font-semibold">Woolly Friends</span>, we’re here to help you find a furry friend—not just to adopt, but to welcome into your life.
-                    </p>
-                </div>
+            <section class="text-base sm:text-lg leading-relaxed space-y-6">
+                <h2 class="text-2xl sm:text-3xl font-bold text-[#684034] border-b pb-2">Welcome to Woolly Friends!</h2>
+
+                <p>Your go-to platform for finding pets in need of a home.</p>
+
+                <p>
+                    At our core, we believe every animal deserves a second chance — a safe place to heal, and a family to call their own.
+                    Our mission is to provide an organized, user-friendly space where potential owners can discover available pets and
+                    give them the loving home they deserve. Whether you're looking for a loyal dog, a playful kitten, or a quiet companion,
+                    our platform allows you to browse available pets easily and find the one that’s right for you.
+                </p>
+
+                <p>We are committed to:</p>
+
+                <ul class="list-disc pl-6 space-y-4">
+                    <li>
+                        <span class="font-semibold">Helping people find pets.</span>
+                        Our goal is to provide an easy and accessible way for anyone to discover and adopt pets in need of a home.
+                    </li>
+                    <li>
+                        <span class="font-semibold">Providing shelter and care.</span>
+                        We offer a secure and nurturing environment for stray, abandoned, and rescued animals,
+                        giving them the medical attention, nourishment, and comfort they need while waiting for adoption.
+                    </li>
+                    <li>
+                        <span class="font-semibold">Promoting animal welfare.</span>
+                        Every pet deserves a life filled with love and dignity. Through proper veterinary care, nutrition,
+                        and attention, we strive to enhance their well-being and quality of life.
+                    </li>
+                    <li>
+                        <span class="font-semibold">Encouraging responsible pet ownership.</span>
+                        Beyond adoption, we promote compassion, awareness, and the lifelong joys and responsibilities
+                        that come with caring for an animal.
+                    </li>
+                </ul>
+
+                <p>
+                    At <span class="font-semibold">Woolly Friends</span>, we’re here to help you find a furry friend — not just to adopt,
+                    but to welcome into your life.
+                </p>
             </section>
+
         </div>
-
-    
-
     </main>
+
 
     <script>
         document.addEventListener("DOMContentLoaded", function () {
