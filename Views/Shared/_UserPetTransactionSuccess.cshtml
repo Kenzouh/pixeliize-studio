@@ -1,0 +1,153 @@
+﻿        <!-- Orders Listings -->
+<div class="w-full md:w-3/4 px-3">
+    <!-- Ongoing -->
+    <h1 class="text-2xl font-bold text-[#684034] mt-4 mb-2">Ongoing</h1>
+
+    <!-- Flex container: Left button + Grid + Right button -->
+    <div class="flex items-center justify-center gap-4">
+
+        <!-- Left Button -->
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+        </button>
+
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            @for (int i = 0; i < 3; i++)
+            {   
+                
+                <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:z-10 hover:cursor-pointer transform transition duration-300 ease-in-out">
+
+                    <!-- Pet Image -->
+                    <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+
+                    <!-- Heart Icon Inside -->
+                    <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                        <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                    </div>
+
+                    <!-- Pet Info -->
+                    <div class="bg-white px-4 pt-4 pb-2">
+                        <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                        <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                        <p class="text-blue-700 sm:p-1">Gender</p>
+                        <p class="text-black sm:p-1">Age</p>
+                        <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                    </div>
+                </div>
+
+            }
+        </div>
+
+        <!-- Right Button -->
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+        </button>
+    </div>
+
+
+    <!-- Success -->
+    <h1 class="text-2xl font-bold text-green-600 mt-4 mb-2">Success</h1>
+    <!-- Flex container: Left button + Grid + Right button -->
+    <div class="flex items-center justify-center gap-4">
+
+        <!-- Left Button -->
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+        </button>
+
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            @for (int i = 0; i < 3; i++)
+            {
+                <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:z-10 hover:cursor-pointer transform transition duration-300 ease-in-out">
+                    
+                        <!-- Pet Image -->
+                        <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+
+                        <!-- Heart Icon Inside -->
+                        <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                            <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                        </div>
+
+                        <!-- Pet Info -->
+                        <div class="bg-white px-4 pt-4 pb-2">
+                            <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                            <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                            <p class="text-blue-700 sm:p-1">Gender</p>
+                            <p class="text-black sm:p-1">Age</p>
+                            <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+
+                            <div class="flex justify-center">
+                            <a href="/PetsReview/Index" class="bg-[#fffca3] hover:bg-[#f3ef88] active:bg-[#ffd78b] py-2 px-6 border-2 border-[#888400] my-4 rounded-full">
+                                    Rate
+                                </a>
+                            </div>
+                        </div>
+                    
+                </div>
+            }
+        </div>
+
+        <!-- Right Button -->
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+        </button>
+    </div>
+
+    <!-- Failed -->
+    <h1 class="text-2xl font-bold text-red-600 mt-10 mb-2">Failed</h1>
+    <!-- Flex container: Left button + Grid + Right button -->
+    <div class="flex items-center justify-center gap-4">
+
+        <!-- Left Button -->
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+                <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+            </svg>
+        </button>
+
+        <!-- Grid Container -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+            @for (int i = 0; i < 3; i++)
+            {
+                <a href="/UserProfile/Index">
+                    <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:z-10 hover:cursor-pointer transform transition duration-300 ease-in-out">
+
+                        <!-- Pet Image -->
+                        <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
+
+                        <!-- Heart Icon Inside -->
+                        <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
+                            <i class="bi bi-suit-heart text-red-600 text-xl"></i>
+                        </div>
+
+                        <!-- Pet Info -->
+                        <div class="bg-white px-4 pt-4 pb-2">
+                            <h3 class="font-bold text-[#684034] sm:p-1 xl:text-3xl">Name</h3>
+                            <p class="text-black flex items-center gap-1 sm:p-1">Breed</p>
+                            <p class="text-blue-700 sm:p-1">Gender</p>
+                            <p class="text-black sm:p-1">Age</p>
+                            <div class="font-bold text-green-700 sm:p-1">&#8369;5,000</div>
+                        </div>
+                    </div>
+                </a>
+            }
+        </div>
+
+        <!-- Right Button -->
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+                <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+            </svg>
+        </button>
+    </div>
+</div>

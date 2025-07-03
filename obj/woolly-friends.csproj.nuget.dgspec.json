@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj": {}
+    "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3-clone1\\woolly-friends\\woolly-friends.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj": {
+    "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3-clone1\\woolly-friends\\woolly-friends.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj",
+        "projectUniqueName": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3-clone1\\woolly-friends\\woolly-friends.csproj",
         "projectName": "woolly-friends",
-        "projectPath": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\woolly-friends.csproj",
+        "projectPath": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3-clone1\\woolly-friends\\woolly-friends.csproj",
         "packagesPath": "C:\\Users\\Chu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3\\woolly-friends\\obj\\",
+        "outputPath": "C:\\Users\\Chu\\source\\repos\\woolly-friends-july-3-clone1\\woolly-friends\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
