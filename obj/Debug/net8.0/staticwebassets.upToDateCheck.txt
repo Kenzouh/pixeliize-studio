@@ -23,6 +23,7 @@ wwwroot\Icons\RightArrow.svg
 wwwroot\Icons\Search.svg
 wwwroot\Icons\Settings.svg
 wwwroot\Icons\SignUp.svg
+wwwroot\Icons\Star.svg
 wwwroot\Icons\Telephone.svg
 wwwroot\Icons\Trash.svg
 wwwroot\Images\badge-check.svg

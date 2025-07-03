@@ -1,0 +1,139 @@
+﻿@{
+    ViewData["Title"] = "Pet Adoption FAQs";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Pet Adoption FAQs</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="FAQs page about how to adopt a pet in the Woolly Friends web app." />
+    <meta name="keywords" content="FAQs, Questions, Pets, Adopt, Adoption" />
+    <meta name="author" content="Kenzo, Lawrenz, John Cee, Jericho, George" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white font-sans">
+
+    <main>
+        
+        <div class="border-2 border-[#684034] rounded-lg py-8">
+            <h1 class="text-4xl text-center text-[#684034] font-bold py-2">Pet Rating System</h1>
+
+			<!-- Top Section -->
+			<div class="container px-4 py-5 flex gap-5 justify-center">
+				<div class="flex flex-col justify-start gap-2.5">
+					<div class="py-2">
+						<img class="w-24 h-24" src="~/images/Skibidi.png" />
+					</div>
+					<div class="py-2">
+						<img class="w-24 h-24" src="~/images/Skibidi.png" />
+					</div>
+					<div class="py-2">
+						<img class="w-24 h-24" src="~/images/Skibidi.png" />
+					</div>
+					<div class="py-2">
+						<img class="w-24 h-24" src="~/images/Skibidi.png" />
+					</div>
+				</div>
+
+				<div class="flex items-center gap-4">
+
+					<!-- Left Button -->
+					<button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+							<path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
+						</svg>
+					</button>
+
+					<img class="w-[500px] h-[500px]" src="~/images/Skibidi.png" />
+
+					<!-- Right Button -->
+					<button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+						<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
+							<path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
+						</svg>
+					</button>
+				</div>
+
+
+				<div class="px-4 pt-4 pb-2 max-w-full border-2 rounded-lg border-[#684034] flex flex-col justify-between h-[450px]">
+					<div>
+						<h3 class="text-[#684034] text-6xl text-center font-bold pt-4">Skibidi</h3>
+
+
+						<div class="flex items-center justify-center gap-2 md:text-lg text-black">
+							<span class="font-bold">By: Woolly Friends</span>
+						</div>
+
+						<hr class="border border-[#684034] my-2" />
+
+
+                        <!-- ======== Pet Listing Form ======== -->
+                        <form id="petListingForm" class="py-4">
+
+							<div>
+								<label for="description" class="block text-sm font-medium text-black mb-2">
+									Rating <span class="font-thin">(1 = lowest | 5 = highest)</span>
+								</label>
+
+								<!-- Stars-->
+								<div class="py-2 flex justify-center gap-1">
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffc860">
+										<path d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z" />
+									</svg>
+
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffc860">
+										<path d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z" />
+									</svg>
+
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffc860">
+										<path d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z" />
+									</svg>
+
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffc860">
+										<path d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z" />
+									</svg>
+
+									<svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#ffc860">
+										<path d="m305-704 112-145q12-16 28.5-23.5T480-880q18 0 34.5 7.5T543-849l112 145 170 57q26 8 41 29.5t15 47.5q0 12-3.5 24T866-523L756-367l4 164q1 35-23 59t-56 24q-2 0-22-3l-179-50-179 50q-5 2-11 2.5t-11 .5q-32 0-56-24t-23-59l4-165L95-523q-8-11-11.5-23T80-570q0-25 14.5-46.5T135-647l170-57Zm49 69-194 64 124 179-4 191 200-55 200 56-4-192 124-177-194-66-126-165-126 165Zm126 135Z" />
+									</svg>
+								</div>
+							</div>
+                            <!-- ===== Description ===== -->
+                            <div class="mb-4">
+
+                                <label for="description" class="block text-sm font-medium text-black mb-2">
+									Description
+                                </label>
+
+                                <div class="flex items-center gap-3">
+
+                                    <textarea id="message" name="message" rows="3" placeholder="I love my pet! Woolly Friends is the best!"
+                                              class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
+											  focus:outline-none focus:ring-2 focus:ring-[#715a44] text-black resize-none"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Submit -->
+                            <div class="flex justify-end gap-3 mt-6">
+								<button type="submit" class="bg-[#684034] text-white font-bold py-2 px-8 my-4 rounded-full hover:bg-[#5e3a2f]">Rate</button>
+                            </div>
+                        </form>
+					</div>
+
+
+				</div>
+			</div>
+
+
+        </div>
+
+    </main>
+
+    <script src="~/js/main.js"></script>
+</body>
+</html>
