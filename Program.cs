@@ -11,11 +11,16 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddSession();
+
+// General
+builder.Services.AddScoped<IPaginationService, PaginationService>();
+
+// UserServices
+builder.Services.AddScoped<IPasswordHasherService, PasswordHasherService>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
 builder.Services.AddScoped<IUserAuthService, UserAuthService>();
-builder.Services.AddScoped<IUserStatusService, UserManagementService>();
-builder.Services.AddScoped<IUserRoleService, UserManagementService>();
-builder.Services.AddScoped<IPaginationService, PaginationService>();
+builder.Services.AddScoped<IUserRoleService, UserRoleService>();
+builder.Services.AddScoped<IUserStatusService, UserStatusService>();
 
 
 // For DB connection
