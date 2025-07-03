@@ -36,5 +36,8 @@ namespace woolly_friends.Models.Tables
         public bool IsActive { get; set; } = true;
         public Role UserRole { get; set; } = Role.User;
         public DateTime DateCreated { get; set; } = DateTime.UtcNow;
+
+        public virtual AdditionalUserInfo? AdditionalUserInfo { get; set; }
+
     }
 }

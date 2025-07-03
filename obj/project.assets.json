@@ -4767,23 +4767,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nayswan\\.nuget\\packages\\": {},
+    "C:\\Users\\user\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nayswan\\Source\\Repos\\woolly-friends-responsive-umay\\woolly-friends.csproj",
+      "projectUniqueName": "C:\\Users\\user\\Source\\Repos\\woolly-friends\\woolly-friends.csproj",
       "projectName": "woolly-friends",
-      "projectPath": "C:\\Users\\Nayswan\\Source\\Repos\\woolly-friends-responsive-umay\\woolly-friends.csproj",
-      "packagesPath": "C:\\Users\\Nayswan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nayswan\\Source\\Repos\\woolly-friends-responsive-umay\\obj\\",
+      "projectPath": "C:\\Users\\user\\Source\\Repos\\woolly-friends\\woolly-friends.csproj",
+      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\user\\Source\\Repos\\woolly-friends\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Nayswan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4810,7 +4810,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "9.0.300"
+      "SdkAnalysisLevel": "9.0.200"
     },
     "frameworks": {
       "net8.0": {
@@ -4854,7 +4854,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.300/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
