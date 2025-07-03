@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using woolly_friends.Models.ViewModels.UserAuth;
 using woolly_friends.Services.Interfaces.UserServices;
 
@@ -38,6 +39,7 @@ namespace woolly_friends.Controllers
             HttpContext.Session.SetInt32("UserId", user.Id);
             HttpContext.Session.SetString("Username", user.Username);
             HttpContext.Session.SetString("UserImgPath", user.UserImgPath);
+            HttpContext.Session.SetString("UserRole", user.UserRole.ToString());
 
             // redirects to home if successful
             return RedirectToAction("Index", "Home");
