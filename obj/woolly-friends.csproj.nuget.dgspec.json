@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LM\\source\\repos\\woolly-friends\\woolly-friends.csproj": {}
+    "E:\\woolly-friends\\woolly-friends.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LM\\source\\repos\\woolly-friends\\woolly-friends.csproj": {
+    "E:\\woolly-friends\\woolly-friends.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LM\\source\\repos\\woolly-friends\\woolly-friends.csproj",
+        "projectUniqueName": "E:\\woolly-friends\\woolly-friends.csproj",
         "projectName": "woolly-friends",
-        "projectPath": "C:\\Users\\LM\\source\\repos\\woolly-friends\\woolly-friends.csproj",
-        "packagesPath": "C:\\Users\\LM\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LM\\source\\repos\\woolly-friends\\obj\\",
+        "projectPath": "E:\\woolly-friends\\woolly-friends.csproj",
+        "packagesPath": "C:\\Users\\marqu\\.nuget\\packages\\",
+        "outputPath": "E:\\woolly-friends\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\LM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marqu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
