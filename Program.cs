@@ -15,13 +15,16 @@ builder.Services.AddSession();
 // General
 builder.Services.AddScoped<IPaginationService, PaginationService>();
 builder.Services.AddScoped<IUserQueryService, UserQueryService>();
+builder.Services.AddScoped<IFileUploadService, FileUploadService>();
 
 // UserServices
 builder.Services.AddScoped<IPasswordHasherService, PasswordHasherService>();
 builder.Services.AddScoped<IRegistrationService, RegistrationService>();
+builder.Services.AddScoped<IUpdateProfileService, UpdateProfileService>();
 builder.Services.AddScoped<IUserAuthService, UserAuthService>();
 builder.Services.AddScoped<IUserRoleService, UserRoleService>();
 builder.Services.AddScoped<IUserStatusService, UserStatusService>();
+
 
 
 // For DB connection

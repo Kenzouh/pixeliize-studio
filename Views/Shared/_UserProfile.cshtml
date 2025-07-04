@@ -1,6 +1,6 @@
 ﻿<div class="container mx-auto mt-8 px-4 flex items-start gap-8">
     <div class="w-full md:w-1/4 mr-4">
-        <img src="@Model.UserImgPath" alt="Profile Picture" class="w-full max-h-72 object-cover border-4 border-black rounded-md" />
+        <img src="@Model.User.UserImgPath" alt="Profile Picture" class="w-full max-h-72 object-cover border-4 border-black rounded-md" />
     </div>
 
 
@@ -17,7 +17,7 @@
             </div>
 
             <div class="flex items-center gap-4 mb-4">
-                <h1 class="text-4xl font-bold text-[#684034] font-serif">@Model.Username</h1>
+                <h1 class="text-4xl font-bold text-[#684034] font-serif">@Model.User.Username</h1>
                 <img src="~/Images/VerifiedIcon.png" alt="Verified" class="w-8 h-8" />
             </div>
 
@@ -65,18 +65,18 @@
                 <button onclick="closeProfileModal()" class="text-gray-600 hover:text-red-500 text-2xl font-bold">&times;</button>
             </div>
 
-            <form id="editProfileForm">
 
-
+            <form id="editProfileForm" method="post" enctype="multipart/form-data" asp-action="EditProfile" asp-controller="UserProfile">
+                @Html.AntiForgeryToken()
 
                 <!-- ===== First Name ===== -->
                 <div class="mb-4">
-                    <label class="block text-sm font-medium mb-2">First Name <span class="text-red-500">*</span></label>
+                    <label class="block text-sm font-medium mb-2">First Name</label>
 
                     <div class="flex items-center gap-3">
                         <input type="text" name="FirstName" placeholder="Hansel"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
-                                focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
+                                focus:outline-none focus:ring-2 focus:ring-[#715a44]"/>
 
 
                         <!-- Eye SVG-->
@@ -106,12 +106,12 @@
 
                 <!-- ===== Last Name ===== -->
                 <div class="mb-4">
-                    <label class="block text-sm font-medium mb-2">Last Name <span class="text-red-500">*</span></label>
+                    <label class="block text-sm font-medium mb-2">Last Name</label>
 
                     <div class="flex items-center gap-3">
-                        <input type="text" name="FirstName" placeholder="Armani"
+                        <input type="text" name="LastName" placeholder="Armani"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
-                                focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
+                                focus:outline-none focus:ring-2 focus:ring-[#715a44]"/>
 
 
                         <!-- Eye SVG-->
@@ -142,15 +142,13 @@
 
                 <!-- ===== Phone Number ===== -->
                 <div class="mb-4">
-                    <label for="phone" class="block text-sm font-medium text-black mb-2">
-                        Phone Number <span class="text-red-500">*</span>
-                    </label>
+                    <label for="phone" class="block text-sm font-medium text-black mb-2">Phone Number</label>
 
                     <div class="flex items-center gap-3">
 
-                        <input type="text" id="phone" name="UserPhone" placeholder="0923*******"
+                        <input type="text" id="phone" name="UserContact" placeholder="0923*******"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
-                                    focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
+                                    focus:outline-none focus:ring-2 focus:ring-[#715a44]"/>
 
                         <!-- Eye SVG -->
                         <button type="button" title="Hide">
@@ -176,14 +174,14 @@
 
                 <!-- ===== Email ===== -->
                 <div class="mb-4">
-                    <label for="contact" class="block text-sm font-medium text-black mb-2">Email <span class="text-red-500">*</span></label>
+                    <label for="contact" class="block text-sm font-medium text-black mb-2">Email</label>
 
                     <div class="flex items-center gap-3">
 
 
                         <input type="text" id="address" name="UserEmail" placeholder="olaf@gmail.com"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
-                                focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
+                                focus:outline-none focus:ring-2 focus:ring-[#715a44]"/>
 
 
                         <!-- Eye SVG-->
@@ -214,14 +212,14 @@
 
                 <!-- ===== Address ===== -->
                 <div class="mb-4">
-                    <label for="home-address" class="block text-sm font-medium text-black mb-2">Home Address <span class="text-red-500">*</span></label>
+                    <label for="home-address" class="block text-sm font-medium text-black mb-2">Home Address</label>
 
                     <div class="flex items-center gap-3">
 
 
-                        <input type="text" id="home-address" name="UserEmail" placeholder="123 Sesame Street"
+                        <input type="text" id="home-address" name="HomeAddress" placeholder="123 Sesame Street"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
-                                focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
+                                focus:outline-none focus:ring-2 focus:ring-[#715a44]"/>
 
 
                         <!-- Eye SVG-->
@@ -251,14 +249,14 @@
 
                 <!-- ===== Birthday ===== -->
                 <div class="mb-4">
-                    <label for="birthday" class="block text-sm font-medium text-black mb-2">Birthday <span class="text-red-500">*</span></label>
+                    <label for="birthday" class="block text-sm font-medium text-black mb-2">Birthday</label>
 
                     <div class="flex items-center gap-3">
 
 
-                        <input type="date" id="birthday" name="birthday" placeholder="olaf@gmail.com"
+                        <input type="date" id="birthday" name="Birthday" placeholder="olaf@gmail.com"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
-                                focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
+                                focus:outline-none focus:ring-2 focus:ring-[#715a44]"/>
 
 
                         <!-- Eye SVG-->
@@ -289,7 +287,7 @@
                     <label class="text-black" for="profile-picture">Profile Picture:</label>
                 </div>
                 <!--Accept attribute: accepts a specific file type.-->
-                <input class="" type="file" id="file" accept="image/png, image/jpeg"><br><br>
+                <input class="" type="file" id="file" name="NewProfileImage" accept="image/png, image/jpeg"><br><br>
 
 
 
