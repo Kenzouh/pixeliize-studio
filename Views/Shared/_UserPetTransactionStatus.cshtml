@@ -1,20 +1,20 @@
-﻿        <!-- Orders Listings -->
+﻿<!-- Orders Listings -->
 <div class="w-full md:w-3/4 px-3">
     <!-- Ongoing -->
     <h1 class="text-2xl font-bold text-[#684034] mt-4 mb-2">Ongoing</h1>
 
     <!-- Flex container: Left button + Grid + Right button -->
-    <div class="flex items-center justify-center gap-4">
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-4 w-full">
 
         <!-- Left Button -->
-        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e] md:mt-28">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
                 <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
-                </svg>
+            </svg>
         </button>
 
         <!-- Grid Container -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
             @for (int i = 0; i < 3; i++)
             {
                 <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:z-10 hover:cursor-pointer transform transition duration-300 ease-in-out">
@@ -40,10 +40,10 @@
         </div>
 
         <!-- Right Button -->
-        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e] md:mt-28">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
                 <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
-                </svg>
+            </svg>
         </button>
     </div>
 
@@ -51,17 +51,17 @@
     <!-- Success -->
     <h1 class="text-2xl font-bold text-green-600 mt-4 mb-2">Success</h1>
     <!-- Flex container: Left button + Grid + Right button -->
-    <div class="flex items-center justify-center gap-4">
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-4 w-full">
 
         <!-- Left Button -->
-        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e] md:mt-28">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
                 <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
             </svg>
         </button>
 
         <!-- Grid Container -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
             @for (int i = 0; i < 3; i++)
             {
                 <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:z-10 hover:cursor-pointer transform transition duration-300 ease-in-out">
@@ -87,7 +87,7 @@
         </div>
 
         <!-- Right Button -->
-        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e] md:mt-28">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
                 <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
             </svg>
@@ -97,17 +97,17 @@
     <!-- Failed -->
     <h1 class="text-2xl font-bold text-red-600 mt-10 mb-2">Failed</h1>
     <!-- Flex container: Left button + Grid + Right button -->
-    <div class="flex items-center justify-center gap-4">
+    <div class="flex flex-col md:flex-row items-center md:items-start gap-4 w-full">
 
         <!-- Left Button -->
-        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e] md:mt-28">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
                 <path d="M560-240 320-480l240-240 56 56-184 184 184 184-56 56Z" />
             </svg>
         </button>
 
         <!-- Grid Container -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 w-full">
             @for (int i = 0; i < 3; i++)
             {
                 <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:shadow-2xl hover:z-10 hover:cursor-pointer transform transition duration-300 ease-in-out">
@@ -133,7 +133,7 @@
         </div>
 
         <!-- Right Button -->
-        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e]">
+        <button class="bg-[#c39383] shadow-lg text-2xl rounded-full w-10 h-10 flex items-center justify-center hover:bg-[#b58778] active:bg-[#a77c6e] md:mt-28">
             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#684034">
                 <path d="M504-480 320-664l56-56 240 240-240 240-56-56 184-184Z" />
             </svg>

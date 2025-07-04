@@ -24,22 +24,21 @@
     <hr class="mt-6 border border-[#412c25]" />
 
     <!-- Buttons -->
-    <div class="flex gap-2 mt-6 px-4">
-        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/Index'">Products</button>
-        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/Orders'">Orders</button>
-        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/Reviews'">Reviews</button>
-        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]" onclick="window.location.href='/Profile/UserManagement'">User Management</button>
+    <div class="flex flex-wrap gap-2 mt-6 px-4 justify-center sm:justify-start">
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778]" onclick="window.location.href='/Profile/Index'">Products</button>
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778]" onclick="window.location.href='/Profile/Orders'">Orders</button>
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778]" onclick="window.location.href='/Profile/Reviews'">Reviews</button>
+        <button class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778]" onclick="window.location.href='/Profile/UserManagement'">User Management</button>
     </div>
 
 
     <!-- Header -->
     @Html.Partial("_SearchBarHeader")
 
-    <!-- Container split into sidebar and main -->
-    <div class="container mx-auto mt-8 px-4 flex gap-4">
+    <div class="container mx-auto mt-8 px-4 flex flex-col md:flex-row gap-4">
 
         <!-- Filter Sidebar -->
-        <div class="w-[240px] shrink-0">
+        <div class="w-full md:w-[240px] shrink-0">
             @Html.Partial("_FilterSidebar")
         </div>
 
@@ -102,7 +101,7 @@
                         Price <span class="text-red-500">*</span>
                     </label>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                         <!-- AAAAAAA -->
                         <input type="number" id="price" name="price" min="1" step="1"
                                placeholder="100"
@@ -123,7 +122,7 @@
                 <div class="mb-4">
                     <label class="block text-sm font-medium mb-2">Name <span class="text-red-500">*</span></label>
 
-                    <div class="flex items-center gap-3">
+                    <<div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                         <input type="text" name="FirstName" placeholder="Cookie"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                                 focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
@@ -146,7 +145,7 @@
                 <div class="mb-4">
                     <label class="block text-sm font-medium mb-2">Pet Type <span class="text-red-500">*</span></label>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                         <input type="text" name="PetType" placeholder="Cat"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                                 focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
@@ -170,7 +169,7 @@
                 <div class="mb-4">
                     <label class="block text-sm font-medium mb-2">Breed <span class="text-red-500">*</span></label>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                         <input type="text" name="Breed" placeholder="German Shepherd"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
                                 focus:outline-none focus:ring-2 focus:ring-[#715a44]" required />
@@ -212,7 +211,7 @@
                 <div class="mb-4">
                     <label for="birthday" class="block text-sm font-medium text-black mb-2">Date of Birth <span class="text-red-500">*</span></label>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
 
 
                         <input type="date" id="birthday" name="birthday" placeholder="olaf@gmail.com"
@@ -241,7 +240,7 @@
                         Location <span class="text-red-500">*</span>
                     </label>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
 
                         <input type="text" id="address" name="Location" placeholder="28-A Ravioli Street"
                                class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
@@ -265,7 +264,7 @@
                     <label class="text-black" for="pet-picture">Pet Picture <span class="text-red-500">*</span></label>
                 </div>
                 <!--Accept attribute: accepts a specific file type.-->
-                <input class="" type="file" id="file" accept="image/png, image/jpeg"><br><br>
+                <input class="w-full sm:w-auto mt-2" type="file" id="file" accept="image/png, image/jpeg"><br><br>
 
 
                 <!-- ===== Description ===== -->
@@ -276,7 +275,7 @@
                         Description <span class="text-red-500">*</span>
                     </label>
 
-                    <div class="flex items-center gap-3">
+                    <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
                         
                         <textarea id="message" name="message" rows="3" placeholder="Cutie-Pie is such a sweet cat! Adopt her now!"
                                   class="placeholder:text-slate-500 bg-transparent border border-[#684034] rounded-lg w-full px-4 py-2
@@ -285,7 +284,7 @@
                 </div>
 
                 <!-- Submit -->
-                <div class="flex justify-end gap-3 mt-6">
+                <div class="flex flex-col sm:flex-row justify-end gap-3 mt-6">
                     <button type="button" onclick="closeProfileModal()" class="bg-gray-300 text-gray-700 px-4 py-2 rounded-md hover:bg-gray-400">Cancel</button>
                     <button type="submit" class="bg-[#684034] text-white px-4 py-2 rounded-md hover:bg-[#533125]">Save Changes</button>
                 </div>
@@ -301,6 +300,12 @@
                 });
             });
         });
+
+        // Function for the hidden sidebar (for small screens)
+        function toggleFilterSidebar() {
+            const sidebar = document.getElementById('mobileFilterSidebar');
+            sidebar.classList.toggle('hidden');
+        }
     </script>
 
     <script src="~/js/main.js"></script>
