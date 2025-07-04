@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("woolly-friends")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+7a71f75a4d288f4bb812d98f344f5d85eb73dc9e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+66727054b634c9c95cdef6a602e341ca7bfc6838")]
 [assembly: System.Reflection.AssemblyProductAttribute("woolly-friends")]
 [assembly: System.Reflection.AssemblyTitleAttribute("woolly-friends")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

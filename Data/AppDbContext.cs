@@ -24,6 +24,7 @@ namespace woolly_friends.Data
         }
 
         public DbSet<AdditionalUserInfo> AdditionalUserInfo { get; set; }
+        public DbSet<Pet> Pets { get; set; }
 
     }
 }
