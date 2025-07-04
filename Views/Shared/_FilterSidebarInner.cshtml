@@ -1,0 +1,52 @@
+﻿<!-- _FilterSidebarInner.cshtml -->
+<h4 class="font-bold text-lg flex items-center mb-4">
+    Refine your search <i class="bi bi-filter ml-2"></i>
+</h4>
+
+<!-- Transaction -->
+<div class="mb-4">
+    <h6 class="font-bold mb-2">Transaction</h6>
+    <label class="block"><input type="checkbox" class="mr-2">Adopt</label>
+    <label class="block"><input type="checkbox" class="mr-2">Buy</label>
+</div>
+
+<!-- Species -->
+<div class="mb-4">
+    <h6 class="font-bold mb-2">Species</h6>
+    <label class="block"><input type="checkbox" class="mr-2">Cats (0)</label>
+    <label class="block"><input type="checkbox" class="mr-2">Dogs (0)</label>
+    <label class="block"><input type="checkbox" class="mr-2">Other Pets (0)</label>
+</div>
+
+<!-- Gender -->
+<div class="mb-4">
+    <h6 class="font-bold mb-2">Gender</h6>
+    <label class="block"><input type="checkbox" class="mr-2">Male (0)</label>
+    <label class="block"><input type="checkbox" class="mr-2">Female (0)</label>
+</div>
+
+<!-- Age -->
+<div class="mb-4">
+    <h6 class="font-bold mb-2">Age</h6>
+    <div class="flex gap-2 items-center justify-center">
+        <input type="text" placeholder="Min" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+        <span>–</span>
+        <input type="text" placeholder="Max" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+    </div>
+</div>
+
+<!-- Price -->
+<div class="mb-4">
+    <h6 class="font-bold mb-2">Price</h6>
+    <div class="flex gap-2 items-center justify-center">
+        <input type="text" placeholder="Min" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+        <span>–</span>
+        <input type="text" placeholder="Max" class="w-24 border border-[#412c25] focus:outline-none focus:ring-2 focus:ring-[#684034] rounded-md p-2" />
+    </div>
+</div>
+
+<!-- Buttons -->
+<div class="flex justify-end w-full gap-2">
+    <button class="bg-[#cfcfcf] hover:bg-[#c4c4c4] active:bg-[#b8b8b8] px-4 py-2 rounded-full border-2 border-[#412c25]">Clear</button>
+    <button class="bg-[#c39383] hover:bg-[#b58778] active:bg-[#a77c6e] px-4 py-2 rounded-full border-2 border-[#412c25]">Filter</button>
+</div>

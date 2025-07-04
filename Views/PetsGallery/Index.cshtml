@@ -19,45 +19,16 @@
 <body>
 
     <!-- Header -->
-    <div class="container mx-auto mt-4 px-4">
-        <div class="flex justify-between border border-[#412c25] items-center bg-[#d0b1b1] px-6 py-2 rounded-full">
-
-            <div class="flex items-center gap-3">
-                <h3>
-                    Displaying <span class="font-bold">1</span> to <span class="font-bold">39</span> of <span class="font-bold">538</span> pets
-                </h3>
-            </div>
-
-            <div class="flex items-center gap-2">
-                <label for="search" class="font-medium text-black">Search:</label>
-
-
-                <div class="relative w-64">
-                    <!-- ========== Search Icon ==========-->
-                    <svg class="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 fill-[#412c25]"
-                         xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed">
-                        <path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z" />
-                    </svg>
-
-                    <input type="text"
-                           id="search"
-                           class="border border-gray-300 rounded-full pl-10 pr-4 py-2 w-full focus:outline-none focus:ring-2 focus:ring-[#684034]"
-                           placeholder="Search users...">
-                </div>
-
-            </div>
-        </div>
-    </div>
+    @Html.Partial("_SearchBarHeader")
 
 
     <!-- Filter + Pet Cards -->
-    <div class="container mx-auto mt-8 px-4 flex flex-wrap">
+    <div class="container mx-auto mt-8 px-4 flex flex-col md:flex-row gap-6">
         <!-- Filter Sidebar -->
-
         @Html.Partial("_FilterSidebar")
 
         <!-- Pet Cards -->
-        <div class="w-full md:w-3/4 p-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="w-full md:w-3/4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
 
             <!-- Card 1 -->
             <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
@@ -119,7 +90,7 @@
                 </div>
             </div>
 
-           <!-- Card 5 -->
+            <!-- Card 5 -->
             <div class="relative rounded-lg overflow-hidden shadow-lg hover:scale-105 hover:cursor-pointer transition-transform ">
                 <img src="~/images/Chewy.jpg" alt="Dog" class="w-full h-64 object-cover">
                 <div class="absolute top-2 right-2 w-10 h-10 bg-white rounded-full flex items-center justify-center shadow cursor-pointer">
@@ -183,6 +154,7 @@
 
 
     <!-- Pagination -->
+    @Html.Partial("_Pagination")
 
 
     <script>
@@ -194,6 +166,12 @@
                 });
             });
         });
+
+        // Function for the hidden sidebar (for small screens)
+        function toggleFilterSidebar() {
+            const sidebar = document.getElementById('mobileFilterSidebar');
+            sidebar.classList.toggle('hidden');
+        }
     </script>
 
     <script src="~/js/main.js"></script>

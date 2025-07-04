@@ -32,7 +32,7 @@
 
     <!-- Tabs (Orders + Wishlist only) -->
     <!-- Buttons -->
-    <div class="flex gap-2 mt-6 px-4">
+    <div class="flex flex-wrap gap-2 mt-6 px-4 justify-center sm:justify-start">
         <form method="get" asp-action="ViewSection" asp-controller="UserProfile">
             <input type="hidden" name="section" value="wishlist" />
             <button type="submit" class="bg-[#c39383] text-[#241612] border border-[#684034] rounded-lg font-black text-lg min-w-[180px] h-[50px] hover:bg-[#b58778] active:bg-[#a77c6e]">
@@ -55,7 +55,7 @@
     @Html.Partial("_SearchBarHeader")
 
     <!-- Filter -->
-    <div class="container mx-auto mt-8 px-4 flex flex-wrap">
+    <div class="container mx-auto mt-8 px-4 flex flex-col md:flex-row gap-6">
 
         <!-- Sidebar -->
         @Html.Partial("_FilterSidebar")
@@ -63,8 +63,10 @@
         <!-- AAAAAAAA -->
         @if (ViewBag.Tab == "wishlist")
         {
-            @Html.Partial("_WishlistContent")
-            @Html.Partial("_Pagination")
+            <div class="flex flex-col gap-6 w-full">
+                @Html.Partial("_WishlistContent")
+                @Html.Partial("_Pagination")
+            </div>
         }
         else if (ViewBag.Tab == "orders")
         {
@@ -85,6 +87,11 @@
                     });
                 });
             });
+
+            function toggleFilterSidebar() {
+                const sidebar = document.getElementById('mobileFilterSidebar');
+                sidebar.classList.toggle('hidden');
+            }
         </script>
     }
 
