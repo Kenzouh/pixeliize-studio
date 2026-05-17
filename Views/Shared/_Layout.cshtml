@@ -163,7 +163,7 @@
 
                     <!-- Pets Gallery -->
                     <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer @(currentController == "PetsGallery" && currentAction == "Index" ? "text-yellow-200 pointer-events-none cursor-default" : "")">
-                        <a href="/PetsGallery/Index" class="flex items-center gap-2 font-bold">
+                        <a href="/PetsGallery" class="flex items-center gap-2 font-bold">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="@(currentController == "PetsGallery" && currentAction == "Index" ? "#fde68a" : "#e8eaed")">
                                 <path d="M120-200q-33 0-56.5-23.5T40-280v-400q0-33 23.5-56.5T120-760h400q33 0 56.5 23.5T600-680v400q0 33-23.5 56.5T520-200H120Zm600-320q-17 0-28.5-11.5T680-560v-160q0-17 11.5-28.5T720-760h160q17 0 28.5 11.5T920-720v160q0 17-11.5 28.5T880-520H720Zm40-80h80v-80h-80v80ZM120-280h400v-400H120v400Zm40-80h320L375-500l-75 100-55-73-85 113Zm560 160q-17 0-28.5-11.5T680-240v-160q0-17 11.5-28.5T720-440h160q17 0 28.5 11.5T920-400v160q0 17-11.5 28.5T880-200H720Zm40-80h80v-80h-80v80Zm-640 0v-400 400Zm640-320v-80 80Zm0 320v-80 80Z" />
                             </svg>
@@ -173,7 +173,7 @@
 
                     <!-- Pets Page -->
                     <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer @(currentController == "PetsGallery" && currentAction == "Pet" ? "text-yellow-200 pointer-events-none cursor-default" : "")">
-                        <a href="/PetsGallery/Pet" class="flex items-center gap-2 font-bold">
+                        <a href="/Pet" class="flex items-center gap-2 font-bold">
                             <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" fill="@(currentController == "PetsGallery" && currentAction == "Pet" ? "#fde68a" : "#e8eaed")">
                                 <path d="M180-475q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180-160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm240 0q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180 160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM266-75q-45 0-75.5-34.5T160-191q0-52 35.5-91t70.5-77q29-31 50-67.5t50-68.5q22-26 51-43t63-17q34 0 63 16t51 42q28 32 49.5 69t50.5 69q35 38 70.5 77t35.5 91q0 47-30.5 81.5T694-75q-54 0-107-9t-107-9q-54 0-107 9t-107 9Z" />
                             </svg>
@@ -211,7 +211,7 @@
                         <ul class="sub-menu grid grid-rows-[0fr] transition-all duration-[300ms] ease-in-out ml-4 overflow-hidden">
                             <li>
                                 <span class="flex items-center gap-2 @(currentController == "Faqs" && currentAction == "Index" ? "text-yellow-200 pointer-events-none cursor-default" : "")">
-                                    <a href="/Faqs/Index" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
+                                    <a href="/FAQs-Adoption" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="@(currentController == "Faqs" && currentAction == "Index" ? "#fde68a" : "#e8eaed")">
                                             <path d="M424-320q0-81 14.5-116.5T500-514q41-36 62.5-62.5T584-637q0-41-27.5-68T480-732q-51 0-77.5 31T365-638l-103-44q21-64 77-111t141-47q105 0 161.5 58.5T698-641q0 50-21.5 85.5T609-475q-49 47-59.5 71.5T539-320H424Zm56 240q-33 0-56.5-23.5T400-160q0-33 23.5-56.5T480-240q33 0 56.5 23.5T560-160q0 33-23.5 56.5T480-80Z" />
                                         </svg>
@@ -222,7 +222,7 @@
 
                             <li>
                                 <span class="flex items-center gap-2 @(currentController == "Faqs" && currentAction == "PetsForSaleFaqs" ? "text-yellow-200 pointer-events-none cursor-default" : "")">
-                                    <a href="/Faqs/PetsForSaleFaqs" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
+                                    <a href="/FAQs-Sales" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="@(currentController == "Faqs" && currentAction == "PetsForSaleFaqs" ? "#fde68a" : "#e8eaed")">
                                             <path d="M424-320q0-81 14.5-116.5T500-514q41-36 62.5-62.5T584-637q0-41-27.5-68T480-732q-51 0-77.5 31T365-638l-103-44q21-64 77-111t141-47q105 0 161.5 58.5T698-641q0 50-21.5 85.5T609-475q-49 47-59.5 71.5T539-320H424Zm56 240q-33 0-56.5-23.5T400-160q0-33 23.5-56.5T480-240q33 0 56.5 23.5T560-160q0 33-23.5 56.5T480-80Z" />
                                         </svg>
@@ -261,7 +261,7 @@
                             <li>
                                 <span class="flex items-center gap-2 @(currentController == "AboutUs" ? "text-yellow-200 pointer-events-none cursor-default" : "")">
 
-                                    <a href="/AboutUs/Index" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
+                                    <a href="/AboutUs" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="@(currentController == "AboutUs" ? "#fde68a" : "#e8eaed")">
                                             <path d="M180-475q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180-160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm240 0q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29Zm180 160q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM266-75q-45 0-75.5-34.5T160-191q0-52 35.5-91t70.5-77q29-31 50-67.5t50-68.5q22-26 51-43t63-17q34 0 63 16t51 42q28 32 49.5 69t50.5 69q35 38 70.5 77t35.5 91q0 47-30.5 81.5T694-75q-54 0-107-9t-107-9q-54 0-107 9t-107 9Z" />
                                         </svg>
@@ -273,7 +273,7 @@
                             <li>
                                 <span class="flex items-center gap-2 @(currentController == "Contact" ? "text-yellow-200 pointer-events-none cursor-default" : "")">
 
-                                    <a href="/Contact/Index" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
+                                    <a href="/Contact" class="flex items-center gap-2 px-4 py-2 rounded-2xl hover:bg-[#49332b] active:bg-[#412e27]">
                                         <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="@(currentController == "Contact" ? "#fde68a" : "#e8eaed")">
                                             <path d="M520-520v-240h80v104l200-200 56 56-200 200h104v80H520Zm278 400q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z" />
                                         </svg>
@@ -290,7 +290,7 @@
 
                     <li class="flex items-center gap-2 font-bold hover:bg-[#49332b] active:bg-[#412e27] p-2 rounded-2xl cursor-pointer @(currentController == "DataPrivacy" ? "text-yellow-200 pointer-events-none cursor-default" : "")">
 
-                        <a href="/DataPrivacy/Index" class="flex items-center gap-2 font-bold">
+                        <a href="/PrivacyPolicy" class="flex items-center gap-2 font-bold">
 
                             <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="@(currentController == "DataPrivacy" ? "#fde68a" : "#e8eaed")">
                                 <path d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q104-33 172-132t68-220v-189l-240-90-240 90v189q0 121 68 220t172 132Zm0-316Zm-80 160h160q17 0 28.5-11.5T600-360v-120q0-17-11.5-28.5T560-520v-40q0-33-23.5-56.5T480-640q-33 0-56.5 23.5T400-560v40q-17 0-28.5 11.5T360-480v120q0 17 11.5 28.5T400-320Zm40-200v-40q0-17 11.5-28.5T480-600q17 0 28.5 11.5T520-560v40h-80Z" />
