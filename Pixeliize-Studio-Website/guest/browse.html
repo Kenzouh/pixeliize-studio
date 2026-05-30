@@ -24,22 +24,21 @@
           <!-- Price Filter -->
           <div class="mb-6">
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Price Range</p>
-            <div class="space-y-2">
-              <button class="filter-btn active w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">Any Price</button>
-              <button class="filter-btn w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">Under ₱500</button>
-              <button class="filter-btn w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">₱500 – ₱1,500</button>
-              <button class="filter-btn w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">₱1,500+</button>
+            <div class="space-y-2" id="price-filters">
+              <button onclick="filterPrice('any')" class="filter-btn w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">Any Price</button>
+              <button onclick="filterPrice('under500')" class="filter-btn w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">Under ₱500</button>
+              <button onclick="filterPrice('mid')" class="filter-btn w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">₱500 – ₱1,500</button>
+              <button onclick="filterPrice('high')" class="filter-btn w-full text-left px-3 py-2 rounded-lg text-sm border border-gray-200 font-medium">₱1,500+</button>
             </div>
           </div>
           <!-- Sort -->
           <div>
             <p class="text-xs font-semibold uppercase tracking-wider text-gray-400 mb-3">Sort By</p>
-            <select class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-600 bg-white">
-              <option>Most Popular</option>
-              <option>Newest First</option>
-              <option>Price: Low to High</option>
-              <option>Price: High to Low</option>
-              <option>Top Rated</option>
+            <select onchange="sortProducts(this.value)" class="w-full border border-gray-200 rounded-lg px-3 py-2 text-sm text-gray-600 bg-white">
+              <option value="popular">Most Popular</option>
+              <option value="priceasc">Price: Low to High</option>
+              <option value="pricedesc">Price: High to Low</option>
+              <option value="rated">Top Rated</option>
             </select>
           </div>
         </div>
