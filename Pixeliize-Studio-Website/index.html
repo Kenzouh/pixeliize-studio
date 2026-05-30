@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pixeliize Studio — Multimedia Marketplace</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap" rel="stylesheet"/>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: '#111827',
+            cream: '#F5F5DC',
+            pageBg: '#F6F9FC',
+            brand: {
+              cyan: '#5BB8D4',
+              blue: '#4A7CC7',
+              purple: '#8B5CF6',
+              pink: '#C45FA0',
+            }
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['DM Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="font-body">
+
+<!-- ============================================================ NAVBAR ============================================================ -->
+<div id="navbar-placeholder"></div>
+
+<!-- ============================================================ LANDING PAGE ============================================================ -->
+<div id="page-landing" class="page active">
+
+  <!-- Hero Section -->
+  <section class="hero-section flex items-center justify-center px-4 py-20">
+    <div class="glow-orb w-96 h-96 bg-blue-500 opacity-5 top-10 left-10"></div>
+    <div class="glow-orb w-72 h-72 bg-purple-500 opacity-8 bottom-10 right-20"></div>
+    <div class="relative z-10 max-w-6xl mx-auto w-full">
+      <!-- Hero Text -->
+      <div class="text-center mb-16">
+        <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 mb-6 text-xs text-gray-400 font-medium tracking-wide uppercase">
+          <span class="w-1.5 h-1.5 rounded-full bg-green-400 animate-pulse"></span>
+          Premium Multimedia Marketplace
+        </div>
+        <h1 class="font-display text-5xl md:text-7xl font-800 text-white leading-tight mb-6">
+          Creative Assets,<br/>
+          <span class="gradient-text">Instantly Yours</span>
+        </h1>
+        <p class="text-gray-400 text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+          Professional presentation templates, stunning photo edits, cinematic video edits, and eye-catching banners — all in one place.
+        </p>
+      </div>
+
+      <!-- Hero Cards -->
+      <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+        <!-- Commission Card -->
+        <div class="hero-gradient-card rounded-2xl p-8 cursor-pointer group hover:border-cyan-400/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" onclick="openAuthModal('signup')">
+          <div class="flex items-start justify-between mb-6">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,rgba(91,184,212,0.2),rgba(74,124,199,0.1))">
+              <svg class="w-7 h-7 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/></svg>
+            </div>
+            <span class="floating-badge text-xs font-semibold bg-cyan-400/10 text-cyan-400 border border-cyan-400/20 rounded-full px-3 py-1">Custom Work</span>
+          </div>
+          <h3 class="font-display text-2xl font-700 text-white mb-3">Request a Service</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-6">Commission our professional editors for custom multimedia tailored exactly to your vision and brand needs.</p>
+          <div class="flex items-center gap-2 text-cyan-400 text-sm font-semibold group-hover:gap-3 transition-all">
+            Get Started
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </div>
+
+        <!-- Plans Card -->
+        <div class="hero-gradient-card rounded-2xl p-8 cursor-pointer group hover:border-purple-400/40 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl" onclick="openAuthModal('signup')">
+          <div class="flex items-start justify-between mb-6">
+            <div class="w-14 h-14 rounded-xl flex items-center justify-center" style="background:linear-gradient(135deg,rgba(139,92,246,0.2),rgba(196,95,160,0.1))">
+              <svg class="w-7 h-7 text-purple-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+            </div>
+            <span class="floating-badge text-xs font-semibold bg-purple-400/10 text-purple-400 border border-purple-400/20 rounded-full px-3 py-1">Subscription</span>
+          </div>
+          <h3 class="font-display text-2xl font-700 text-white mb-3">Subscription Plans</h3>
+          <p class="text-gray-400 text-sm leading-relaxed mb-4">Choose a plan that fits your workflow. Save more, create more.</p>
+          <div class="space-y-3">
+            <div class="flex items-center justify-between bg-white/5 rounded-xl px-4 py-3">
+              <div>
+                <div class="text-white text-sm font-semibold">Basic Photo Plan</div>
+                <div class="text-gray-500 text-xs">10 images/month</div>
+              </div>
+              <div class="text-right">
+                <div class="text-cyan-400 font-display font-700 text-lg">₱999</div>
+                <div class="text-gray-500 text-xs">/month</div>
+              </div>
+            </div>
+            <div class="flex items-center justify-between rounded-xl px-4 py-3" style="background:linear-gradient(135deg,rgba(139,92,246,0.15),rgba(74,124,199,0.1));border:1px solid rgba(139,92,246,0.2)">
+              <div>
+                <div class="text-white text-sm font-semibold">Video + Photo Package</div>
+                <div class="text-gray-500 text-xs">10 vids + 20 images/month</div>
+              </div>
+              <div class="text-right">
+                <div class="text-purple-400 font-display font-700 text-lg">₱2,999</div>
+                <div class="text-gray-500 text-xs">/month</div>
+              </div>
+            </div>
+          </div>
+          <div class="flex items-center gap-2 text-purple-400 text-sm font-semibold mt-4 group-hover:gap-3 transition-all">
+            View Plans
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="flex items-center justify-center gap-12 mt-16 flex-wrap">
+        <div class="text-center">
+          <div class="font-display text-3xl font-800 gradient-text">2,400+</div>
+          <div class="text-gray-500 text-xs mt-1">Premium Assets</div>
+        </div>
+        <div class="w-px h-10 bg-white/10"></div>
+        <div class="text-center">
+          <div class="font-display text-3xl font-800 gradient-text">800+</div>
+          <div class="text-gray-500 text-xs mt-1">Happy Clients</div>
+        </div>
+        <div class="w-px h-10 bg-white/10"></div>
+        <div class="text-center">
+          <div class="font-display text-3xl font-800 gradient-text">5-Star</div>
+          <div class="text-gray-500 text-xs mt-1">Average Rating</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== CATEGORIES CAROUSEL ======================== -->
+  <section class="py-20 px-4 bg-pageBg">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color:#4A7CC7">Explore Categories</p>
+        <h2 class="font-display text-4xl font-700 text-navy">Browse by Type</h2>
+        <p class="text-gray-500 mt-3 max-w-xl mx-auto">Find the perfect asset in our curated collection of professional multimedia content.</p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+
+        <!-- Picture -->
+        <div class="category-card group rounded-2xl overflow-hidden shadow-lg" onclick="browseCategory('picture')">
+          <div class="img-photo relative h-44 flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+            <svg class="relative z-10 w-12 h-12 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+            <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm rounded-full px-2 py-0.5 text-white text-xs font-medium">Photos</div>
+          </div>
+          <div class="bg-white p-4">
+            <h3 class="font-display font-700 text-navy text-base">Picture Edits</h3>
+            <p class="text-gray-400 text-xs mt-1">Professional retouching & composites</p>
+          </div>
+        </div>
+
+        <!-- Banner -->
+        <div class="category-card group rounded-2xl overflow-hidden shadow-lg" onclick="browseCategory('banner')">
+          <div class="img-banner relative h-44 flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+            <svg class="relative z-10 w-12 h-12 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h18M3 10h18m-9 4h9m-9 4h6"/></svg>
+            <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm rounded-full px-2 py-0.5 text-white text-xs font-medium">Banners</div>
+          </div>
+          <div class="bg-white p-4">
+            <h3 class="font-display font-700 text-navy text-base">Banner Designs</h3>
+            <p class="text-gray-400 text-xs mt-1">Eye-catching digital banners</p>
+          </div>
+        </div>
+
+        <!-- Flyer -->
+        <div class="category-card group rounded-2xl overflow-hidden shadow-lg" onclick="browseCategory('flyer')">
+          <div class="img-flyer relative h-44 flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+            <svg class="relative z-10 w-12 h-12 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>
+            <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm rounded-full px-2 py-0.5 text-white text-xs font-medium">Flyers</div>
+          </div>
+          <div class="bg-white p-4">
+            <h3 class="font-display font-700 text-navy text-base">Flyer Templates</h3>
+            <p class="text-gray-400 text-xs mt-1">Print & digital ready designs</p>
+          </div>
+        </div>
+
+        <!-- Presentation -->
+        <div class="category-card group rounded-2xl overflow-hidden shadow-lg" onclick="browseCategory('presentation')">
+          <div class="img-pres relative h-44 flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+            <svg class="relative z-10 w-12 h-12 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>
+            <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm rounded-full px-2 py-0.5 text-white text-xs font-medium">Slides</div>
+          </div>
+          <div class="bg-white p-4">
+            <h3 class="font-display font-700 text-navy text-base">Presentation Templates</h3>
+            <p class="text-gray-400 text-xs mt-1">Pitch decks & slide packs</p>
+          </div>
+        </div>
+
+        <!-- Video -->
+        <div class="category-card group rounded-2xl overflow-hidden shadow-lg col-span-2 md:col-span-1" onclick="browseCategory('video')">
+          <div class="img-video relative h-44 flex items-center justify-center">
+            <div class="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-all"></div>
+            <svg class="relative z-10 w-12 h-12 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.723v6.554a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+            <div class="absolute top-3 right-3 bg-white/20 backdrop-blur-sm rounded-full px-2 py-0.5 text-white text-xs font-medium">Video</div>
+          </div>
+          <div class="bg-white p-4">
+            <h3 class="font-display font-700 text-navy text-base">Video Edits</h3>
+            <p class="text-gray-400 text-xs mt-1">Cinematic reels & intros</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== TESTIMONIALS / CLIENTS ======================== -->
+  <section class="py-16 px-4" style="background:#f0f4f8">
+    <div class="max-w-6xl mx-auto">
+      <div class="text-center mb-12">
+        <p class="text-sm font-semibold tracking-widest uppercase mb-3" style="color:#4A7CC7">Trusted By</p>
+        <h2 class="font-display text-3xl font-700 text-navy">Brands We've Worked With</h2>
+      </div>
+      <div class="flex flex-wrap items-center justify-center gap-10 md:gap-16">
+        <!-- Brand Logos (SVG text-based) -->
+        <div class="testimonial-logo flex items-center cursor-pointer">
+          <div class="font-display font-800 text-2xl" style="color:#1a1a2e;letter-spacing:-0.5px">Adobe</div>
+        </div>
+        <div class="testimonial-logo flex items-center cursor-pointer">
+          <div class="font-display font-800 text-2xl" style="color:#1a1a2e">Figma</div>
+        </div>
+        <div class="testimonial-logo flex items-center cursor-pointer">
+          <div class="font-display font-800 text-2xl" style="color:#1a1a2e">Canva</div>
+        </div>
+        <div class="testimonial-logo flex items-center cursor-pointer">
+          <div class="font-display font-800 text-2xl" style="color:#1a1a2e">Shopify</div>
+        </div>
+        <div class="testimonial-logo flex items-center cursor-pointer">
+          <div class="font-display font-800 text-2xl" style="color:#1a1a2e">Notion</div>
+        </div>
+        <div class="testimonial-logo flex items-center cursor-pointer">
+          <div class="font-display font-800 text-2xl" style="color:#1a1a2e">Slack</div>
+        </div>
+      </div>
+      <p class="text-center text-gray-400 text-sm mt-10">Join 800+ satisfied clients who trust Pixeliize Studio for their creative needs.</p>
+    </div>
+  </section>
+
+</div><!-- end landing -->
+
+<!-- ============================================================ BROWSE PAGE ============================================================ -->
+<div id="browse-placeholder"></div>
+
+<!-- ============================================================ AUTH MODAL ============================================================ -->
+<div id="auth-modal-placeholder"></div>
+
+<!-- ============================================================ PRODUCT DETAIL MODAL ============================================================ -->
+<div id="product-modal" class="fixed inset-0 z-50 hidden flex items-center justify-center p-4">
+  <div class="modal-backdrop absolute inset-0 bg-black/70" onclick="closeProductModal()"></div>
+  <div class="modal-box relative bg-white rounded-2xl shadow-2xl w-full max-w-2xl overflow-hidden">
+    <button onclick="closeProductModal()" class="absolute top-4 right-4 z-10 text-gray-400 hover:text-gray-700 bg-white rounded-full p-1.5 shadow">
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+    </button>
+    <!-- Product Image -->
+    <div id="modal-img" class="h-64 w-full relative flex items-center justify-center">
+      <div id="modal-img-inner" class="absolute inset-0"></div>
+      <div class="relative z-10 text-center">
+        <div id="modal-icon" class="w-16 h-16 rounded-2xl bg-white/10 mx-auto flex items-center justify-center backdrop-blur-sm mb-3"></div>
+        <div id="modal-category-badge" class="inline-block text-xs font-semibold bg-white/20 text-white rounded-full px-3 py-1 backdrop-blur-sm"></div>
+      </div>
+    </div>
+    <!-- Product Details -->
+    <div class="p-8">
+      <div class="flex items-start justify-between mb-4">
+        <div>
+          <h2 id="modal-title" class="font-display text-2xl font-700 text-navy"></h2>
+          <p id="modal-author" class="text-gray-400 text-sm mt-1"></p>
+        </div>
+        <div class="text-right">
+          <div id="modal-price" class="font-display text-3xl font-800 gradient-text"></div>
+          <div class="flex items-center justify-end gap-1 mt-1">
+            <span class="star text-sm">★★★★★</span>
+            <span id="modal-rating" class="text-gray-500 text-xs"></span>
+          </div>
+        </div>
+      </div>
+      <p id="modal-desc" class="text-gray-600 text-sm leading-relaxed mb-6"></p>
+      <!-- Features -->
+      <div id="modal-features" class="grid grid-cols-2 gap-2 mb-6"></div>
+      <!-- Actions -->
+      <div class="flex gap-3">
+        <button onclick="openAuthModal('signup')" class="btn-primary flex-1 py-3 rounded-xl text-white font-semibold text-sm"><span>Buy Now — <span id="modal-price-btn"></span></span></button>
+        <button class="btn-outline px-5 py-3 rounded-xl text-sm font-semibold">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        </button>
+      </div>
+      <p class="text-center text-xs text-gray-400 mt-3">You need an account to purchase. <a class="text-cyan-500 cursor-pointer" onclick="closeProductModal();openAuthModal('signup')">Create one free →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- ============================================================ FOOTER ============================================================ -->
+<footer class="bg-navy text-gray-400" style="border-top:1px solid rgba(91,184,212,0.1)">
+  <div class="max-w-7xl mx-auto px-4 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+      <!-- Brand -->
+      <div class="md:col-span-1">
+        <img src="images/logo-with-text.png" alt="Pixeliize Studio Logo" class="h-8 object-contain mb-4"/>
+        <p class="text-sm leading-relaxed text-gray-500">Premium multimedia marketplace for creative professionals. Quality assets, crafted with care.</p>
+        <div class="flex gap-3 mt-5">
+          <a class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition cursor-pointer" title="Facebook">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+          </a>
+          <a class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition cursor-pointer" title="Instagram">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5" stroke-width="2"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" stroke-width="2"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+          <a class="w-8 h-8 rounded-lg bg-white/5 hover:bg-white/10 flex items-center justify-center transition cursor-pointer" title="Twitter">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h4 class="font-display font-700 text-white text-sm uppercase tracking-widest mb-4">Marketplace</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cyan-400 transition cursor-pointer" onclick="showPage('browse')">Browse All</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Presentation Templates</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Photo Edits</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Video Edits</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Banners & Flyers</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="font-display font-700 text-white text-sm uppercase tracking-widest mb-4">Services</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cyan-400 transition cursor-pointer" onclick="openAuthModal('signup')">Request a Commission</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer" onclick="openAuthModal('signup')">Subscription Plans</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Enterprise Solutions</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Affiliate Program</a></li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4 class="font-display font-700 text-white text-sm uppercase tracking-widest mb-4">Company</h4>
+        <ul class="space-y-2 text-sm">
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">About Us</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Our Team</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Careers</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Contact</a></li>
+          <li><a class="hover:text-cyan-400 transition cursor-pointer">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="border-t border-white/5 pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-xs text-gray-600">
+      <p>© 2025 Pixeliize Studio. All rights reserved. Made with ♥ in the Philippines.</p>
+      <div class="flex gap-6">
+        <a class="hover:text-gray-400 transition cursor-pointer">Terms</a>
+        <a class="hover:text-gray-400 transition cursor-pointer">Privacy</a>
+        <a class="hover:text-gray-400 transition cursor-pointer">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================================================ JAVASCRIPT ============================================================ -->
+<script>
+// ===================== DATA =====================
+const PRODUCTS = [
+  // PRESENTATION
+  { id:1, title:'Nexus Corporate Deck', category:'presentation', price:649, rating:'4.9 (218)', downloads:1204, desc:'A sleek, modern pitch deck with 40+ fully editable slides. Perfect for startups and enterprise presentations with a professional dark theme.', author:'by Pixeliize Studio', features:['40+ Slides','PowerPoint & Keynote','Free Font Included','Fully Editable'], imgClass:'img-pres', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>' },
+  { id:2, title:'Aurora Creative Portfolio', category:'presentation', price:499, rating:'4.8 (156)', downloads:890, desc:'Vibrant gradient-themed presentation template ideal for designers, artists, and creative agencies showcasing their portfolio.', author:'by Pixeliize Studio', features:['35 Slides','PPTX + Google Slides','Animation Ready','Modern Layout'], imgClass:'img-pres', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>' },
+  { id:3, title:'Minimal Business Report', category:'presentation', price:349, rating:'4.7 (203)', downloads:762, desc:'Clean and minimal business report template. Ideal for quarterly reviews, financial summaries and corporate reporting.', author:'by Pixeliize Studio', features:['25 Slides','Infographic Elements','Data Visualization','Executive Summary Page'], imgClass:'img-pres', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z"/></svg>' },
+  // PICTURE
+  { id:4, title:'Cinematic Portrait Edit', category:'picture', price:299, rating:'5.0 (88)', downloads:412, desc:'Professional cinematic-style portrait retouching. Moody tones, clean skin, and dramatic lighting delivered as a layered PSD file.', author:'by Pixeliize Studio', features:['PSD File Included','Layered Edit','Color Graded','Print Ready'], imgClass:'img-photo', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>' },
+  { id:5, title:'Product Composite Pack', category:'picture', price:799, rating:'4.9 (134)', downloads:567, desc:'Professional product photo compositing with studio-grade backgrounds. Perfect for e-commerce and brand photography.', author:'by Pixeliize Studio', features:['5 Composites Included','White Background Option','Shadow Effects','High Resolution 300dpi'], imgClass:'img-photo', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>' },
+  { id:6, title:'Fashion Photo Retouch', category:'picture', price:450, rating:'4.8 (97)', downloads:340, desc:'High-end fashion and lifestyle photo retouching. Skin smoothing, color correction, and background enhancement.', author:'by Pixeliize Studio', features:['Skin Retouching','Color Grade','Background Cleanup','Magazine Quality'], imgClass:'img-photo', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>' },
+  // BANNER
+  { id:7, title:'Summer Sale Banner Set', category:'banner', price:399, rating:'4.8 (176)', downloads:890, desc:'A complete set of 10 web banners in all standard sizes. Bright summer theme with editable text and colors in Photoshop.', author:'by Pixeliize Studio', features:['10 Banner Sizes','Social Media Ready','Editable PSD','Web & Print'], imgClass:'img-banner', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h18M3 10h18m-9 4h9m-9 4h6"/></svg>' },
+  { id:8, title:'Tech Startup Banner Pack', category:'banner', price:499, rating:'4.9 (112)', downloads:445, desc:'Dark tech-themed banner pack for SaaS startups and tech companies. Features glowing gradients and geometric patterns.', author:'by Pixeliize Studio', features:['8 Banner Variants','Dark & Light Versions','Vector Elements','Figma + PSD'], imgClass:'img-banner', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3 6h18M3 10h18m-9 4h9m-9 4h6"/></svg>' },
+  // FLYER
+  { id:9, title:'Club Night Event Flyer', category:'flyer', price:249, rating:'4.7 (203)', downloads:1120, desc:'High-energy neon club flyer for events, parties, and nightlife promotions. Fully customizable text and colors.', author:'by Pixeliize Studio', features:['A4 + Letter Size','Neon Effects','Font Included','Print Ready 300dpi'], imgClass:'img-flyer', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' },
+  { id:10, title:'Business Services Flyer', category:'flyer', price:199, rating:'4.8 (89)', downloads:678, desc:'Clean and professional flyer template for business services, consulting, and corporate events.', author:'by Pixeliize Studio', features:['Clean Layout','Corporate Style','Editable PSD','Front & Back'], imgClass:'img-flyer', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/></svg>' },
+  // VIDEO
+  { id:11, title:'Cinematic Brand Intro', category:'video', price:1299, rating:'5.0 (67)', downloads:234, desc:'Stunning 10-second cinematic brand intro for YouTube, Instagram, or any video content. Delivered as MP4 with customizable text.', author:'by Pixeliize Studio', features:['10s Duration','4K Resolution','Multiple Versions','After Effects Source'], imgClass:'img-video', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.723v6.554a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>' },
+  { id:12, title:'Social Reel Edit Pack', category:'video', price:999, rating:'4.9 (145)', downloads:489, desc:'Professional social media reel edits in vertical format. Dynamic transitions, text overlays, and music sync ready.', author:'by Pixeliize Studio', features:['3 Reel Formats','9:16 Vertical','Transition Pack','CapCut & Premiere'], imgClass:'img-video', icon:'<svg class="w-8 h-8 text-white opacity-80" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M15 10l4.553-2.276A1 1 0 0121 8.723v6.554a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>' },
+];
+
+let currentFilter = 'all';
+let currentProduct = null;
+
+// ===================== NAVIGATION =====================
+function showPage(page) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  const pageEl = document.getElementById('page-' + page);
+  if (pageEl) pageEl.classList.add('active');
+  window.scrollTo(0, 0);
+  if (page === 'browse') renderProducts('all');
+}
+
+function browseCategory(cat) {
+  showPage('browse');
+  filterCategory(cat);
+}
+
+// ===================== AUTH MODAL =====================
+function openAuthModal(tab) {
+  const modal = document.getElementById('auth-modal');
+  if (!modal) return;
+  modal.classList.remove('hidden');
+  modal.classList.add('flex');
+  document.body.style.overflow = 'hidden';
+  switchAuthTab(tab || 'login');
+}
+
+function closeAuthModal() {
+  const modal = document.getElementById('auth-modal');
+  if (!modal) return;
+  modal.classList.add('hidden');
+  modal.classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+function switchAuthTab(tab) {
+  const loginForm = document.getElementById('form-login');
+  const signupForm = document.getElementById('form-signup');
+  const loginTab = document.getElementById('tab-login');
+  const signupTab = document.getElementById('tab-signup');
+  if (!loginForm || !signupForm || !loginTab || !signupTab) return;
+
+  if (tab === 'login') {
+    loginForm.classList.remove('hidden');
+    signupForm.classList.add('hidden');
+    loginTab.classList.add('active');
+    signupTab.classList.remove('active');
+    loginTab.style.color = '#5BB8D4';
+    signupTab.style.color = '';
+  } else {
+    signupForm.classList.remove('hidden');
+    loginForm.classList.add('hidden');
+    signupTab.classList.add('active');
+    loginTab.classList.remove('active');
+    signupTab.style.color = '#5BB8D4';
+    loginTab.style.color = '';
+  }
+}
+
+// ===================== PRODUCT MODAL =====================
+function openProductModal(product) {
+  currentProduct = product;
+  document.getElementById('modal-title').textContent = product.title;
+  document.getElementById('modal-author').textContent = product.author;
+  document.getElementById('modal-price').textContent = '₱' + product.price.toLocaleString();
+  document.getElementById('modal-price-btn').textContent = '₱' + product.price.toLocaleString();
+  document.getElementById('modal-rating').textContent = product.rating + ' reviews';
+  document.getElementById('modal-desc').textContent = product.desc;
+  document.getElementById('modal-img-inner').className = 'absolute inset-0 ' + product.imgClass;
+  document.getElementById('modal-icon').innerHTML = product.icon;
+  document.getElementById('modal-category-badge').textContent = product.category.charAt(0).toUpperCase() + product.category.slice(1);
+  const featGrid = document.getElementById('modal-features');
+  featGrid.innerHTML = product.features.map(f => `<div class="flex items-center gap-2 text-xs text-gray-600"><svg class="w-4 h-4 flex-shrink-0" style="color:#4A7CC7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>${f}</div>`).join('');
+  document.getElementById('product-modal').classList.remove('hidden');
+  document.getElementById('product-modal').classList.add('flex');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeProductModal() {
+  document.getElementById('product-modal').classList.add('hidden');
+  document.getElementById('product-modal').classList.remove('flex');
+  document.body.style.overflow = '';
+}
+
+// ===================== FILTER =====================
+function filterCategory(cat) {
+  currentFilter = cat;
+  document.querySelectorAll('#category-filters .filter-btn').forEach(btn => {
+    btn.classList.remove('active');
+    btn.style.background = '';
+    btn.style.color = '';
+    btn.style.borderColor = '';
+  });
+  const btns = document.querySelectorAll('#category-filters .filter-btn');
+  const idx = ['all','picture','banner','flyer','presentation','video'].indexOf(cat);
+  if (btns[idx]) {
+    btns[idx].classList.add('active');
+    btns[idx].style.background = 'linear-gradient(135deg,#4A7CC7,#8B5CF6)';
+    btns[idx].style.color = 'white';
+    btns[idx].style.borderColor = 'transparent';
+  }
+  renderProducts(cat);
+}
+
+// ===================== RENDER PRODUCTS =====================
+function renderProducts(cat) {
+  const filtered = cat === 'all' ? PRODUCTS : PRODUCTS.filter(p => p.category === cat);
+  const resultCount = document.getElementById('result-count');
+  if (resultCount) resultCount.textContent = filtered.length + ' assets';
+  const grid = document.getElementById('products-grid');
+  if (!grid) return;
+  grid.innerHTML = filtered.map(p => `
+    <div class="product-card bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-100 cursor-pointer" onclick='openProductModal(${JSON.stringify(p).replace(/'/g,"\'")} )'>
+      <div class="${p.imgClass} relative h-48 flex items-center justify-center">
+        <div class="product-overlay absolute inset-0 bg-black/30 flex items-center justify-center">
+          <div class="bg-white/90 backdrop-blur-sm text-navy text-xs font-semibold px-4 py-2 rounded-full">Quick View</div>
+        </div>
+        <div class="relative z-10">${p.icon}</div>
+        <div class="absolute top-3 right-3 price-badge text-white text-xs font-bold px-2.5 py-1 rounded-lg">₱${p.price.toLocaleString()}</div>
+        <div class="absolute top-3 left-3 bg-black/40 backdrop-blur-sm text-white text-xs font-medium px-2 py-1 rounded-md capitalize">${p.category}</div>
+      </div>
+      <div class="p-4">
+        <h3 class="font-display font-700 text-navy text-sm leading-tight mb-1">${p.title}</h3>
+        <div class="flex items-center justify-between mt-2">
+          <div class="flex items-center gap-1">
+            <span style="color:#F59E0B" class="text-xs">★</span>
+            <span class="text-gray-500 text-xs">${p.rating}</span>
+          </div>
+          <span class="text-gray-400 text-xs">${p.downloads.toLocaleString()} sales</span>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// ===================== KEYBOARD ESC =====================
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') { closeAuthModal(); closeProductModal(); }
+});
+
+
+// ===================== FETCH FOR OTHER FILES =====================
+
+fetch('shared/navbar.html')
+  .then(res => res.text())
+  .then(html => document.getElementById('navbar-placeholder').innerHTML = html);
+
+// Load Auth Modal Component
+fetch('shared/login.html')
+  .then(res => res.text())
+  .then(html => document.getElementById('auth-modal-placeholder').innerHTML = html);
+
+// Load Browse Component
+fetch('guest/browse.html')
+  .then(res => res.text())
+  .then(html => {
+    document.getElementById('browse-placeholder').innerHTML = html;
+    renderProducts('all'); // Run this only after HTML has been loaded to avoid null errors
+  });
+</script>
+</body>
+</html>
